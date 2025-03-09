@@ -1,9 +1,9 @@
 import Home from "./pages/home/home";
 import About from "./pages/about/About"
+import Legal from "./pages/legal/Legal"
 import Contact from "./pages/contact/Contact"
-import feestructure from "./pages/fee-structure/fee-structure"
-import courses from "./pages/courses/courses"
-import blogs from "./pages/blogs/blogs"
+import Ip from "./pages/ip/Ip"
+import Login from "./pages/login/login";
 import CustomCursor from "./CustomCursor";
 
 import {
@@ -18,11 +18,11 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route exact path = "/" element = {<Home/>}/>
+          <Route exact path = "/Legal" element = {<Legal/>}/>
           <Route exact path = "/About" element = {<About/>}/>
-          <Route exact path = "/fee-structure" element = {<fee-structure/>}/>
-          <Route exact path = "/courses" element = {<courses/>}/>
-          <Route exact path = "/blogs" element = {<blogs/>}/>
           <Route exact path = "/Contact" element = {<Contact/>}/>
+          <Route exact path = "/IpTracker" element = {<Ip/>}/>
+          <Route exact path="/Login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </>
