@@ -3,8 +3,8 @@ import './homeContent.css';
 
 const HomeContent = () => {
   return (
-    <div className="hi-container">
-      <h1>Hi</h1>
+    <div className="home-container">
+      <h1>HiWAASSUP</h1>
     </div>
   );
 };
