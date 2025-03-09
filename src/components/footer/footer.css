@@ -15,7 +15,7 @@ footer {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: #1a1a1a; /* Dark background color */
   box-shadow: 0 16px 70px -8px rgba(0, 0, 0, 0.25);
   transition: background 0.3s linear;
 
@@ -48,7 +48,7 @@ footer .containerx {
 }
 
 .profil .logo_area img {
-  background-color: rgb(0, 0, 0);
+  background-color: #1a1a1a; /* Match the dark background */
   filter: invert(1);
   width: 2vw;
 }
@@ -56,39 +56,41 @@ footer .containerx {
 .logo_area .logo_name {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #000;
+  color: #ffffff; /* White text color */
   margin: 0 1rem;
 }
+
 .profil {
   /* width: 500vh; */
   /* width: 70%; */
 }
+
 .desc_area {
   margin-bottom: 1.25rem;
   overflow: hidden;
 }
 
 .desc_area p {
-  /* width: 70vh; */
-
-  color: #828282;
+  color: #b3b3b3; /* Light gray text color */
   font-weight: 400;
   line-height: 25px;
   font-family: "Rubik", sans-serif;
 }
 
 .social_media box-icon {
-  fill: #313131;
+  fill: #b3b3b3; /* Light gray icon color */
   margin-right: 18px;
   font-size: 24px;
 }
 
 .social_media box-icon:hover {
-  fill: #313131;
+  fill: #ffffff; /* White icon color on hover */
 }
 
 .service_area {
   display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .service_header {
@@ -97,7 +99,7 @@ footer .containerx {
 
 li.service_name {
   font-family: "Rubik", sans-serif;
-  color: #000;
+  color: #ffffff; /* White text color */
   font-weight: 600;
 }
 
@@ -107,14 +109,14 @@ li.service_name {
   padding-bottom: 1px;
   color: inherit;
   font-family: "Rubik", sans-serif;
-  color: #a9a9a9;
+  color: #b3b3b3; /* Light gray text color */
   font-weight: 400;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 .service_header li a:hover {
-  color: #000;
+  color: #ffffff; /* White text color on hover */
 }
 
 .service_header li a::after {
@@ -124,7 +126,7 @@ li.service_name {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: #000000;
+  background-color: #ffffff; /* White underline color */
   transition: width 0.3s ease-in-out;
 }
 
@@ -150,29 +152,33 @@ hr {
 }
 
 .copy_right {
-  color: #828282;
+  color: #b3b3b3; /* Light gray text color */
   display: flex;
   align-items: center;
+  box-icon {
+    fill: #b3b3b3; /* Light gray icon color */
+  }
 }
 
 .copy_right span {
   margin-left: 8px;
   font-weight: 400;
   letter-spacing: 0.135rem;
-  color: #828282;
+  color: #b3b3b3; /* Light gray text color */
   font-family: "Rubik", sans-serif;
 }
 
 .tou a {
-  color: #828282;
+  color: #b3b3b3; /* Light gray text color */
   margin-left: 1.5rem;
   font-family: "Rubik", sans-serif;
 }
 
 .tou a:hover {
-  color: #313131;
+  color: #ffffff; /* White text color on hover */
 }
 
+/* -----------media screen---------------- */
 @media only screen and (max-width: 880px) {
   footer {
     width: 180vw;
@@ -190,7 +196,7 @@ hr {
     display: flex;
     width: 38vh;
     padding-bottom: 2vh;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ffffff; /* White border color */
   }
 
   .profil .logo_area {
@@ -210,7 +216,7 @@ hr {
     width: 65vh;
     padding-bottom: 2vh;
     margin-bottom: 2vh;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ffffff; /* White border color */
   }
 
   .service_area {

@@ -10,11 +10,11 @@ const Footer = () => {
         <div className="content_footer">
           <div className="profil">
             <div className="logo_area">
-              <img src={logo} alt="Chain Messenger Logo" />
-              {/* <span className="logo_name">Chain Messenger</span> */}
+              <img src={logo} alt="MVM EDUCATION Logo" />
+              {/* <span className="logo_name">MVM EDUCATION</span> */}
             </div>
             <div className="desc_area">
-              <p>Chain Messenger is a secure, decentralized messaging platform built on blockchain technology. Experience end-to-end encryption, fast and reliable communication, and full decentralization. Connect with your friends and colleagues securely and privately.</p>
+              <p>MVM EDUCATION is your trusted source for comprehensive stock market training. Learn the ins and outs of stock trading, investment strategies, and market analysis from industry experts. Empower yourself with the knowledge to succeed in the stock market.</p>
             </div>
             <div className="social_media">
               <a href='https://steamcommunity.com/id/akyboy27/'><box-icon type='logo' name='steam' size='md' ></box-icon></a>
@@ -26,17 +26,17 @@ const Footer = () => {
           </div>
           <div className="service_area">
             <ul className="service_header">
-              <li className="service_name">Features</li>
-              <li><a href='#'>End-to-End Encryption</a></li>
-              <li><a href='#'>Fast & Reliable</a></li>
-              <li><a href='#'>Gas-Optimized</a></li>
-              <li><a href='#'>Fully Decentralized</a></li>
+              <li className="service_name">Courses</li>
+              <li><a href='#'>Beginner's Guide</a></li>
+              <li><a href='#'>Advanced Strategies</a></li>
+              <li><a href='#'>Market Analysis</a></li>
+              <li><a href='#'>Investment Planning</a></li>
             </ul>
             <ul className="service_header">
               <li className="service_name">Resources</li>
-              <li><a href='#'>Documentation</a></li>
-              <li><a href='#'>API Reference</a></li>
-              <li><a href='#'>Community</a></li>
+              <li><a href='#'>Blog</a></li>
+              <li><a href='#'>Webinars</a></li>
+              <li><a href='#'>E-books</a></li>
               <li><a href='#'>Support</a></li>
             </ul>
             <ul className="service_header">
@@ -53,7 +53,7 @@ const Footer = () => {
         <div className="footer_bottom">
           <div className="copy_right">
             <box-icon name='copyright' ></box-icon>
-            <span>2025 Chain Messenger</span>
+            <span>2025 MVM EDUCATION</span>
           </div>
           <div className="tou">
             <a href='#'>Terms of Use</a>

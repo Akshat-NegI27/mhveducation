@@ -12,7 +12,6 @@
   align-items: center;
   background-color: rgba(13, 18, 33, 0.6);
   backdrop-filter: blur(10px);
-  /* padding: 12px 24px; */
   justify-self: center;
   margin-top: 20px;
   border-radius: 50px 50px 50px 50px;
@@ -23,19 +22,18 @@
 .logo-container {
   display: flex;
   justify-content: flex-start;
-  /* margin-bottom: 4rem; */
 }
 
 .logo {
   display: flex;
   align-items: center;
   animation: fadeIn 1s ease-in-out;
-  img {
-    width: 80%;
-    height: 50px;
-    margin-left: 50px;
-    /* background-color: red; */
-  }
+}
+
+.logo img {
+  width: 80%;
+  height: 50px;
+  margin-left: 50px;
 }
 
 .logo-icon {
@@ -77,12 +75,32 @@
   color: #8b93a7; /* Light gray for non-active links */
   text-decoration: none;
   font-weight: 500;
+  position: relative;
   transition: color 0.2s;
 }
 
-.navbar-links a.active,
-.navbar-links a:hover {
-  color: #ffffff; /* White for active/hovered links */
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffffff; /* White for the underline */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: #ffffff; /* White color on hover and active */
+}
+
+.navbar-links a:hover::after,
+.navbar-links a.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .navbar-actions {
