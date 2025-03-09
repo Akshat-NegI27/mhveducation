@@ -1,16 +1,15 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
-import feestructure from '../../components/feestructure/feestructure'
+import LegalContent from '../../components/login-content/login'
 import Footer from "../../components/footer/footer";
-const feestructure = () => {
+const Login = () => {
   return (
     <>
     <Navbar/>
-    <feestructure />
-    <Footer/>
+    <LegalContent/>
+   <Footer/>
     </>
 
   )
 }
-
-export default About
+export default Login
