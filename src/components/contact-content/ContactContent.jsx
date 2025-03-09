@@ -1,12 +1,12 @@
 import React from 'react';
-import './ContactContent.css';
+import './contactContent.css';
 
-const ContactContent = () => {
+const contactContent = () => {
   return (
     <div className="hi-container">
-      <h1>Hi</h1>
+      <h1>Contact page</h1>
     </div>
   );
 };
 
-export default ContactContent;
+export default contactContent;

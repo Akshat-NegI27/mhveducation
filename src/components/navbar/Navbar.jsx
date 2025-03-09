@@ -16,13 +16,14 @@ const Navbar = () => {
 
       <div className="navbar-links">
         <NavLink to="/" exact activeClassName="active">Home</NavLink>
-        <NavLink to="/about" activeClassName="active">About</NavLink>
-        <NavLink to="/IpTracker" activeClassName="active">Chat</NavLink>
-        <NavLink to="/legal" activeClassName="active">Legal</NavLink>
-        <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+        <NavLink to="/Courses" activeClassName="active">Courses</NavLink>
+        <NavLink to="/Feestructure" activeClassName="active">Fee Structure</NavLink>
+        <NavLink to="/Blogs" activeClassName="active">Blogs</NavLink>
+        <NavLink to="/About" activeClassName="active">About</NavLink>
+        <NavLink to="/Contact" activeClassName="active">Contact Us</NavLink>
       </div>
       <div className="navbar-actions">
-        <button className="btn-download">Login</button>
+        <button className="btn-download">Enroll Today</button>
       </div>
     </nav>
   );

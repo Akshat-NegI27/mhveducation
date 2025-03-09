@@ -1,16 +1,15 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
-import courses from '../../components/courses/courses'
+import CoursesContent from "../../components/courses-content/coursesContent";
 import Footer from "../../components/footer/footer";
-const courses = () => {
+const Courses = () => {
   return (
     <>
     <Navbar/>
-    <courses />
-    <Footer />
+    <CoursesContent/>
+    <Footer/>
     </>
-
   )
 }
 
-export default Contact
+export default Courses

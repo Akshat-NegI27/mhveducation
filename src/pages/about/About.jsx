@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
-import AboutContent from '../../components/about-content/About'
+import AboutContent from '../../components/about-content/aboutContent'
 import Footer from "../../components/footer/footer";
 const About = () => {
   return (
@@ -9,7 +9,6 @@ const About = () => {
     <AboutContent />
     <Footer/>
     </>
-
   )
 }
 

@@ -1,16 +1,15 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
-import feestructure from '../../components/feestructure/feestructure'
+import FeestructureContent from "../../components/feestructure-content/feestructureContent";
 import Footer from "../../components/footer/footer";
-const feestructure = () => {
+const Feestrcuture = () => {
   return (
     <>
     <Navbar/>
-    <feestructure />
+    <FeestructureContent/>
     <Footer/>
     </>
-
   )
 }
 
-export default About
+export default Feestrcuture

@@ -1,16 +1,15 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
-import Blogs from '../../components/Blogs/Blogs'
+import BlogsContent from "../../components/blogs-content/blogsContent";
 import Footer from "../../components/footer/footer";
 const Blogs = () => {
   return (
     <>
     <Navbar/>
-    <Blogs />
+    <BlogsContent/>
     <Footer/>
     </>
-
   )
 }
 
-export default About
+export default Blogs

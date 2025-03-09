@@ -1,23 +1,23 @@
 @import "../fonts/fonts.css";
 .navbar {
   font-family: DM-sans2;
-  position: fixed; /* Changed from sticky to fixed */
-  top: 0; /* Adjusted top to 0 */
-  left: 0; /* Ensure the navbar starts from the left edge */
-  right: 0; /* Ensure the navbar spans the full width */
-  width: 100%; /* Ensure the navbar spans the full width */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
   height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(13, 18, 33, 0.6); /* Semi-transparent background */
-  backdrop-filter: blur(
-    10px
-  ); /* Adds a blur effect to what's behind the navbar */
+  background-color: rgba(13, 18, 33, 0.6);
+  backdrop-filter: blur(10px);
   /* padding: 12px 24px; */
-  border-radius: 0 0 50px 50px; /* Rounded corners at the bottom */
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Subtle shadow for floating effect */
-  z-index: 1000; /* Ensure the navbar is above other content */
+  justify-self: center;
+  margin-top: 20px;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
 .logo-container {
