@@ -3,7 +3,10 @@
   font-family: DM-sans2;
   position: fixed; /* Changed from sticky to fixed */
   top: 0; /* Adjusted top to 0 */
+  left: 0; /* Ensure the navbar starts from the left edge */
+  right: 0; /* Ensure the navbar spans the full width */
   width: 100%; /* Ensure the navbar spans the full width */
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,7 +14,7 @@
   backdrop-filter: blur(
     10px
   ); /* Adds a blur effect to what's behind the navbar */
-  padding: 12px 24px;
+  /* padding: 12px 24px; */
   border-radius: 0 0 50px 50px; /* Rounded corners at the bottom */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Subtle shadow for floating effect */
   z-index: 1000; /* Ensure the navbar is above other content */
@@ -30,7 +33,7 @@
   img {
     width: 80%;
     height: 50px;
-    margin-right: 50px;
+    margin-left: 50px;
     /* background-color: red; */
   }
 }
@@ -84,7 +87,7 @@
 
 .navbar-actions {
   display: flex;
-  gap: 16px;
+  gap: 6px;
 }
 
 .btn-login {
@@ -103,6 +106,7 @@
   padding: 8px 24px;
   cursor: pointer;
   transition: background-color 0.2s;
+  margin-right: 50px;
 }
 
 .btn-download:hover {
