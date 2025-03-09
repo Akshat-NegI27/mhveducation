@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
-import AboutContent from '../../components/about/About'
+import feestructure from '../../components/feestructure/feestructure'
 import Footer from "../../components/footer/footer";
-const About = () => {
+const feestructure = () => {
   return (
     <>
     <Navbar/>
-    <AboutContent />
+    <feestructure />
     <Footer/>
     </>
 
