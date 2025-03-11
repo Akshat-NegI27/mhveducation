@@ -14,7 +14,7 @@ const Footer = () => {
               {/* <span className="logo_name">MVM EDUCATION</span> */}
             </div>
             <div className="desc_area">
-              <p>MVM EDUCATION is your trusted source for comprehensive stock market training. Learn the ins and outs of stock trading, investment strategies, and market analysis from industry experts. Empower yourself with the knowledge to succeed in the stock market.</p>
+              <p>We are the leading Trading Institute in Dehradun, having a great infrastructure, reliable teaching methods, and experienced staff in our organization.</p>
             </div>
             <div className="social_media">
               <a href='https://steamcommunity.com/id/akyboy27/'><box-icon type='logo' name='steam' size='md' ></box-icon></a>
@@ -27,16 +27,16 @@ const Footer = () => {
           <div className="service_area">
             <ul className="service_header">
               <li className="service_name">Courses</li>
-              <li><a href='#'>Beginner's Guide</a></li>
-              <li><a href='#'>Advanced Strategies</a></li>
-              <li><a href='#'>Market Analysis</a></li>
-              <li><a href='#'>Investment Planning</a></li>
+              <li><a href='#'>Beginner Technical Analysis Course</a></li>
+              <li><a href='#'>Advanced Technical Analysis Course</a></li>
+              <li><a href='#'>Intraday Strategy Course</a></li>
+              <li><a href='#'>Elliott Wave Program</a></li>
             </ul>
             <ul className="service_header">
               <li className="service_name">Resources</li>
               <li><a href='#'>Blog</a></li>
-              <li><a href='#'>Webinars</a></li>
-              <li><a href='#'>E-books</a></li>
+              <li><a href='#'>Courses</a></li>
+              <li><a href='#'>Fee Structure</a></li>
               <li><a href='#'>Support</a></li>
             </ul>
             <ul className="service_header">
@@ -53,7 +53,7 @@ const Footer = () => {
         <div className="footer_bottom">
           <div className="copy_right">
             <box-icon name='copyright' ></box-icon>
-            <span>2025 MVM EDUCATION</span>
+            <span>Copyright © 2025 MHV Education</span>
           </div>
           <div className="tou">
             <a href='#'>Terms of Use</a>
