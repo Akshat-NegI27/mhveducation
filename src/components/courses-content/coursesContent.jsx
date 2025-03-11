@@ -3,7 +3,7 @@ import './coursesContent.css';
 
 const coursesContent = () => {
   return (
-    <div className="hi-container">
+    <div className="hi-cxontainer">
       <h1>Courses is this PAGE</h1>
       </div>
   );

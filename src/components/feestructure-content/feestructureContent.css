@@ -1,13 +1,144 @@
 @import "../fonts/fonts.css";
 
-.hi-container {
+.outer-container {
+  background: linear-gradient(to right, #dbeaf9, #e3f2fd, #fccfc7);
+  font-family: sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  height: 160vh;
+  margin: 0;
+  flex-direction: column;
+  gap: 60px;
+  .title-fee {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 20px; */
+    h1 {
+      font-size: 3em;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: #333;
+      /* border-bottom: 3px solid #333; */
+      width: 80%;
+    }
+    p {
+      font-size: 1em;
+      color: #666;
+      width: 60%;
+    }
+  }
+}
+
+.pricing-container {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.pricing-card {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  font-family: patron-m;
-  color: black;
-  background-color: rgb(255, 255, 255);
+}
+
+.plan {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  width: 30%;
+  height: 40vh;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+    /* background-color: red; */
+    width: fit-content;
+    text-align: center;
+    padding-left: 60px;
+  }
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.free {
+  background-color: #e3b3fc;
+  color: #fff;
+}
+
+.free:hover {
+  background-color: #d28ff2;
+}
+
+.standard {
+  background-color: #7ad8f5;
+  color: #fff;
+}
+
+.standard:hover {
+  background-color: #5dc5e9;
+}
+
+.premium {
+  background-color: #ffcc99;
+  color: #fff;
+}
+
+.premium:hover {
+  background-color: #ffb366;
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

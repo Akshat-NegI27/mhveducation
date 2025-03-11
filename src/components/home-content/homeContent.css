@@ -1,13 +1,115 @@
 @import "../fonts/fonts.css";
 
-.home-container {
+.pg1section1 {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 50px 50px;
+  /* padding-top: 130px !important; */
+  background: #ffffff;
   height: 100vh;
-  width: 100%;
-  font-family: patron-m;
-  color: black;
-  background-color: rgb(255, 255, 255);
+  /* margin-top: 90px; */
+}
+
+.content {
+  max-width: 50%;
+  h1 {
+    font-family: "Sofia Pro Bold";
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 20px 0;
+    color: #111;
+    text-transform: uppercase;
+  }
+}
+
+.tag {
+  display: inline-block;
+  background: #eef3ff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.highlight {
+  color: #2563eb;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.secondary-btn {
+  background: #fff;
+  color: #2563eb;
+  padding: 12px 20px;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.students {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.image-container {
+  position: relative;
+  width: 45%;
+  height: 500px;
+  background: url("https://img.freepik.com/free-vector/gradient-stock-market-concept_23-2149166910.jpg")
+    no-repeat center center/cover;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container:hover {
+  transform: translateY(-10px);
+  box-shadow: none;
+}
+
+.image-overlay {
+  align-self: center;
+  margin-top: 375px;
+  justify-self: center;
+  backdrop-filter: blur(10px);
+  background: rgba(190, 190, 190, 0.55);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-family: inter-n7;
+}
+
+.image-overlay p {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.badge {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2563eb;
+  font-family: inter-n7;
 }
