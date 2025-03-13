@@ -38,10 +38,9 @@
 }
 
 @font-face {
-  font-family: patron-m;
-  src: url(../../fonts/Patron-Medium.ttf);
+  font-family: inter-thin;
+  src: url(../../fonts/Inter-Thin.woff2);
 }
-
 @font-face {
   font-family: inter-n7;
   src: url(../../fonts/inter_n7.woff2);
