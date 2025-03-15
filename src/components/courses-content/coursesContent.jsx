@@ -1,5 +1,6 @@
 import React from 'react';
 import './coursesContent.css';
+import vid from '../../img/vid1.mp4';
 
 const courses = [
   {
@@ -73,6 +74,11 @@ const courses = [
 const CoursesContent = () => {
   return (
     <div className="courses-container">
+      <div className="vid">
+        <video autoPlay loop muted>
+          <source src={vid} type="video/mp4" />
+        </video>
+      </div>
       <div className="hero-section">
         <h1>Welcome to Our Courses</h1>
         <p>Explore a variety of courses to enhance your skills and knowledge.</p>
