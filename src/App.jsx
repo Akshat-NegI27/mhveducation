@@ -29,7 +29,10 @@ const App = () => {
       ) : (
         <>
           <CustomCursor />
-          <Router future={{ v7_relativeSplatPath: true }}> {/* ✅ Future-proofing React Router */}
+          <Router future={{ v7_startTransition: true ,
+                v7_relativeSplatPath: true,
+
+          }}> {/* ✅ Future-proofing React Router */}
             <Suspense fallback={<Loader />}> {/* ✅ Handles lazy loading */}
               <Routes>
                 <Route path="/" element={<Home />} />
