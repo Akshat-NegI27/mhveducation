@@ -7,7 +7,7 @@ import Loader from "./components/Loader";
 const Home = lazy(() => import("./pages/home/home"));
 const Courses = lazy(() => import("./pages/courses/courses"));
 const Feestructure = lazy(() => import("./pages/feestructure/feestructure"));
-const Blogs = lazy(() => import("./pages/blogs/blogs"));
+const Blogs = lazy(() => import("./pages/blog/blog"));
 const About = lazy(() => import("./pages/about/about"));
 const Contact = lazy(() => import("./pages/contact/contact"));
 const Coursesdetail = lazy(() =>
