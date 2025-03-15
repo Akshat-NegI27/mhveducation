@@ -1,32 +1,44 @@
+import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/home";
 import Courses from "./pages/courses/courses";
 import Feestructure from "./pages/feestructure/feestructure";
 import Blogs from "./pages/blogs/blogs";
-import About from "./pages/about/about"
-import Contact from "./pages/contact/contact"
+import About from "./pages/about/about";
+import Contact from "./pages/contact/contact";
 import CustomCursor from "./CustomCursor";
+import Coursesdetail from "./components/courses-detail-content/coursesdetailContent";
+import Loader from "./components/Loader"; 
 
-
-
-import {
-    BrowserRouter,
-    Routes,
-    Route
-} from "react-router-dom"
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Ensures loader displays for the intended time before switching to the home page
+    const timer = setTimeout(() => setLoading(false), 4500); 
+    return () => clearTimeout(timer); // Cleanup function
+  }, []);
+
   return (
     <>
-            <CustomCursor></CustomCursor>
-      <BrowserRouter>
-        <Routes>
-          <Route exact path = "/" element = {<Home/>}/>
-          <Route exact path = "/Courses" element = {<Courses/>}/>
-          <Route exact path = "/Feestructure" element = {<Feestructure/>}/>
-          <Route exact path = "/Blogs" element = {<Blogs/>}/>
-          <Route exact path = "/About" element = {<About/>}/>
-          <Route exact path = "/Contact" element = {<Contact/>}/>
-        </Routes>
-      </BrowserRouter>
+      {loading ? (
+        <Loader onComplete={() => setLoading(false)} />
+      ) : (
+        <>
+          <CustomCursor />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/Courses" element={<Courses />} />
+              <Route path="/Feestructure" element={<Feestructure />} />
+              <Route path="/Blogs" element={<Blogs />} />
+              <Route path="/About" element={<About />} />
+              <Route path="/Contact" element={<Contact />} />
+              <Route path="/Coursesdetail" element={<Coursesdetail />} />
+            </Routes>
+          </BrowserRouter>
+        </>
+      )}
     </>
   );
 };
