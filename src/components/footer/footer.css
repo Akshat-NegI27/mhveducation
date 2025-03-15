@@ -15,10 +15,9 @@ footer {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: #1a1a1a; /* Dark background color */
+  background-color: #000000;
   box-shadow: 0 16px 70px -8px rgba(0, 0, 0, 0.25);
   transition: background 0.3s linear;
-
   li {
     list-style: none;
   }
@@ -29,8 +28,11 @@ footer {
 }
 
 footer .containerx {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  padding: 30px 10vh;
+  height: 50vh;
+  padding: 20px 10vh;
   flex-direction: column;
 }
 
@@ -38,7 +40,7 @@ footer .containerx {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .profil .logo_area {
@@ -49,8 +51,8 @@ footer .containerx {
 
 .profil .logo_area img {
   background-color: #1a1a1a; /* Match the dark background */
-  filter: invert(1);
-  width: 2vw;
+  filter: invert(0);
+  width: 35%;
 }
 
 .logo_area .logo_name {
@@ -60,10 +62,16 @@ footer .containerx {
   margin: 0 1rem;
 }
 
-
 .desc_area {
   margin-bottom: 1.25rem;
   overflow: hidden;
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff; /* White text color */
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .desc_area p {
@@ -134,24 +142,40 @@ li.service_name {
   margin-bottom: 10px;
 }
 
-hr {
-  height: 1px;
-  border: none;
-  background-color: #828282;
-  margin-bottom: 1rem;
-}
-
 .footer_bottom {
   display: flex;
+  flex-direction: column;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
+  hr {
+    height: 1px;
+    border: none;
+    width: 100%;
+    background-color: #828282;
+    margin-bottom: 1rem;
+  }
+  .below {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
 }
 
 .copy_right {
   color: #b3b3b3; /* Light gray text color */
   display: flex;
   align-items: center;
+  font-size: 12px;
+
+  #icon svg {
+    width: 20%;
+    height: 25%;
+  }
   box-icon {
+    width: 18px;
+    height: 18px;
     fill: #b3b3b3; /* Light gray icon color */
   }
 }
@@ -167,6 +191,8 @@ hr {
 .tou a {
   color: #b3b3b3; /* Light gray text color */
   margin-left: 1.5rem;
+  font-size: 12px;
+
   font-family: "Rubik", sans-serif;
 }
 

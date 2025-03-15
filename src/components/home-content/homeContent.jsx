@@ -2,6 +2,9 @@ import React from 'react';
 import './homeContent.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
+import "../button/button.scss"; 
+import { Link } from 'react-router-dom';
+
 
 
 const faqs = [
@@ -37,8 +40,20 @@ const HomeContent = () => {
           their strategy.
         </p>
         <div className="buttons">
-          <button className="primary-btn">Enroll Now →</button>
-          <button className="secondary-btn">View All Courses</button>
+        <Link to="/courses">
+
+          <button className="button-underline">View All Courses</button>
+          </Link>
+          <Link to="/contact">
+
+        <button className="learn-more">
+        <span className="circle">
+        <span className="icon arrow"></span>
+      </span>
+      <span className="button-text">Enroll Now</span>
+    </button>     
+    </Link>
+     
         </div>
         <div className="students">👥 Join 12,000+ Students
         </div>
@@ -50,13 +65,21 @@ const HomeContent = () => {
         </div>
       </div>
     </div>
+
+
     <div className="pg1section2">
         <div className="s2content">
         <h1>CHOOSE BEST STOCK MARKET INSTITUTE</h1>
         <p>MHV Education is more than a Stock Market Institution. We offer extensive courses to learn about share market trading, including the live execution of the strategies learned throughout the program. Whether you are a beginner or an advanced level trader, we help you build live trading confidence, retailer psychology, cultivate the discipline needed to take control of your trading and investment future.</p>
         <div className="buttons">
-          <button className="primary-btn">Enroll Now →</button>
-          <button className="secondary-btn">View All Courses</button>
+        <Link to="/courses">
+        <button className="button-underline">View All Courses</button>
+        </Link>
+        <Link to ="/contact">
+
+        <button className="button-underline">Enroll Now →</button>
+        </Link>
+
         </div>
         </div>
         <div className="s2img">

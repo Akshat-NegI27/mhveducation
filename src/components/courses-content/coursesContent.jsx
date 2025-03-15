@@ -2,6 +2,79 @@ import React from 'react';
 import './coursesContent.css';
 import vid from '../../img/vid1.mp4';
 
+const CoursesContent = () => {
+  return (
+    <div className="courses-container">
+
+      <div className="hero-section">
+        <div className="bg">
+        <video autoPlay loop muted playsInline>
+          <source src={vid} type="video/mp4" />
+        </video>
+
+        <h1>Welcome to Our Courses</h1>
+        <p>Explore a variety of courses to enhance your skills and knowledge.</p>
+        <button className="explore-button">Explore Courses</button>
+      </div>
+
+      </div>
+
+      <div className="courses-grid">
+        <h1>OUR FEATURED COURSES</h1>
+        <div className="cards">
+        {courses.map((course, index) => (
+          <div key={index} className="course-card">
+            <div className="course-image-container">
+              {course.popular && (
+                <span className="course-popular-badge">POPULAR</span>
+              )}
+              <img src={course.image} alt={course.title} className="course-image" />
+            </div>
+            <div className="course-details">
+              <div className="courselvl">
+              <span className="course-level">{course.level}</span>
+              <span className="course-rating">⭐ {course.rating}</span>
+              </div>
+
+              <h3 className="course-title">{course.title}</h3>
+              <p className="course-description">{course.description}</p>
+              <div className="course-meta">
+                <span>{course.duration}</span>
+                <span>{course.students} students</span>
+              </div>
+              {/* <div className="course-author-rating">
+                <span className="course-author">BY {course.author.toUpperCase()}</span>
+              </div> */}
+              <button className="enroll-button">Enroll Now</button>
+            </div>
+          </div>
+        ))}
+                </div>
+
+      </div>
+
+      <div className="containerr">
+      <h2 className="section-title">WHY CHOOSE MHV EDUCATION?</h2>
+      <p className="section-subtitle">
+        We provide a premium learning environment with features designed to help you succeed in the stock market.
+      </p>
+      <div className="features-grid">
+        {features.map((feature, index) => (
+          <div className="feature-card" key={index}>
+            <div className="feature-icon">{feature.icon}</div>
+            <h3 className="feature-title">{feature.title}</h3>
+            <p className="feature-description">{feature.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    </div>
+  );
+};
+
+export default CoursesContent;
+
 const courses = [
   {
     level: 'Beginner',
@@ -70,78 +143,6 @@ const courses = [
     image: '/src/img/cources.jpg',
   },
 ];
-
-const CoursesContent = () => {
-  return (
-    <div className="courses-container">
-      <div className="vid">
-        <video autoPlay loop muted>
-          <source src={vid} type="video/mp4" />
-        </video>
-      </div>
-      <div className="hero-section">
-        <h1>Welcome to Our Courses</h1>
-        <p>Explore a variety of courses to enhance your skills and knowledge.</p>
-        <button className="explore-button">Explore Courses</button>
-      </div>
-
-      <div className="courses-grid">
-        <h1>OUR FEATURED COURSES</h1>
-        <div className="cards">
-        {courses.map((course, index) => (
-          <div key={index} className="course-card">
-            <div className="course-image-container">
-              {course.popular && (
-                <span className="course-popular-badge">POPULAR</span>
-              )}
-              <img src={course.image} alt={course.title} className="course-image" />
-            </div>
-            <div className="course-details">
-              <div className="courselvl">
-              <span className="course-level">{course.level}</span>
-              <span className="course-rating">⭐ {course.rating}</span>
-              </div>
-
-              <h3 className="course-title">{course.title}</h3>
-              <p className="course-description">{course.description}</p>
-              <div className="course-meta">
-                <span>{course.duration}</span>
-                <span>{course.students} students</span>
-              </div>
-              {/* <div className="course-author-rating">
-                <span className="course-author">BY {course.author.toUpperCase()}</span>
-              </div> */}
-              <button className="enroll-button">Enroll Now</button>
-            </div>
-          </div>
-        ))}
-                </div>
-
-      </div>
-
-      <div className="containerr">
-      <h2 className="section-title">WHY CHOOSE MHV EDUCATION?</h2>
-      <p className="section-subtitle">
-        We provide a premium learning environment with features designed to help you succeed in the stock market.
-      </p>
-      <div className="features-grid">
-        {features.map((feature, index) => (
-          <div className="feature-card" key={index}>
-            <div className="feature-icon">{feature.icon}</div>
-            <h3 className="feature-title">{feature.title}</h3>
-            <p className="feature-description">{feature.description}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-
-    </div>
-  );
-};
-
-export default CoursesContent;
-
-
 
 const features = [
   {
