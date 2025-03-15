@@ -1,7 +1,7 @@
 import React from 'react';
 import './blogsContent.css';
 
-const coursesContent = () => {
+const BlogsContent = () => {
   return (
     <div className="hi-container">
       <h1>Blogs is this PAGE</h1>
@@ -9,4 +9,4 @@ const coursesContent = () => {
   );
 };
 
-export default coursesContent;
+export default BlogsContent;
