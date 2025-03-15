@@ -61,8 +61,11 @@
 }
 
 .buttons .primary-btn:hover {
-  color: #2563eb;
-  z-index: 1; /* Ensure text is above the background */
+  color: #000000;
+  z-index: 3; 
+  background-color: black;
+  border: 2px solid black;
+
 }
 
 .buttons .primary-btn::before {
@@ -93,6 +96,7 @@
   transition: transform 0.4s ease;
   z-index: 0;
   transform: translateX(100%);
+  color: black;
 }
 
 .buttons .secondary-btn {
@@ -403,8 +407,8 @@
 
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
 .review-card {
