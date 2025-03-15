@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/home/home";
-import Courses from "./pages/courses/courses";
-import Feestructure from "./pages/feestructure/feestructure";
-import Blogs from "./pages/blogs/blogs";
-import About from "./pages/about/about";
-import Contact from "./pages/contact/contact";
+import Home from "./pages/home/Home";
+import Courses from "./pages/courses/Courses";
+import Feestructure from "./pages/feestructure/Feestructure";
+import Blogs from "./pages/blogs/Blogs";
+import About from "./pages/about/About";
+import Contact from "./pages/contact/Contact";
 import CustomCursor from "./CustomCursor";
 import Coursesdetail from "./components/courses-detail-content/coursesdetailContent";
-import Loader from "./components/Loader"; 
+import Loader from "./components/Loader";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
