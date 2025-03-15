@@ -36,12 +36,13 @@ const Navbar = () => {
       </div>
 
       <div className={`navbar-links ${menuOpen ? "open" : ""}`}>
-        <NavLink to="/" exact activeClassName="active">Home</NavLink>
-        <NavLink to="/Courses" activeClassName="active">Courses</NavLink>
-        <NavLink to="/Feestructure" activeClassName="active">Fee Structure</NavLink>
-        <NavLink to="/Blogs" activeClassName="active">Blogs</NavLink>
-        <NavLink to="/About" activeClassName="active">About</NavLink>
-        <NavLink to="/Contact" activeClassName="active">Contact Us</NavLink>
+      <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink>
+<NavLink to="/Courses" className={({ isActive }) => (isActive ? "active" : "")}>Courses</NavLink>
+<NavLink to="/Feestructure" className={({ isActive }) => (isActive ? "active" : "")}>Fee Structure</NavLink>
+<NavLink to="/Blogs" className={({ isActive }) => (isActive ? "active" : "")}>Blogs</NavLink>
+<NavLink to="/About" className={({ isActive }) => (isActive ? "active" : "")}>About</NavLink>
+<NavLink to="/Contact" className={({ isActive }) => (isActive ? "active" : "")}>Contact Us</NavLink>
+
       </div>
       <div className="navbar-actions">
         <button className="btn-download">Enroll Today</button>

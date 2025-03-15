@@ -1,22 +1,25 @@
-import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/home/Home";
-import Courses from "./pages/courses/Courses";
-import Feestructure from "./pages/feestructure/Feestructure";
-import Blogs from "./pages/blogs/Blogs";
-import About from "./pages/about/About";
-import Contact from "./pages/contact/Contact";
+import { useState, useEffect, Suspense, lazy } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CustomCursor from "./CustomCursor";
-import Coursesdetail from "./components/courses-detail-content/coursesdetailContent";
 import Loader from "./components/Loader";
+
+// ✅ Lazy Loading Components for Performance Optimization
+const Home = lazy(() => import("./pages/home/home"));
+const Courses = lazy(() => import("./pages/courses/courses"));
+const Feestructure = lazy(() => import("./pages/feestructure/feestructure"));
+const Blogs = lazy(() => import("./pages/blogs/blogs"));
+const About = lazy(() => import("./pages/about/about"));
+const Contact = lazy(() => import("./pages/contact/contact"));
+const Coursesdetail = lazy(() =>
+  import("./components/courses-detail-content/coursesdetailContent")
+);
 
 const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Ensures loader displays for the intended time before switching to the home page
-    const timer = setTimeout(() => setLoading(false), 4500); 
-    return () => clearTimeout(timer); // Cleanup function
+    const timer = setTimeout(() => setLoading(false), 4500);
+    return () => clearTimeout(timer); // ✅ Cleanup to prevent memory leaks
   }, []);
 
   return (
@@ -26,17 +29,22 @@ const App = () => {
       ) : (
         <>
           <CustomCursor />
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/Courses" element={<Courses />} />
-              <Route path="/Feestructure" element={<Feestructure />} />
-              <Route path="/Blogs" element={<Blogs />} />
-              <Route path="/About" element={<About />} />
-              <Route path="/Contact" element={<Contact />} />
-              <Route path="/Coursesdetail" element={<Coursesdetail />} />
-            </Routes>
-          </BrowserRouter>
+          <Router future={{ v7_startTransition: true ,
+                v7_relativeSplatPath: true,
+
+          }}> {/* ✅ Future-proofing React Router */}
+            <Suspense fallback={<Loader />}> {/* ✅ Handles lazy loading */}
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/courses" element={<Courses />} />
+                <Route path="/feestructure" element={<Feestructure />} />
+                <Route path="/blogs" element={<Blogs />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/coursesdetail" element={<Coursesdetail />} />
+              </Routes>
+            </Suspense>
+          </Router>
         </>
       )}
     </>
