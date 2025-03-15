@@ -5,8 +5,7 @@ import Blogs from "./pages/blogs/blogs";
 import About from "./pages/about/about"
 import Contact from "./pages/contact/contact"
 import CustomCursor from "./CustomCursor";
-
-
+import Coursesdetail from "./components/courses-detail-content/coursesdetailContent";
 
 import {
     BrowserRouter,
@@ -25,6 +24,7 @@ const App = () => {
           <Route exact path = "/Blogs" element = {<Blogs/>}/>
           <Route exact path = "/About" element = {<About/>}/>
           <Route exact path = "/Contact" element = {<Contact/>}/>
+          <Route exact path = "/Coursesdetail" element = {<Coursesdetail/>}/>
         </Routes>
       </BrowserRouter>
     </>
