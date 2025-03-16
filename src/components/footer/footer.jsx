@@ -1,6 +1,7 @@
 import React from 'react';
 import "./footer.css";
 import 'boxicons';
+import { Link } from 'react-router-dom';
 import logo from './logo.png';
 
 const Footer = () => {
@@ -34,22 +35,21 @@ const Footer = () => {
               <li><a href='#'>Advanced Technical Analysis Course</a></li>
               <li><a href='#'>Intraday Strategy Course</a></li>
               <li><a href='#'>Elliott Wave Program</a></li>
-              <li><a href='#'>Chartered Market Technician (CMT)</a></li>
+              <li><a href=''>Chartered Market Technician (CMT)</a></li>
 
             </ul>
             <ul className="service_header">
               <li className="service_name">Resources</li>
-              <li><a href='#'>Blog</a></li>
-              <li><a href='#'>Courses</a></li>
-              <li><a href='#'>Fee Structure</a></li>
-              <li><a href='#'>Support</a></li>
-            </ul>
+              <li><Link to="/blogs">Blog</Link></li>              <li><a href='#'>Courses</a></li>
+              <li><Link to="/Feestructure">Fee Structure</Link></li>
+              <li><Link to="/contact">Support</Link></li>
+              </ul>
             <ul className="service_header">
               <li className="service_name">Company</li>
-              <li><a href='#'>About Us</a></li>
-              <li><a href='#'>Careers</a></li>
-              <li><a href='#'>Contact</a></li>
-              <li><a href='#'>Legal</a></li>
+              <li><Link to="/about">About Us</Link></li>
+<li><Link to="/careers">Careers</Link></li>
+<li><Link to="/contact">Contact</Link></li>
+<li><Link to="/legal">Legal</Link></li>
             </ul>
             </div>
           </div>

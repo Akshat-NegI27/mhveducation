@@ -148,10 +148,12 @@
   margin-top: 375px;
   justify-self: center;
   backdrop-filter: blur(10px);
-  background: rgba(190, 190, 190, 0.55);
+  background-color: rgba(193, 193, 193, 0.55);
+  backdrop-filter: saturate(180%) blur(20px);
   padding: 10px 15px;
   border-radius: 8px;
   font-family: inter-n7;
+  animation: float 6s ease-in-out infinite;
 }
 
 .image-overlay p {

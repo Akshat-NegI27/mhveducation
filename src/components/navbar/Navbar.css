@@ -12,6 +12,7 @@
   align-items: center;
   /* background-color: rgba(13, 18, 33, 0.2); */
   backdrop-filter: blur(10px);
+
   /* border-radius: 0px 0px 50px 50px; */
   /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); */
   transition: all 0.3s ease-in-out;
@@ -20,8 +21,10 @@
 
 .navbar-scrolled {
   /* height: 60px; */
-  background-color: rgba(13, 18, 33, 0.6);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  background-color: rgba(193, 193, 193, 0.55);
+  backdrop-filter: saturate(180%) blur(20px);
+  /* background-color: rgba(13, 18, 33, 0.6); */
+  /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); */
   border-radius: 0px 0px 60px 60px;
   transition: all 0.3s ease-in-out; /* Smooth transition */
   .navbar-links {
@@ -30,7 +33,7 @@
     transition: all 0.3s ease-in-out; /* Smooth transition */
     a {
       transition: color 0.3s ease-in-out; /* Smooth transition */
-      color: rgba(200, 200, 200, 0.733);
+      color: rgba(65, 65, 65, 0.733);
     }
   }
   .navbar-links a::after {
@@ -38,20 +41,20 @@
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 1px;
+    height: 1.5px;
     bottom: -1px;
     left: 0;
-    background-color: #ffffff;
+    background-color: #000000;
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
   }
 
   .navbar-links a:hover,
   .navbar-links a.active {
-    color: #ffffff;
+    color: #000000;
   }
   .btn-download {
-    color: #ffffff;
+    color: #000000;
     background-color: rgba(255, 255, 255, 0.2);
     border: none;
     border-radius: 50px;
@@ -65,7 +68,7 @@
   }
   .logo {
     animation: all 0.3s ease-in-out;
-    filter: invert(0%);
+    /* filter: invert(0%); */
   }
 }
 
@@ -93,9 +96,10 @@
 .navbar-links {
   display: flex;
   gap: 28px;
-  font-family: inter-thin;
-  font-weight: 400;
-  font-size: 1rem;
+  font-family: worksans-n4;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .navbar-links a {
@@ -111,7 +115,7 @@
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 1px;
+  height: 1.5px;
   bottom: -1px;
   left: 0;
   background-color: #000000;

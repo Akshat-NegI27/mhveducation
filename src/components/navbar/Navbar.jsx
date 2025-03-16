@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import "./Navbar.css";
 import brandlogo from './brandlogo.png';
 import { FiMenu, FiX } from "react-icons/fi";
@@ -45,7 +45,10 @@ const Navbar = () => {
 
       </div>
       <div className="navbar-actions">
+                <Link to="/contact">
         <button className="btn-download">Enroll Today</button>
+        </Link>
+        
       </div>
 
       <div className="menu-icon" onClick={toggleMenu}>
