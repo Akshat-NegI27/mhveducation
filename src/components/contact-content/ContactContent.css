@@ -9,41 +9,8 @@
   width: 100%;
   font-family: patron-m;
 
-  /* background: linear-gradient(to right, #ffb3ba, #ffdfba, #ffffba); */
-
-  background: radial-gradient(
-    circle at center,
-    #ffffff,
-    #fad0c4,
-    #fad0c4,
-    #fbc2eb,
-    #a6c1ee,
-    #e2f5b5,
-    #b3f7bc
-  );
-  background-size: 400% 400%;
-  animation: gradient-animation 15s ease infinite;
+  background: linear-gradient(to left, #ffb3ba, #ffdfba, #ffffba);
 }
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  25% {
-    background-position: 50% 50%;
-  }
-  50% {
-    background-position: 50% 100%;
-  }
-  75% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-
 .contact-form {
   display: flex;
   flex-direction: column;

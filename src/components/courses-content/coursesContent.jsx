@@ -17,7 +17,7 @@ const CoursesContent = () => {
         <button className="explore-button">Explore Courses</button>
       </div>
 
-      </div>
+      </div>  
 
       <div className="courses-grid">
         <h1>OUR FEATURED COURSES</h1>
