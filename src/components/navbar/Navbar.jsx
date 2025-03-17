@@ -44,8 +44,8 @@ const Navbar = () => {
         <div className={`navbar-links ${menuOpen ? "open" : ""}`}>
           <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink>
           <NavLink to="/Courses" className={({ isActive }) => (isActive ? "active" : "")}>Courses</NavLink>
-          <NavLink to="/Feestructure" className={({ isActive }) => (isActive ? "active" : "")}>Fee Structure</NavLink>
-          <NavLink to="/Blogs" className={({ isActive }) => (isActive ? "active" : "")}>Blogs</NavLink>
+          {/* <NavLink to="/Feestructure" className={({ isActive }) => (isActive ? "active" : "")}>Fee Structure</NavLink> */}
+          {/* <NavLink to="/Blogs" className={({ isActive }) => (isActive ? "active" : "")}>Blogs</NavLink> */}
           <NavLink to="/About" className={({ isActive }) => (isActive ? "active" : "")}>About</NavLink>
           <NavLink to="/Contact" className={({ isActive }) => (isActive ? "active" : "")}>Contact Us</NavLink>
         </div>
