@@ -2,6 +2,7 @@
 
 .navbar {
   position: fixed;
+  /* overflow: hidden; */
   top: 0;
   left: 0;
   right: 0;
@@ -75,14 +76,18 @@
 .logo {
   display: flex;
   align-items: center;
+  height: 65px;
+
   /* animation: fadeIn 1s ease-in-out; */
-  filter: invert(100%);
+  /* filter: invert(100%); */
+  /* background-color: red; */
 }
 
 .logo img {
-  height: 40px;
-  width: 80%;
-  margin-left: 50px;
+  height: 80px;
+  width: 100%;
+  margin-left: 80px;
+  margin-bottom: 10px;
   transition: height 0.3s ease-in-out;
 }
 

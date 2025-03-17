@@ -2,7 +2,7 @@ import React from 'react';
 import "./footer.css";
 import 'boxicons';
 import { Link } from 'react-router-dom';
-import logo from './logo.png';
+import logo from '../../img/brandlogo.webp';
 
 const Footer = () => {
   return (
