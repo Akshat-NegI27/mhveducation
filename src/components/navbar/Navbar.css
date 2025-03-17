@@ -162,43 +162,192 @@
 .btn-download:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
+/* SIDEBAR BASE STYLES */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px; /* Hidden by default */
+  width: 260px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.15); /* Translucent effect */
+  backdrop-filter: blur(20px);
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 1100; /* Ensure it appears above everything */
+}
 
-/* Mobile and Tablet styles */
+/* Show Sidebar when open */
+.sidebar.open {
+  left: 0;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.sidebar-logo {
+  width: 120px;
+}
+
+.sidebar-close {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Sidebar Navigation Links */
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-links a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar-links a:hover {
+  color: #007bff;
+}
+
+/* Sidebar Footer - Enroll Button */
+.sidebar-footer {
+  margin-top: auto;
+  text-align: center;
+}
+
+.btn-enroll {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-enroll:hover {
+  background-color: #007bff;
+}
+
+/* Sidebar Overlay (closes sidebar when clicked outside) */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1099;
+  display: none;
+}
+
+.sidebar.open + .sidebar-overlay {
+  display: block;
+}
+
+/* 🌟 MEDIA QUERIES - Adjust Sidebar for Different Devices */
+
+/* ✅ Tablet & Medium-Sized Screens */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 230px;
+    left: -230px; /* Ensures it's hidden by default */
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar-logo {
+    width: 100px;
+  }
+
+  .sidebar-links a {
+    font-size: 15px;
+  }
+
+  .btn-enroll {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+/* ✅ Mobile Screens */
 @media (max-width: 768px) {
+  .sidebar {
+    width: 220px;
+    left: -220px; /* Ensures it stays hidden when closed */
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar-logo {
+    width: 90px;
+  }
+
+  .sidebar-links {
+    gap: 15px;
+  }
+
+  .btn-enroll {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+
+  /* Hide the default navbar links (only sidebar is shown) */
   .navbar-links {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 250px;
-    height: 100vh;
-    background-color: rgba(13, 18, 33, 0.9);
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    display: flex;
-  }
-
-  .navbar-links.open {
-    transform: translateX(0);
-  }
-
-  .navbar-links a {
-    color: white;
-    font-size: 1.2rem;
-    padding: 15px 0;
-    width: 100%;
-    text-align: center;
-    transition: background 0.2s ease-in-out;
-  }
-
-  .navbar-links a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    display: none;
   }
 
   .menu-icon {
-    display: block;
+    display: block; /* Ensure menu icon is visible */
+    font-size: 2rem;
+    cursor: pointer;
+    color: #000;
+  }
+}
+
+/* ✅ Small Mobile Devices */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar-logo {
+    width: 80px;
+  }
+
+  .btn-enroll {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  /* Adjust Navbar for small screens */
+  .navbar {
+    padding: 0 15px;
+    height: 55px;
+  }
+
+  .menu-icon {
+    font-size: 1.8rem;
   }
 }
