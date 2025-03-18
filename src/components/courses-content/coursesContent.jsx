@@ -1,7 +1,6 @@
 import React from 'react';
 import './coursesContent.css';
 import vid from '../../img/vid1.mp4';
-
 const CoursesContent = () => {
   return (
     <div className="courses-container">
@@ -20,7 +19,10 @@ const CoursesContent = () => {
       </div>  
 
       <div className="courses-grid">
-        <h1>OUR FEATURED COURSES</h1>
+      <div className="title-fee">
+        <h1>Fee Structure</h1>
+        <p>Our fee structure is designed to be flexible and affordable for all types of traders. Choose the plan that best suits your needs.</p>
+      </div>
         <div className="cards">
         {courses.map((course, index) => (
           <div key={index} className="course-card">
@@ -39,8 +41,12 @@ const CoursesContent = () => {
               <h3 className="course-title">{course.title}</h3>
               <p className="course-description">{course.description}</p>
               <div className="course-meta">
-                <span>{course.duration}</span>
-                <span>{course.students} students</span>
+                <span>{course.rate} + GST</span>
+              </div>
+              <div className="datax">
+              <p>✔️Course Learning Checks</p>
+          <p>✔️Course Discussions</p>
+          <p>✔️Exercise Files</p>
               </div>
               {/* <div className="course-author-rating">
                 <span className="course-author">BY {course.author.toUpperCase()}</span>
@@ -52,7 +58,73 @@ const CoursesContent = () => {
                 </div>
 
       </div>
+{/* courses */}
+{/* <div className="outer-container">
+      <div className="title-fee">
+        <h1>Fee Structure</h1>
+        <p>Our fee structure is designed to be flexible and affordable for all types of traders. Choose the plan that best suits your needs.</p>
+      </div>
+    <div className="pricing-container">
+      <div className="pricing-card">
+        <div className="plan">
+          <h3>Beginner Technical Analysis Course</h3>
+          <h2>₹ 20,000 + GST </h2>
+          <p>✔️Course Learning Checks</p>
+          <p>✔️Course Discussions</p>
+          <p>✔️Exercise Files</p>
+          <button className="btn free">Get started</button>
+        </div>
+        <div className="plan">
+          <h3>Advanced Technical Analysis Course​</h3>
+          <h2>₹ 25,000 + GST​</h2>
+          <p>✔️Course Learning Checks</p>
+          <p>✔️Course Discussions</p>
+          <p>✔️Exercise Files</p>
+          <button className="btn standard">Upgrade Now</button>
+        </div>
+        <div className="plan">
+          <h3>Integrated Beginner and Technical Analysis Course​</h3>
+          <h2>₹ 30,000 + GST​</h2>
+          <p>✔️Course Learning Checks</p>
+          <p>✔️Course Discussions</p>
+          <p>✔️Exercise Files</p>
+          <button className="btn premium">Try for free</button>
+        </div>
+      </div>
+    </div> */}
 
+    {/* ---------------------------------------------- */}
+    {/* <div className="pricing-container">
+      <div className="pricing-card">
+        <div className="plan">
+          <h3>Intraday Strategy Course​          </h3>
+          <h2>₹ 15,000 + GST</h2>
+          <p>✔️Course Learning Checks</p>
+          <p>✔️Course Discussions</p>
+          <p>✔️Exercise Files</p>
+          <button className="btn free">Get started</button>
+        </div>
+        <div className="plan">
+          <h3>Elliott Wave Program​</h3>
+          <h2>₹ 35,000 + GST         </h2>
+          <p>✔️Course Learning Checks</p>
+          <p>✔️Course Discussions</p>
+          <p>✔️Exercise Files</p>
+          <button className="btn standard">Upgrade Now</button>
+        </div>
+        <div className="plan">
+          <h3>Chartered Market Technician(CMT)</h3>
+          <h2>₹ 35,000 + GST​</h2>
+          <p>✔️Course Learning Checks</p>
+          <p>✔️Course Discussions</p>
+          <p>✔️Exercise Files</p>
+          <button className="btn premium">Try for free</button>
+        </div>
+      </div>
+    </div>
+  </div> */}
+
+{/* ---------------------------------------------- */}
       <div className="containerr">
       <h2 className="section-title">WHY CHOOSE MHV EDUCATION?</h2>
       <p className="section-subtitle">
@@ -78,9 +150,9 @@ export default CoursesContent;
 const courses = [
   {
     level: 'Beginner',
-    title: 'Stock Market Fundamentals',
+    title: 'Beginner Technical Analysis Course',
     description: 'Master the basics of stock market investing with our comprehensive beginner course.',
-    duration: '6 weeks',
+    rate: '₹ 20,000',
     students: '12,543',
     rating: 4.8,
     author: 'Sarah Johnson',
@@ -89,9 +161,9 @@ const courses = [
   },
   {
     level: 'Intermediate',
-    title: 'Technical Analysis Masterclass',
+    title: 'Advanced Technical Analysis Course',
     description: 'Learn how to read charts and identify trading patterns for better investment decisions.',
-    duration: '8 weeks',
+    rate: '₹ 20,000',
     students: '8,721',
     rating: 4.7,
     author: 'Michael Chang',
@@ -100,9 +172,9 @@ const courses = [
   },
   {
     level: 'Advanced',
-    title: 'Value Investing Strategies',
+    title: 'Integrated Beginner and Technical Analysis Course',
     description: 'Discover how to identify undervalued stocks using fundamental analysis techniques.',
-    duration: '10 weeks',
+    rate: '₹ 20,000',
     students: '7,432',
     rating: 4.9,
     author: 'Robert Greene',
@@ -111,9 +183,9 @@ const courses = [
   },
   {
     level: 'Beginner',
-    title: 'Stock Market Fundamentals',
+    title: 'Intraday Strategy Course​',
     description: 'Master the basics of stock market investing with our comprehensive beginner course.',
-    duration: '6 weeks',
+    rate: '₹ 20,000',
     students: '12,543',
     rating: 4.8,
     author: 'Sarah Johnson',
@@ -122,9 +194,9 @@ const courses = [
   },
   {
     level: 'Intermediate',
-    title: 'Technical Analysis Masterclass',
+    title: 'Elliott Wave Program​',
     description: 'Learn how to read charts and identify trading patterns for better investment decisions.',
-    duration: '8 weeks',
+    rate: '₹ 20,000',
     students: '8,721',
     rating: 4.7,
     author: 'Michael Chang',
@@ -133,9 +205,9 @@ const courses = [
   },
   {
     level: 'Advanced',
-    title: 'Value Investing Strategies',
+    title: 'Chartered Market Technician(CMT)',
     description: 'Discover how to identify undervalued stocks using fundamental analysis techniques.',
-    duration: '10 weeks',
+    rate: '₹ 20,000',
     students: '7,432',
     rating: 4.9,
     author: 'Robert Greene',

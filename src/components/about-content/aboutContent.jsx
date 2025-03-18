@@ -54,8 +54,6 @@ const AboutContent = () => {
                   
       </section>
 
-
-
       {/* ---------------------------------------------- */}
 
       <div className="about-team">
@@ -84,8 +82,7 @@ const AboutContent = () => {
           <p>UI/UX Designer</p>
         </div>
         </div>
-       
-        {/* Add more team members as needed */}
+
       </div>
     </div>
   );

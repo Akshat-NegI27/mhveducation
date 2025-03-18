@@ -129,10 +129,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 550px;
+  width: 650px;
   height: 525px;
-  background: url(https://hipfonts.com/wp-content/uploads/2023/01/milad-fakurian-E8Ufcyxz514-unsplash.jpg)
-    no-repeat center center/cover;
+  background-image: url("../../img/pic1.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   border-radius: 12px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
