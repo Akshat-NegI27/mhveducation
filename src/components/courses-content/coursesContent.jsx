@@ -27,9 +27,7 @@ const CoursesContent = () => {
         {courses.map((course, index) => (
           <div key={index} className="course-card">
             <div className="course-image-container">
-              {course.popular && (
-                <span className="course-popular-badge">POPULAR</span>
-              )}
+              {course.popular && (<span className="course-popular-badge">POPULAR</span>)}
               <img src={course.image} alt={course.title} className="course-image" />
             </div>
             <div className="course-details">
@@ -37,25 +35,24 @@ const CoursesContent = () => {
               <span className="course-level">{course.level}</span>
               <span className="course-rating">⭐ {course.rating}</span>
               </div>
-
               <h3 className="course-title">{course.title}</h3>
               <p className="course-description">{course.description}</p>
               <div className="course-meta">
                 <span>{course.rate} + GST</span>
               </div>
               <div className="datax">
-              <p>✔️Course Learning Checks</p>
-          <p>✔️Course Discussions</p>
-          <p>✔️Exercise Files</p>
-              </div>
-              {/* <div className="course-author-rating">
-                <span className="course-author">BY {course.author.toUpperCase()}</span>
-              </div> */}
+              <p>✔️ Course Learning Checks</p>
+              <p>✔️ Course Discussions</p>
+              <p>✔️ Exercise Files</p>
+                </div>
+                {/* <div className="course-author-rating">
+                  <span className="course-author">BY {course.author.toUpperCase()}</span>
+                </div> */}
               <button className="enroll-button">Enroll Now</button>
             </div>
           </div>
-        ))}
-                </div>
+                  ))}
+          </div>
 
       </div>
 {/* courses */}

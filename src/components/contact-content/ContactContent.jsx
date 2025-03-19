@@ -4,12 +4,14 @@ import styled from 'styled-components';
 import { scroller } from 'react-scroll';
 import LocomotiveScroll from 'locomotive-scroll';
 import './ContactContent.css';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import vido from '../../img/vid1.mp4';
+
+import { motion } from 'framer-motion';
 
 
 const Wrapper = styled.section`
   // background-color: red;
-  padding: 40px 60px;
+  padding: 120px 120px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -31,26 +33,18 @@ const Heading = styled.h2`
 const GridContainer = styled.div`
   display: flex;
   height: 100%;
-    width: 100%;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 50px;
   // background-color: yellow;
   justify-content: space-between;
   // max-width: 1200px;
 `;
 
-const FormContainer = styled.div`
-  // background-color: grey;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 90%;
-  text-align: center;
-`;
-
 const MapContainer = styled.div`
   border-radius: 0px;
   height: 100%;
+  font-family: 'Poppins';
   width: 100%;
   overflow: hidden;
   // box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -117,18 +111,26 @@ const ContactContent = () => {
     scroller.scrollTo('form-top', { duration: 500, smooth: true });
   }, []);
 
-  useEffect(() => {
-    const locomotiveScroll = new LocomotiveScroll({
-      el: document.querySelector('#scroll-container'),
-      smooth: true,
-    });
-    return () => locomotiveScroll.destroy();
-  }, []);
+  // useEffect(() => {
+  //   const locomotiveScroll = new LocomotiveScroll({
+  //     el: document.querySelector('#scroll-container'),
+  //     smooth: true,
+  //   });
+  //   return () => locomotiveScroll.destroy();
+  // }, []);
 
   return (
     <div className="hi-ccontainer" id="scroll-container">
-      <div className="section2">
-        <h1>how can we help You?</h1>
+       <div className="contact-container">
+      <div className="contact-header">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you. Fill out the form below to get in touch!</p>
+      </div>
+      <div className="bgvid">
+      <video autoPlay loop muted className="video">
+        <source src={vido} type="video/mp4" />
+      </video>
+      </div>
       </div>
       <Wrapper>
         <GridContainer>
@@ -137,35 +139,69 @@ const ContactContent = () => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.003708333702!2d78.08289358189612!3d30.36378440969597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d7c27be48317%3A0xe9533331fe68926e!2sIKSANA%20Workspaces%20%7C%20Best%20Co-working%20%26%20Office%20Space%20in%20Dehradun%20%7C%20Private%20Offices%20at%20IT%20Park%2C%20Dehradun!5e1!3m2!1sen!2sus!4v1742021409298!5m2!1sen!2sus"
               width="100%"
-              height="450"
+              height="500"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </MapContainer>
-          <FormContainer>
-            <h3 className="headi" >Got questions? We’re here to help!</h3>
-            <form ref={formRef} onSubmit={handleSubmit}>
-              <StyledInput type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="First Name" />
-              <StyledInput type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Last Name" />
-              <StyledInput type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email" />
-              <StyledInput type="text" name="topic" value={formData.topic} onChange={handleChange} placeholder="Topic" />
-              <StyledTextarea name="message" value={formData.message} onChange={handleChange} placeholder="Message" />
-              <StyledButton type="submit">Submit</StyledButton>
-            </form>
+            {/* <h3 className="headi" >Got questions? We’re here to help!</h3> */}
+            <motion.form
+    ref={formRef}
+    onSubmit={handleSubmit}
+    className="contact-form"
+    initial={{ opacity: 0, x: 200 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.8, delay: 0.3 }}
+  >
+    <input
+      type="text"
+      name="firstName"
+      value={formData.firstName}
+      onChange={handleChange}
+      placeholder="First Name"
+      required
+    />
+    <input
+      type="text"
+      name="lastName"
+      value={formData.lastName}
+      onChange={handleChange}
+      placeholder="Last Name"
+      required
+    />
+    <input
+      type="email"
+      name="email"
+      value={formData.email}
+      onChange={handleChange}
+      placeholder="Your Email"
+      required
+    />
+    <input
+      type="text"
+      name="topic"
+      value={formData.topic}
+      onChange={handleChange}
+      placeholder="Topic"
+      required
+    />
+    <textarea
+      name="message"
+      value={formData.message}
+      onChange={handleChange}
+      placeholder="Your Message"
+      required
+    ></textarea>
+    <button type="submit">Send Message</button>
+  </motion.form>
             {feedback && <p>{feedback}</p>}
-          </FormContainer>
         </GridContainer>
       </Wrapper>
 
 
       {/* SOCIAL MEDIA CONTAINER */}
-        <HelmetProvider>
-        <Helmet>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></link>
-        </Helmet>
-        </HelmetProvider>
       <div class="social-media-container">
   <p class="title">Follow Us</p>
   <ul class="social-media-list">
@@ -179,6 +215,7 @@ const ContactContent = () => {
     <li><a href="#"><i class="fa-brands fa-apple"></i><span>Apple</span></a></li>
   </ul>
 </div>
+
     </div>
   );
 };

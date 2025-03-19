@@ -103,7 +103,7 @@ const AboutContent = () => {
         </div> */}
             
         <div className="title-3">
-           <h1>Meet Our Executives</h1>
+          <h1>Meet Our Executives</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui recusandae voluptates aliquam libero suscipit autem maiores totam itaque modi, praesentium quam corporis, architecto, reiciendis ab id deserunt soluta nesciunt dolor.</p>
         </div>
 <div className="profile1" ref={exe1Ref}>
@@ -114,20 +114,20 @@ const AboutContent = () => {
                       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nulla itaque voluptas unde cupiditate laboriosam illo natus excepturi veniam dolorum, omnis ullam doloribus vero quis esse aspernatur porro, aliquam consequatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nulla itaque voluptas unde cupiditate laboriosam illo natus excepturi veniam dolorum, omnis ullam doloribus vero quis esse aspernatur porro, aliquam consequatur</p>
             <div className="social">  
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-             <FontAwesomeIcon icon={faFacebook} />
-             </a>
-           
-             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-             <FontAwesomeIcon icon={faInstagram} />
-             </a>
-             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-             <FontAwesomeIcon  icon={faXTwitter} />
-             </a>
+            <FontAwesomeIcon icon={faFacebook} />
+            </a>
+          
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon  icon={faXTwitter} />
+            </a>
 
-             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-             <FontAwesomeIcon icon={faLinkedin} />
-                    </a>
-             </div>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            </div>
 
           </div>
           <div className="photo">
@@ -145,20 +145,20 @@ const AboutContent = () => {
                       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nulla itaque voluptas unde cupiditate laboriosam illo natus excepturi veniam dolorum, omnis ullam doloribus vero quis esse aspernatur porro, aliquam consequatur? <br /> <br />Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nulla itaque voluptas unde cupiditate laboriosam illo natus excepturi veniam dolorum, omnis ullam doloribus vero quis esse aspernatur porro, aliquam consequatur</p>
             <div className="social">  
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-             <FontAwesomeIcon icon={faFacebook} />
-             </a>
-           
-             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-             <FontAwesomeIcon icon={faInstagram} />
-             </a>
-             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-             <FontAwesomeIcon  icon={faXTwitter} />
-             </a>
+            <FontAwesomeIcon icon={faFacebook} />
+            </a>
+          
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon  icon={faXTwitter} />
+            </a>
 
-             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-             <FontAwesomeIcon icon={faLinkedin} />
-             </a>
-             </div>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            </div>
 
           </div>
           <div className="photo">
@@ -176,20 +176,20 @@ const AboutContent = () => {
                       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nulla itaque voluptas unde cupiditate laboriosam illo natus excepturi veniam dolorum, omnis ullam doloribus vero quis esse aspernatur porro, aliquam consequatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nulla itaque voluptas unde cupiditate laboriosam illo natus excepturi veniam dolorum, omnis ullam doloribus vero quis esse aspernatur porro, aliquam consequatur</p>
             <div className="social">  
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-             <FontAwesomeIcon icon={faFacebook} />
-             </a>
-           
-             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-             <FontAwesomeIcon icon={faInstagram} />
-             </a>
-             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-             <FontAwesomeIcon  icon={faXTwitter} />
-             </a>
+            <FontAwesomeIcon icon={faFacebook} />
+            </a>
+          
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon  icon={faXTwitter} />
+            </a>
 
-             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-             <FontAwesomeIcon icon={faLinkedin} />
-             </a>
-             </div>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            </div>
 
           </div>
           <div className="photo">
