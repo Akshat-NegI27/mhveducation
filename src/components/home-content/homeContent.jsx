@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import "../button/button.scss"; 
 import { Link } from 'react-router-dom';
+import './homeContentmedia.css';
 
 
 

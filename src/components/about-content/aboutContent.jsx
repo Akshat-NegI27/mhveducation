@@ -4,6 +4,7 @@ import video from '../../img/vid1.mp4';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faLinkedin, faInstagram, faFacebook, } from '@fortawesome/free-brands-svg-icons';
 import front from '../../img/front.png';
+import './aboutContentmedia.css';
 
 const AboutContent = () => {
   const exe1Ref = useRef(null);
