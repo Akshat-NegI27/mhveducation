@@ -3,6 +3,8 @@
 .about-container {
   /* padding: 50px; */
   background: #f9f9f9;
+  font-family: Poppins;
+
   /* animation: fadeIn 2s ease-in-out; */
 
   .heading-content {
@@ -10,10 +12,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 70px 60px;
-    padding-top: 90px;
+    padding: 60px 120px;
+    padding-top: 125px;
+    gap: 40px;
     /* background-color: #82d811; */
-    height: 80vh;
+    /* height: 80vh; */
     .title-box {
       display: flex;
       flex-direction: column;
@@ -21,18 +24,17 @@
       /* align-items: center; */
       width: 100%;
       height: 100%;
-      padding: 20px;
       /* background-color: #4d11d8; */
       h1 {
         font-size: 5.5em;
         margin-bottom: 10px;
         color: #333;
-        border-bottom: 3px solid #333;
+        /* border-bottom: 3px solid #333; */
         width: 80%;
       }
       p {
-        font-size: 1em;
-        /* margin-bottom: 40px; */
+        font-size: 18px;
+        line-height: 26px;
         color: #666;
       }
     }
@@ -43,13 +45,11 @@
       align-items: center;
       width: 100%;
       height: 100%;
-      padding: 20px;
       /* background-color: #991d1d; */
       video {
         width: 100%;
-        height: 100%;
-        border-radius: 10px;
-
+        height: 508px;
+        /* border-radius: 10px; */
         /* cover: fill; */
         object-fit: cover;
       }
@@ -63,27 +63,32 @@
   display: flex;
   flex-direction: row;
   animation: fadeIn 2s ease-in-out;
-  height: 80vh;
+  /* height: 80vh; */
   padding: 60px 120px;
   background-color: rgba(245, 206, 154, 0.653);
+  align-items: center;
   .mission-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-self: center;
     /* align-items: center; */
     width: 100%;
     height: 100%;
     h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
+      font-size: 34px;
+      margin-bottom: 30px;
       color: #333;
-      border-bottom: #000000 2px solid;
+      /* border-bottom: #000000 2px solid; */
     }
     /* background-color: #ff0000; */
     p {
-      font-size: 1.1em;
-      line-height: 1.5em;
+      font-size: 18px;
+      font-family: Poppins;
+      line-height: 26px;
       color: #000000;
+      text-align: justify;
+      text-justify: inter-word;
     }
   }
   .image-content {
@@ -148,8 +153,9 @@
     }
     /* background-color: #ff0000; */
     p {
-      font-size: 1.1em;
-      line-height: 1.5em;
+      font-size: 18px;
+      font-family: Poppins;
+      line-height: 26px;
       color: #000000;
     }
     .values-list {
@@ -175,7 +181,6 @@
       font-size: 2.5em;
       margin-bottom: 20px;
       color: #333;
-      border-bottom: #000000 2px solid;
     }
     .values-list {
       justify-content: space-evenly;
@@ -195,6 +200,9 @@
         width: 100%;
         text-align: center;
         text-decoration: none;
+        font-size: 18px;
+        font-family: Poppins;
+        line-height: 26px;
         font-size: 16px;
         cursor: pointer;
         border-radius: 12px;
@@ -220,21 +228,22 @@
   height: fit-content;
   display: flex;
   flex-direction: column;
-  padding: 60px;
+  padding: 60px 120px;
   .team-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 90%;
-    border-bottom: #000000 2px solid;
+    /* border-bottom: #000000 2px solid; */
     padding: 10px;
     align-self: center;
     height: fit-content;
     /* background-color: red; */
     h2 {
-      font-family: inter-n7;
+      font-family: Poppins;
       font-size: 3em;
+      /* text-transform: uppercase; */
       color: #333;
     }
     /* background-color: #ff0000; */
@@ -247,7 +256,8 @@
   .team-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    /* background-color: rgb(195, 195, 195); */
   }
 }
 
@@ -255,11 +265,11 @@
   background-color: whitesmoke;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s, padding 0.3s, height 0.3s;
   color: #333;
-  width: 340px;
-  height: 300px;
+  width: 440px;
+  height: 440px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -274,8 +284,8 @@
 }
 
 .team-photo {
-  width: fit-content;
-  height: 200px;
+  width: 400px;
+  height: fit-content;
   /* border-radius: 50%; */
   margin-bottom: 10px;
 }
@@ -306,3 +316,231 @@
     transform: translateX(0);
   }
 } */
+
+/* -----------------section-3-----------------  */
+.exe1,
+.exe3 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 50px;
+}
+.exe2 {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+/* .team-overlay {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  justify-self: left;
+
+  h1 {
+    position: relative;
+    font-size: 4em;
+
+    height: fit-content;
+    font-family: Poppins;
+    color: #00000042;
+    left: -780px;
+    rotate: -90deg;
+    letter-spacing: 55px;
+    text-transform: uppercase;
+  }
+} */
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  width: 100%;
+  padding: 60px 120px;
+  /* gap: 120px; */
+
+  .profile1,
+  .profile2,
+  .profile3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .title-3 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    h1 {
+      font-size: 3em;
+      font-family: Poppins;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 1.2em;
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 50%;
+    h2 {
+      font-size: 2em;
+      font-family: Poppins;
+      color: #333;
+    }
+    h3 {
+      font-size: 1.4em;
+      font-family: Poppins;
+      color: #333;
+      font-weight: 500;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #333;
+      width: 30px;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 1.2em;
+      color: #333;
+      text-justify: inter-word;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+  }
+  .photo {
+    width: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+}
+.social {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.social svg {
+  background: #fff;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  padding: 6px;
+  animation: ease-in-out 0.3s;
+}
+
+/* Tooltip Styling */
+.social svg::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -35px;
+  background: inherit;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.social svg:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Brand Colors */
+.social .fa-x-twitter {
+  color: #000;
+} /* X (Twitter) */
+.social .fa-instagram {
+  color: #e4405f;
+}
+.social .fa-facebook {
+  color: #1877f2;
+}
+.social .fa-linkedin {
+  color: #0077b5;
+}
+
+/* Hover Effects */
+.social svg:hover {
+  color: #fff;
+  transform: rotate(360deg);
+  box-shadow: none;
+}
+
+.social .fa-x-twitter:hover,
+.social .fa-x-twitter:hover::after {
+  background: #000;
+}
+
+.social .fa-instagram:hover,
+.social .fa-instagram:hover::after {
+  background: #e4405f;
+}
+
+.social .fa-facebook:hover,
+.social .fa-facebook:hover::after {
+  background: #1877f2;
+}
+
+.social .fa-linkedin:hover,
+.social .fa-linkedin:hover::after {
+  background: #0077b5;
+}
+
+.section-contact {
+  height: 15vh;
+  background-color: rgba(0, 0, 0, 0.372);
+  width: 100%;
+  color: #fff;
+  font-family: Poppins;
+  border-radius: 10px;
+  display: flex;
+  /* justify-content: center; */
+  padding: 0 50px;
+  align-items: center;
+}
+
+.vidmega {
+  padding: 60px 120px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  video {
+    width: 80%;
+    border-radius: 10px;
+    height: 80%;
+    object-fit: cover;
+  }
+}
