@@ -21,11 +21,9 @@ const Footer = () => {
               Iksana Workspaces, Anand Arcade, Kishanpur, Dehradun, Uttarakhand 248001</p>
             </div>
             <div className="social_media">
-              <a href='https://steamcommunity.com/id/akyboy27/'><box-icon type='logo' name='steam' size='md' ></box-icon></a>
               <a href='https://www.facebook.com/mhveducation/'><box-icon type='logo' name='facebook' size='md'></box-icon></a>
               <a href='https://www.instagram.com/mhveducation/'><box-icon type='logo' name='instagram' size='md'></box-icon></a>
               <a href='https://www.linkedin.com/company/mhv-education/'><box-icon type='logo' name='linkedin-square' size='md'></box-icon></a>
-              <a href='https://github.com/Akshat-NegI27'><box-icon type='logo' name='github' size='md'></box-icon></a>
             </div>
           </div>
           <div className="service_area">
@@ -63,7 +61,6 @@ const Footer = () => {
             <div className="tou">
               <a href='#'>Terms of Use</a>
               <a href='#'>Privacy Policy</a>
-              <a href='#'>Cookies</a>
             </div>
           </div>
         </div>
