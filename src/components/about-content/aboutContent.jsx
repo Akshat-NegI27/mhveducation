@@ -4,6 +4,8 @@ import video from '../../img/vid1.mp4';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faLinkedin, faInstagram, faFacebook, } from '@fortawesome/free-brands-svg-icons';
 import front from '../../img/front.png';
+import front2 from '../../img/front2.png';
+
 import './aboutContentmedia.css';
 
 const AboutContent = () => {
@@ -19,7 +21,7 @@ const AboutContent = () => {
       <div className="heading-content">
       <div className="title-box">
       <h1>About Us</h1>
-      <p>We are a team of passionate developers committed to creating amazing web experiences.
+      <p>MHV Educations, a leading institute dedicated to providing high-quality stock market education and professional trading mentorship. Founded by Prakhar Rawat, a stock market trader with 12+ years  experience, our mission is to train the  individuals with the knowledge and skills needed to trade and invest in the financial markets with confidence.
       </p>
       </div>
       <div className="vid-box">
@@ -80,13 +82,13 @@ const AboutContent = () => {
         <div className="team-cards">
         <div className="team-member" onClick={() => scrollToProfile(exe1Ref)}>
         <img src={front} alt="Team Member 1" className="team-photo" />
-          <h3>John Doe</h3>
-          <p>Lead Developer</p>
+          <h3>Prakhar Rawat</h3>
+          <p>The Founder</p>
         </div>
         <div className="team-member" onClick={() => scrollToProfile(exe2Ref)}>
-        <img src={front} alt="Team Member 2" className="team-photo" />
-          <h3>Jane Smith</h3>
-          <p>UI/UX Designer</p>
+        <img src={front2} alt="Team Member 2" className="team-photo" />
+          <h3>Sagar Juneja</h3>
+          <p>Manager</p>
         </div>
         <div className="team-member" onClick={() => scrollToProfile(exe3Ref)}>
         <img src="https://media.istockphoto.com/id/1185414460/photo/young-woman.jpg?s=612x612&w=0&k=20&c=KukKq-I_BJU0I1W4itV-IBuUZk3NubmGP2cgFEuaF0o=" alt="Team Member 2" className="team-photo" />
@@ -111,8 +113,12 @@ const AboutContent = () => {
         <div className="exe1" >
           <div className="content">
             <h2>Prakhar Rawat</h2>
-            <h3>CEO</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nulla itaque voluptas unde cupiditate laboriosam illo natus excepturi veniam dolorum, omnis ullam doloribus vero quis esse aspernatur porro, aliquam consequatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nulla itaque voluptas unde cupiditate laboriosam illo natus excepturi veniam dolorum, omnis ullam doloribus vero quis esse aspernatur porro, aliquam consequatur</p>
+            <h3>Founder</h3>
+                      <p>Prakhar Rawat is a seasoned trader with expertise in technical analysis, discretionary trading, and algorithmic strategies. Since entering the stock market in 2013, he has developed a deep understanding of institutional trading and risk management.
+<br />
+After clearing CMT Level 1 in 2017, he traded U.S. markets at a hedge fund before shifting to discretionary and algorithmic trading in 2019. With a PGDM in Finance (2021-2023), he began mentoring traders in Chandigarh, helping them develop structured market strategies.
+<br />
+In 2024, Prakhar expanded internationally, training traders in Dubai, furthering his mission to educate and empower investors globally.</p>
             <div className="social">  
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebook} />
@@ -141,9 +147,13 @@ const AboutContent = () => {
         <div className="profile2" ref={exe2Ref}>
         <div className="exe2" >
           <div className="content">
-            <h2>John Doe</h2>
+            <h2>Sagar Juneja</h2>
             <h3>Manager</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nulla itaque voluptas unde cupiditate laboriosam illo natus excepturi veniam dolorum, omnis ullam doloribus vero quis esse aspernatur porro, aliquam consequatur? <br /> <br />Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nulla itaque voluptas unde cupiditate laboriosam illo natus excepturi veniam dolorum, omnis ullam doloribus vero quis esse aspernatur porro, aliquam consequatur</p>
+                      <p>Sagar Juneja is a finance professional specializing in investment analysis, business evaluation, and financial strategy. He holds an MBA from Great Lakes Institute of Management, majoring in Finance and Data Analytics.
+<br />
+Currently at State Street, Sagar identifies investment opportunities in the stock market using his expertise in investment banking. As a mentor at MHV Educations, he guides aspiring traders in financial modeling, macroeconomics, and commodity markets, making investing a practical learning experience.
+<br />
+With deep market knowledge, he helps students understand sector fundamentals and apply strategies in live market conditions.</p>
             <div className="social">  
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebook} />
@@ -163,7 +173,7 @@ const AboutContent = () => {
 
           </div>
           <div className="photo">
-            <img src="https://media.istockphoto.com/id/1185414460/photo/young-woman.jpg?s=612x612&w=0&k=20&c=KukKq-I_BJU0I1W4itV-IBuUZk3NubmGP2cgFEuaF0o="/>
+          <img src={front2}/>
           </div>
           
         </div>
@@ -194,7 +204,7 @@ const AboutContent = () => {
 
           </div>
           <div className="photo">
-            <img src="https://media.istockphoto.com/id/1185414460/photo/young-woman.jpg?s=612x612&w=0&k=20&c=KukKq-I_BJU0I1W4itV-IBuUZk3NubmGP2cgFEuaF0o="/>
+          <img src="https://media.istockphoto.com/id/1185414460/photo/young-woman.jpg?s=612x612&w=0&k=20&c=KukKq-I_BJU0I1W4itV-IBuUZk3NubmGP2cgFEuaF0o=" alt="Team Member 2" className="team-photo" />
           </div>
           
         </div>
