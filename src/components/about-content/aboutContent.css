@@ -544,3 +544,112 @@
     object-fit: cover;
   }
 }
+
+
+/* media queries */
+@media screen and (max-width: 1024px) {
+  .about-container {
+    .heading-content {
+      flex-direction: column;
+      gap: 20px;
+      padding: 60px 20px;
+      .title-box {
+        h1 {
+          font-size: 3em;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .vid-box {
+        display: none;
+      }
+    }
+  }
+  .mission-section {
+    flex-direction: column;
+    padding: 60px 20px;
+    .mission-content {
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .image-content {
+      img {
+        height: 300px;
+      }
+    }
+  }
+  .values-section {
+    flex-direction: column;
+    padding: 60px 20px;
+    .program-content {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 16px;
+      }
+      .values-list {
+        .value-item {
+          font-size: 1em;
+        }
+      }
+    }
+    .values-content {
+      display: none;
+    }
+  }
+  .about-team {
+    padding: 20px 10px;
+    gap: 10px;
+    .team-content {
+      h2 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  }
+  .team-member {
+    width: 100%;
+    height: 100%;
+  }
+  .section-3 {
+    padding: 60px 20px;
+    .title-3 {
+      width: 80%;
+      h1 {
+        font-size: 2.5em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+    .content {
+      width: 80%;
+      h2 {
+        font-size: 1.5em;
+      }
+      h3 {
+        font-size: 1.2em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+    .photo {
+      width: 80%;
+    }
+  }
+  .section-contact {
+    padding: 0 20px;
+  }
+  .vidmega {
+    display: none;
+  }
+}
