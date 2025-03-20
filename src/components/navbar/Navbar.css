@@ -26,7 +26,6 @@
   backdrop-filter: saturate(180%) blur(20px);
   /* background-color: rgba(13, 18, 33, 0.6); */
   /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); */
-  border-radius: 0px 0px 60px 60px;
   transition: all 0.3s ease-in-out; /* Smooth transition */
   .navbar-links {
     /* font-size: 0.9rem; */
@@ -301,6 +300,14 @@
     left: -220px; /* Ensures it stays hidden when closed */
   }
 
+  .btn-download {
+    display: none;
+  }
+  .logo img {
+    margin-left: 20px;
+    height: 60px;
+    width: 100%;
+  }
   .sidebar.open {
     left: 0;
   }
@@ -328,6 +335,7 @@
     font-size: 2rem;
     cursor: pointer;
     color: #000;
+    margin-right: 20px;
   }
 }
 
@@ -349,7 +357,7 @@
   /* Adjust Navbar for small screens */
   .navbar {
     padding: 0 15px;
-    height: 55px;
+    height: 45px;
   }
 
   .menu-icon {

@@ -431,29 +431,47 @@
 @media (max-width: 1023px) {
   .pg1section1 {
     display: block;
-    padding: 20px;
+    padding: 60px 20px 40px 20px;
     height: auto;
   }
 
   .content {
     max-width: 100%;
-
+    .tag {
+      padding: 0;
+      font-size: 0.8rem;
+    }
     h1 {
+      margin: 0;
       font-size: 3rem;
     }
 
     p {
+      margin-top: 10px;
       font-size: 1rem;
     }
   }
 
   .buttons {
-    flex-direction: column;
+    height: 80px;
+    flex-direction: row;
     gap: 10px;
-  }
 
+    .button-text {
+      font-size: small;
+    }
+  }
+  .learn-more {
+    /* padding: 0.5rem; */
+    font-size: small;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+  }
   .button-underline {
     width: 100%;
+    padding: 0.5rem;
+    font-size: small;
   }
 
   .image-container {
