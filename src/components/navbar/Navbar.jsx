@@ -74,8 +74,6 @@ const Navbar = () => {
         <div className="sidebar-links">
           <NavLink to="/" onClick={toggleSidebar}>Home</NavLink>
           <NavLink to="/Courses" onClick={toggleSidebar}>Courses</NavLink>
-          <NavLink to="/Feestructure" onClick={toggleSidebar}>Fee Structure</NavLink>
-          <NavLink to="/Blogs" onClick={toggleSidebar}>Blogs</NavLink>
           <NavLink to="/About" onClick={toggleSidebar}>About</NavLink>
           <NavLink to="/Contact" onClick={toggleSidebar}>Contact Us</NavLink>
         </div>
