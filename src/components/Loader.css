@@ -117,7 +117,7 @@
   .loader-container {
     .loader-text,
     .loader-quote {
-      font-size: 0.8rem;
+      font-size: 1rem;
       letter-spacing: 5px;
     }
   }
@@ -127,7 +127,7 @@
   .loader-container {
     .loader-text,
     .loader-quote {
-      font-size: 0.6rem;
+      font-size: 1rem;
       letter-spacing: 3px;
     }
   }
@@ -137,7 +137,7 @@
   .loader-container {
     .loader-text,
     .loader-quote {
-      font-size: 0.5rem;
+      font-size: 1rem;
       letter-spacing: 2px;
     }
   }
