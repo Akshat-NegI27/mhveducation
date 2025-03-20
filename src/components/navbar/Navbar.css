@@ -346,11 +346,11 @@
   }
 
   .sidebar-logo {
-    width: 80px;
+    width: 100px;
   }
 
   .btn-enroll {
-    font-size: 12px;
+    font-size: 16px;
     padding: 8px 16px;
   }
 
@@ -362,5 +362,30 @@
 
   .menu-icon {
     font-size: 1.8rem;
+  }
+}
+
+
+
+/* media queires of mobile width  */
+@media (max-width: 768px) {
+  .btn-download {
+    color:transparent;
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 24px;
+    margin-right: 50px;
+  }
+  .btn-download:hover {
+    background-color: transparent;
+  }
+  
+  .logo img {
+    height: 80px;
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: height 0.3s ease-in-out;
   }
 }
