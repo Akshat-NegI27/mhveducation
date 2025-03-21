@@ -207,7 +207,7 @@ li.service_name {
 /* Media query for tablets and smaller screens */
 @media only screen and (max-width: 880px) {
   .containerx {
-    padding: 5vh;
+    padding: 60px;
   }
 
   .content_footer {
@@ -237,7 +237,7 @@ li.service_name {
 
   .desc_area {
     width: 90%;
-    padding-bottom: 2vh;
+    /* padding-bottom: 2vh; */
     margin-bottom: 2vh;
     text-align: center;
     font-size: 14px; /* Smaller text */
@@ -246,7 +246,7 @@ li.service_name {
   .service_area {
     flex-direction: column;
     gap: 2vh;
-    align-items: center;
+    /* align-items: center; */
   }
 
   .service_header {
@@ -261,7 +261,7 @@ li.service_name {
   }
 
   .social_media {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     gap: 10px; /* Spacing between icons */
@@ -271,14 +271,27 @@ li.service_name {
     font-size: 20px; /* Smaller icons */
     fill: #b3b3b3;
   }
-
+  .desc_area h2 {
+    margin-top: 10px;
+  }
   .social_media box-icon:hover {
     fill: #ffffff;
   }
 
+  .footer_bottom .below {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    /* font-size: small; */
+  }
+
+  .copy_right span {
+    /* font-size: 0px; */
+  }
   .copy_right {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
     font-size: 12px; /* Smaller text */
@@ -300,8 +313,8 @@ li.service_name {
 
 /* Media query for mobile devices (max-width: 600px) */
 @media (max-width: 600px) {
-  .containerx {
-    padding: 4vh;
+  footer .containerx {
+    padding: 20px 40px;
   }
 
   .content_footer {
@@ -321,7 +334,7 @@ li.service_name {
   }
 
   .profil .logo_area img {
-    width: 50px; /* Smaller logo */
+    width: 150px; /* Smaller logo */
     height: auto;
   }
 
@@ -334,6 +347,8 @@ li.service_name {
   .service_area {
     flex-direction: column;
     text-align: center;
+    flex-direction: row;
+    font-size: small;
   }
 
   .footer_bottom hr {

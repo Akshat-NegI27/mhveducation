@@ -1,1458 +1,182 @@
-/* Media Queries for About Content */
-@import "../fonts/fonts.css";
+@media screen and (max-width: 1024px) {
+  .about-container .heading-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+  }
 
-/* Default styles for larger screens */
-@media (min-width: 1024px) {
-  .about-container {
-    background: #f9f9f9;
-    font-family: Poppins;
+  .about-container .heading-content .title-box h1 {
+    font-size: 3em;
+  }
 
-    .heading-content {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 60px 120px;
-      padding-top: 125px;
-      gap: 40px;
+  .about-container .heading-content .title-box p {
+    font-size: 16px;
+  }
 
-      .title-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-
-        h1 {
-          font-size: 5.5em;
-          margin-bottom: 10px;
-          color: #333;
-          width: 80%;
-        }
-
-        p {
-          font-size: 18px;
-          line-height: 26px;
-          color: #666;
-        }
-      }
-
-      .vid-box {
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-
-        video {
-          width: 100%;
-          height: 508px;
-          object-fit: cover;
-        }
-      }
-    }
+  .about-container .heading-content .vid-box {
+    display: none;
   }
 
   .mission-section {
-    gap: 40px;
-    display: flex;
-    flex-direction: row;
-    padding: 60px 120px;
-    background-color: rgba(245, 206, 154, 0.653);
-    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
 
-    .mission-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
+  .mission-section .mission-content h2 {
+    font-size: 30px;
+  }
 
-      h2 {
-        font-size: 34px;
-        margin-bottom: 30px;
-        color: #333;
-      }
+  .mission-section .mission-content p {
+    font-size: 16px;
+  }
 
-      p {
-        font-size: 18px;
-        font-family: Poppins;
-        line-height: 26px;
-        color: #000000;
-        text-align: justify;
-        text-justify: inter-word;
-      }
-    }
-
-    .image-content {
-      width: 100%;
-      height: 100%;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
+  .mission-section .image-content img {
+    height: 250px;
   }
 
   .values-section {
-    gap: 60px;
-    display: flex;
-    flex-direction: row;
-    animation: fadeIn 2s ease-in-out;
-    height: 70vh;
-    padding: 70px 70px;
-    background: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 223, 239, 1) 40%,
-      rgba(198, 217, 243, 1) 100%
-    );
-    animation: radialGlow 10s ease infinite;
-
-    @keyframes radialGlow {
-      0% {
-        background-position: 50% 50%;
-        box-shadow: 0 0 20px #232526;
-      }
-      50% {
-        background-position: 100% 100%;
-        box-shadow: 0 0 40px #414345;
-      }
-      100% {
-        background-position: 50% 50%;
-        box-shadow: 0 0 20px #232526;
-      }
-    }
-
-    .program-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-
-      h1 {
-        font-size: 2.5em;
-        margin-bottom: 20px;
-        color: #333;
-      }
-
-      p {
-        font-size: 18px;
-        font-family: Poppins;
-        line-height: 26px;
-        color: #000000;
-      }
-
-      .values-list {
-        padding: 0;
-        list-style: none;
-
-        .value-item {
-          font-size: 1.2em;
-          color: #666;
-          margin: 10px 0;
-        }
-      }
-    }
-
-    .values-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      justify-content: space-between;
-
-      h2 {
-        font-size: 2.5em;
-        margin-bottom: 20px;
-        color: #333;
-      }
-
-      .values-list {
-        justify-content: space-evenly;
-        align-content: center;
-        list-style: none;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 80%;
-
-        .value-item {
-          border: none;
-          color: rgb(0, 0, 0);
-          padding: 8px 42px;
-          width: 100%;
-          text-align: center;
-          text-decoration: none;
-          font-size: 18px;
-          font-family: Poppins;
-          line-height: 26px;
-          font-size: 16px;
-          cursor: pointer;
-          border-radius: 12px;
-          background-color: rgba(0, 0, 0, 0.1);
-          transition: background-color 0.3s, transform 0.3s, padding 0.3s;
-        }
-
-        .value-item:hover {
-          background-color: rgba(0, 0, 0, 0.2);
-          backdrop-filter: blur(10px);
-          transform: translateY(-5px);
-          padding: 12px 42px;
-        }
-      }
-    }
-  }
-
-  .about-team {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    height: fit-content;
     flex-direction: column;
-    padding: 60px 120px;
-
-    .team-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 90%;
-      padding: 10px;
-      align-self: center;
-      height: fit-content;
-
-      h2 {
-        font-family: Poppins;
-        font-size: 3em;
-        color: #333;
-      }
-
-      p {
-        font-size: 1.1em;
-        line-height: 1.5em;
-        color: #000000;
-      }
-    }
-
-    .team-cards {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
+    padding: 40px 20px;
   }
 
-  .team-member {
-    background-color: whitesmoke;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, padding 0.3s, height 0.3s;
-    color: #333;
-    width: 440px;
-    height: 440px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  .values-section .program-content h1 {
+    font-size: 2em;
   }
 
-  .team-member:hover {
-    transform: translateY(-20px);
-    padding: 10px;
-  }
-
-  .team-photo {
-    width: 400px;
-    height: fit-content;
-    margin-bottom: 10px;
-  }
-
-  .exe1,
-  .exe3 {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 50px;
-  }
-
-  .exe2 {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-  }
-
-  .section-3 {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 60px 120px;
-
-    .profile1,
-    .profile2,
-    .profile3 {
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .title-3 {
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      h1 {
-        font-size: 3em;
-        font-family: Poppins;
-        color: #333;
-        margin-bottom: 20px;
-      }
-
-      p {
-        font-family: Poppins;
-        font-size: 1.2em;
-        color: #333;
-        text-align: center;
-        margin-bottom: 30px;
-      }
-    }
-
-    .content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 50%;
-
-      h2 {
-        font-size: 2em;
-        font-family: Poppins;
-        color: #333;
-      }
-
-      h3 {
-        font-size: 1.4em;
-        font-family: Poppins;
-        color: #333;
-        font-weight: 500;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        border-bottom: 1px solid #333;
-        width: 30px;
-      }
-
-      p {
-        font-family: Poppins;
-        font-size: 1.2em;
-        color: #333;
-        text-justify: inter-word;
-        text-align: justify;
-        margin-bottom: 20px;
-      }
-    }
-
-    .photo {
-      width: 50%;
-
-      img {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        object-fit: cover;
-      }
-    }
-  }
-
-  .social {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 15px;
-    padding: 10px;
-
-    svg {
-      background: #fff;
-      border-radius: 50%;
-      width: 28px;
-      height: 28px;
-      font-size: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      position: relative;
-      padding: 6px;
-      animation: ease-in-out 0.3s;
-    }
-
-    svg::after {
-      content: attr(data-tooltip);
-      position: absolute;
-      top: -35px;
-      background: inherit;
-      color: #fff;
-      padding: 5px 8px;
-      border-radius: 5px;
-      font-size: 14px;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-      opacity: 0;
-      transition: all 0.3s ease-in-out;
-      pointer-events: none;
-      white-space: nowrap;
-    }
-
-    svg:hover::after {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .fa-x-twitter {
-      color: #000;
-    }
-
-    .fa-instagram {
-      color: #e4405f;
-    }
-
-    .fa-facebook {
-      color: #1877f2;
-    }
-
-    .fa-linkedin {
-      color: #0077b5;
-    }
-
-    svg:hover {
-      color: #fff;
-      transform: rotate(360deg);
-      box-shadow: none;
-    }
-
-    .fa-x-twitter:hover,
-    .fa-x-twitter:hover::after {
-      background: #000;
-    }
-
-    .fa-instagram:hover,
-    .fa-instagram:hover::after {
-      background: #e4405f;
-    }
-
-    .fa-facebook:hover,
-    .fa-facebook:hover::after {
-      background: #1877f2;
-    }
-
-    .fa-linkedin:hover,
-    .fa-linkedin:hover::after {
-      background: #0077b5;
-    }
-  }
-
-  .section-contact {
-    height: 15vh;
-    background-color: rgba(0, 0, 0, 0.372);
-    width: 100%;
-    color: #fff;
-    font-family: Poppins;
-    border-radius: 10px;
-    display: flex;
-    padding: 0 50px;
-    align-items: center;
-  }
-
-  .vidmega {
-    padding: 60px 120px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    video {
-      width: 80%;
-      border-radius: 10px;
-      height: 80%;
-      object-fit: cover;
-    }
+  .values-section .values-content h2 {
+    font-size: 2em;
   }
 }
 
-/* Styles for smaller screens */
-@media (max-width: 1023px) {
-  .about-container {
-    background: #f9f9f9;
-    font-family: Poppins;
+@media screen and (max-width: 768px) {
+  .about-container .heading-content {
+    padding: 30px 15px;
+  }
 
-    .heading-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 30px 60px;
-      padding-top: 60px;
-      gap: 20px;
+  .about-container .heading-content .title-box h1 {
+    font-size: 2.5em;
+  }
 
-      .title-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
+  .about-container .heading-content .title-box p {
+    font-size: 14px;
+  }
 
-        h1 {
-          font-size: 3em;
-          margin-bottom: 10px;
-          color: #333;
-          width: 100%;
-        }
+  .mission-section {
+    padding: 30px 15px;
+  }
 
-        p {
-          font-size: 16px;
-          line-height: 24px;
-          color: #666;
-        }
-      }
+  .mission-section .mission-content h2 {
+    font-size: 26px;
+  }
 
-      .vid-box {
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
+  .mission-section .mission-content p {
+    font-size: 14px;
+  }
 
-        video {
-          width: 100%;
-          height: 300px;
-          object-fit: cover;
-        }
-      }
-    }
+  .mission-section .image-content img {
+    height: 220px;
+  }
+
+  .values-section {
+    padding: 30px 15px;
+  }
+
+  .values-section .program-content h1 {
+    font-size: 1.8em;
+  }
+
+  .values-section .values-content h2 {
+    font-size: 1.8em;
+  }
+
+  .team-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-container .heading-content .title-box h1 {
+    padding-top: 20px;
+    font-size: 2.5em;
+  }
+
+  .about-container .heading-content .title-box p {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .mission-section .mission-content h2 {
+    font-size: 22px;
+  }
+
+  .mission-section .mission-content p {
+    font-size: 14px;
+    line-height: normal;
   }
 
   .mission-section {
     gap: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 30px 60px;
-    background-color: rgba(245, 206, 154, 0.653);
-    align-items: center;
-
-    .mission-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-
-      h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-        color: #333;
-      }
-
-      p {
-        font-size: 16px;
-        font-family: Poppins;
-        line-height: 24px;
-        color: #000000;
-        text-align: justify;
-        text-justify: inter-word;
-      }
+    .image-content img {
+      height: fit-content;
     }
+  }
 
-    .image-content {
-      width: 100%;
-      height: 100%;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+  .values-section {
+    .program-content {
+      p {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 1.5em;
+        margin-bottom: 0;
       }
     }
   }
 
   .values-section {
-    gap: 30px;
-    display: flex;
     flex-direction: column;
-    animation: fadeIn 2s ease-in-out;
-    height: auto;
-    padding: 30px 30px;
-    background: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 223, 239, 1) 40%,
-      rgba(198, 217, 243, 1) 100%
-    );
-    animation: radialGlow 10s ease infinite;
-
-    .program-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-
-      h1 {
-        font-size: 2em;
-        margin-bottom: 20px;
-        color: #333;
-      }
-
-      p {
-        font-size: 16px;
-        font-family: Poppins;
-        line-height: 24px;
-        color: #000000;
-      }
-
-      .values-list {
-        padding: 0;
-        list-style: none;
-
-        .value-item {
-          font-size: 1em;
-          color: #666;
-          margin: 10px 0;
-        }
-      }
-    }
-
-    .values-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      justify-content: space-between;
-
-      h2 {
-        font-size: 2em;
-        margin-bottom: 20px;
-        color: #333;
-      }
-
-      .values-list {
-        justify-content: space-evenly;
-        align-content: center;
-        list-style: none;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-
-        .value-item {
-          border: none;
-          color: rgb(0, 0, 0);
-          padding: 8px 42px;
-          width: 100%;
-          text-align: center;
-          text-decoration: none;
-          font-size: 16px;
-          font-family: Poppins;
-          line-height: 24px;
-          cursor: pointer;
-          border-radius: 12px;
-          background-color: rgba(0, 0, 0, 0.1);
-          transition: background-color 0.3s, transform 0.3s, padding 0.3s;
-        }
-
-        .value-item:hover {
-          background-color: rgba(0, 0, 0, 0.2);
-          backdrop-filter: blur(10px);
-          transform: translateY(-5px);
-          padding: 12px 42px;
-        }
-      }
-    }
+    gap: 20px;
+    height: fit-content;
+  }
+  .values-section .values-content h2 {
+    font-size: 1.5em;
   }
 
-  .about-team {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    height: fit-content;
-    flex-direction: column;
-    padding: 30px 60px;
-
-    .team-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      padding: 10px;
-      align-self: center;
-      height: fit-content;
-
-      h2 {
-        font-family: Poppins;
-        font-size: 2em;
-        color: #333;
-      }
-
-      p {
-        font-size: 1em;
-        line-height: 1.5em;
-        color: #000000;
-      }
-    }
-
-    .team-cards {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+  .values-section .values-list .value-item {
+    font-size: 14px;
   }
 
   .team-member {
-    background-color: whitesmoke;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, padding 0.3s, height 0.3s;
-    color: #333;
-  }
-  /* Media Queries for About Content */
-  /* Default styles for larger screens */
-
-  @media (min-width: 1024px) {
-    .about-container {
-      background: #f9f9f9;
-      font-family: Poppins;
-
-      .heading-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 60px 120px;
-        padding-top: 125px;
-        gap: 40px;
-
-        .title-box {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          width: 100%;
-          height: 100%;
-
-          h1 {
-            font-size: 5.5em;
-            margin-bottom: 10px;
-            color: #333;
-            width: 80%;
-          }
-
-          p {
-            font-size: 18px;
-            line-height: 26px;
-            color: #666;
-          }
-        }
-
-        .vid-box {
-          display: none;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 100%;
-
-          video {
-            width: 100%;
-            height: 508px;
-            object-fit: cover;
-          }
-        }
-      }
-    }
-
-    .mission-section {
-      gap: 40px;
-      display: flex;
-      flex-direction: row;
-      padding: 60px 120px;
-      background-color: rgba(245, 206, 154, 0.653);
-      align-items: center;
-
-      .mission-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-
-        h2 {
-          font-size: 34px;
-          margin-bottom: 30px;
-          color: #333;
-        }
-
-        p {
-          font-size: 18px;
-          font-family: Poppins;
-          line-height: 26px;
-          color: #000000;
-          text-align: justify;
-          text-justify: inter-word;
-        }
-      }
-
-      .image-content {
-        width: 100%;
-        height: 100%;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-    }
-
-    .values-section {
-      gap: 60px;
-      display: flex;
-      flex-direction: row;
-      animation: fadeIn 2s ease-in-out;
-      height: 70vh;
-      padding: 70px 70px;
-      background: radial-gradient(
-        circle,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 223, 239, 1) 40%,
-        rgba(198, 217, 243, 1) 100%
-      );
-      animation: radialGlow 10s ease infinite;
-
-      @keyframes radialGlow {
-        0% {
-          background-position: 50% 50%;
-          box-shadow: 0 0 20px #232526;
-        }
-        50% {
-          background-position: 100% 100%;
-          box-shadow: 0 0 40px #414345;
-        }
-        100% {
-          background-position: 50% 50%;
-          box-shadow: 0 0 20px #232526;
-        }
-      }
-
-      .program-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-
-        h1 {
-          font-size: 2.5em;
-          margin-bottom: 20px;
-          color: #333;
-        }
-
-        p {
-          font-size: 18px;
-          font-family: Poppins;
-          line-height: 26px;
-          color: #000000;
-        }
-
-        .values-list {
-          padding: 0;
-          list-style: none;
-
-          .value-item {
-            font-size: 1.2em;
-            color: #666;
-            margin: 10px 0;
-          }
-        }
-      }
-
-      .values-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        justify-content: space-between;
-
-        h2 {
-          font-size: 2.5em;
-          margin-bottom: 20px;
-          color: #333;
-        }
-
-        .values-list {
-          justify-content: space-evenly;
-          align-content: center;
-          list-style: none;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          width: 80%;
-
-          .value-item {
-            border: none;
-            color: rgb(0, 0, 0);
-            padding: 8px 42px;
-            width: 100%;
-            text-align: center;
-            text-decoration: none;
-            font-size: 18px;
-            font-family: Poppins;
-            line-height: 26px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 12px;
-            background-color: rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s, transform 0.3s, padding 0.3s;
-          }
-
-          .value-item:hover {
-            background-color: rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(10px);
-            transform: translateY(-5px);
-            padding: 12px 42px;
-          }
-        }
-      }
-    }
-
-    .about-team {
-      display: flex;
-      justify-content: center;
-      gap: 60px;
-      height: fit-content;
-      flex-direction: column;
-      padding: 60px 120px;
-
-      .team-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        padding: 10px;
-        align-self: center;
-        height: fit-content;
-
-        h2 {
-          font-family: Poppins;
-          font-size: 3em;
-          color: #333;
-        }
-
-        p {
-          font-size: 1.1em;
-          line-height: 1.5em;
-          color: #000000;
-        }
-      }
-
-      .team-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
-    }
-
-    .team-member {
-      background-color: whitesmoke;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s, padding 0.3s, height 0.3s;
-      color: #333;
-      width: 440px;
-      height: 440px;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .team-member:hover {
-      transform: translateY(-20px);
-      padding: 10px;
-    }
-
-    .team-photo {
-      width: 400px;
-      height: fit-content;
-      margin-bottom: 10px;
-    }
-
-    .exe1,
-    .exe3 {
-      display: flex;
-      flex-direction: row-reverse;
-      gap: 50px;
-    }
-
-    .exe2 {
-      display: flex;
-      flex-direction: row;
-      gap: 50px;
-    }
-
-    .section-3 {
-      display: flex;
-      flex-direction: column;
-      background-color: rgb(255, 255, 255);
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      padding: 60px 120px;
-
-      .profile1,
-      .profile2,
-      .profile3 {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
-      .title-3 {
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h1 {
-          font-size: 3em;
-          font-family: Poppins;
-          color: #333;
-          margin-bottom: 20px;
-        }
-
-        p {
-          font-family: Poppins;
-          font-size: 1.2em;
-          color: #333;
-          text-align: center;
-          margin-bottom: 30px;
-        }
-      }
-
-      .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 50%;
-
-        h2 {
-          font-size: 2em;
-          font-family: Poppins;
-          color: #333;
-        }
-
-        h3 {
-          font-size: 1.4em;
-          font-family: Poppins;
-          color: #333;
-          font-weight: 500;
-          padding-bottom: 10px;
-          margin-bottom: 20px;
-          border-bottom: 1px solid #333;
-          width: 30px;
-        }
-
-        p {
-          font-family: Poppins;
-          font-size: 1.2em;
-          color: #333;
-          text-justify: inter-word;
-          text-align: justify;
-          margin-bottom: 20px;
-        }
-      }
-
-      .photo {
-        width: 50%;
-
-        img {
-          width: 100%;
-          height: 100%;
-          border-radius: 10px;
-          object-fit: cover;
-        }
-      }
-    }
-
-    .social {
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      gap: 15px;
-      padding: 10px;
-
-      svg {
-        background: #fff;
-        border-radius: 50%;
-        width: 28px;
-        height: 28px;
-        font-size: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        position: relative;
-        padding: 6px;
-        animation: ease-in-out 0.3s;
-      }
-
-      svg::after {
-        content: attr(data-tooltip);
-        position: absolute;
-        top: -35px;
-        background: inherit;
-        color: #fff;
-        padding: 5px 8px;
-        border-radius: 5px;
-        font-size: 14px;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-        opacity: 0;
-        transition: all 0.3s ease-in-out;
-        pointer-events: none;
-        white-space: nowrap;
-      }
-
-      svg:hover::after {
-        opacity: 1;
-        visibility: visible;
-      }
-
-      .fa-x-twitter {
-        color: #000;
-      }
-
-      .fa-instagram {
-        color: #e4405f;
-      }
-
-      .fa-facebook {
-        color: #1877f2;
-      }
-
-      .fa-linkedin {
-        color: #0077b5;
-      }
-
-      svg:hover {
-        color: #fff;
-        transform: rotate(360deg);
-        box-shadow: none;
-      }
-
-      .fa-x-twitter:hover,
-      .fa-x-twitter:hover::after {
-        background: #000;
-      }
-
-      .fa-instagram:hover,
-      .fa-instagram:hover::after {
-        background: #e4405f;
-      }
-
-      .fa-facebook:hover,
-      .fa-facebook:hover::after {
-        background: #1877f2;
-      }
-
-      .fa-linkedin:hover,
-      .fa-linkedin:hover::after {
-        background: #0077b5;
-      }
-    }
-
-    .section-contact {
-      height: 15vh;
-      background-color: rgba(0, 0, 0, 0.372);
-      width: 100%;
-      color: #fff;
-      font-family: Poppins;
-      border-radius: 10px;
-      display: flex;
-      padding: 0 50px;
-      align-items: center;
-    }
-
-    .vidmega {
-      padding: 60px 120px;
-      height: fit-content;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      video {
-        width: 80%;
-        border-radius: 10px;
-        height: 80%;
-        object-fit: cover;
-      }
-    }
+    width: 100%;
+    height: auto;
+    padding: 15px;
   }
 
-  /* Styles for smaller screens */
-  @media (max-width: 1023px) {
-    .about-container {
-      background: #f9f9f9;
-      font-family: Poppins;
-
-      .heading-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 60px;
-        padding-top: 60px;
-        gap: 20px;
-
-        .title-box {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          width: 100%;
-          height: 100%;
-
-          h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            color: #333;
-            width: 100%;
-          }
-
-          p {
-            font-size: 16px;
-            line-height: 24px;
-            color: #666;
-          }
-        }
-
-        .vid-box {
-          display: none;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 100%;
-
-          video {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-          }
-        }
-      }
-    }
-
-    .mission-section {
-      gap: 20px;
-      display: flex;
-      flex-direction: column;
-      padding: 30px 60px;
-      background-color: rgba(245, 206, 154, 0.653);
-      align-items: center;
-
-      .mission-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-
-        h2 {
-          font-size: 24px;
-          margin-bottom: 20px;
-          color: #333;
-        }
-
-        p {
-          font-size: 16px;
-          font-family: Poppins;
-          line-height: 24px;
-          color: #000000;
-          text-align: justify;
-          text-justify: inter-word;
-        }
-      }
-
-      .image-content {
-        width: 100%;
-        height: 100%;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-    }
-
-    .values-section {
-      gap: 30px;
-      display: flex;
-      flex-direction: column;
-      animation: fadeIn 2s ease-in-out;
-      height: auto;
-      padding: 30px 30px;
-      background: radial-gradient(
-        circle,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 223, 239, 1) 40%,
-        rgba(198, 217, 243, 1) 100%
-      );
-      animation: radialGlow 10s ease infinite;
-
-      .program-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-
-        h1 {
-          font-size: 2em;
-          margin-bottom: 20px;
-          color: #333;
-        }
-
-        p {
-          font-size: 16px;
-          font-family: Poppins;
-          line-height: 24px;
-          color: #000000;
-        }
-
-        .values-list {
-          padding: 0;
-          list-style: none;
-
-          .value-item {
-            font-size: 1em;
-            color: #666;
-            margin: 10px 0;
-          }
-        }
-      }
-
-      .values-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        justify-content: space-between;
-
-        h2 {
-          font-size: 2em;
-          margin-bottom: 20px;
-          color: #333;
-        }
-
-        .values-list {
-          justify-content: space-evenly;
-          align-content: center;
-          list-style: none;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          width: 100%;
-
-          .value-item {
-            border: none;
-            color: rgb(0, 0, 0);
-            padding: 8px 42px;
-            width: 100%;
-            text-align: center;
-            text-decoration: none;
-            font-size: 16px;
-            font-family: Poppins;
-            line-height: 24px;
-            cursor: pointer;
-            border-radius: 12px;
-            background-color: rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s, transform 0.3s, padding 0.3s;
-          }
-
-          .value-item:hover {
-            background-color: rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(10px);
-            transform: translateY(-5px);
-            padding: 12px 42px;
-          }
-        }
-      }
-    }
-
-    .about-team {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      height: fit-content;
-      flex-direction: column;
-      padding: 30px 60px;
-
-      .team-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 10px;
-        align-self: center;
-        height: fit-content;
-
-        h2 {
-          font-family: Poppins;
-          font-size: 2em;
-          color: #333;
-        }
-
-        p {
-          font-size: 1em;
-          line-height: 1.5em;
-          color: #000000;
-        }
-      }
-
-      .team-cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-    }
+  .team-photo {
+    width: 100%;
   }
+
+  .social {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+.exe1,
+.exe2,
+.exe3 {
+  flex-direction: column-reverse;
+  height: fit-content;
+}
+
+.profile1,
+.profile2,
+.profile3 {
+  height: fit-content;
 }

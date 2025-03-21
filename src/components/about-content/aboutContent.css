@@ -545,7 +545,6 @@
   }
 }
 
-
 /* media queries */
 @media screen and (max-width: 1024px) {
   .about-container {
@@ -599,9 +598,6 @@
         }
       }
     }
-    .values-content {
-      display: none;
-    }
   }
   .about-team {
     padding: 20px 10px;
@@ -631,7 +627,7 @@
       }
     }
     .content {
-      width: 80%;
+      width: 100%;
       h2 {
         font-size: 1.5em;
       }
@@ -643,7 +639,7 @@
       }
     }
     .photo {
-      width: 80%;
+      width: 100%;
     }
   }
   .section-contact {
