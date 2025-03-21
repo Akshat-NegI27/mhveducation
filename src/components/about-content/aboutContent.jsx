@@ -7,8 +7,42 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faLinkedin, faInstagram, faFacebook, } from '@fortawesome/free-brands-svg-icons';
 import front from '../../img/front.png';
 import front2 from '../../img/front2.png';
-
+import { Helmet } from "react-helmet-async"; 
 import './aboutContentmedia.css';
+
+<Helmet>
+  <title>About MHV Education | Best Stock Market Institute in Dehradun</title>
+  <meta name="description" content="Learn more about MHV Education, Dehradun's best stock market training institute. Founded by Prakhar Rawat, we offer expert-led courses in stock trading and investing." />
+  <meta name="keywords" content="Stock Market Education, Trading Institute Dehradun, MHV Education, Stock Market Training, Learn Stock Trading, Investment Courses" />
+  <link rel="canonical" href="https://mhveducation.com/about" />
+  {/* ✅ Structured Data for SEO */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "MHV Education",
+      "url": "https://mhveducation.com/about",
+      "logo": "https://mhveducation.com/logo.png",
+      "founder": {
+        "@type": "Person",
+        "name": "Prakhar Rawat"
+      },
+      "description": "MHV Education is the leading stock market training institute in Dehradun, specializing in stock trading, investment strategies, and financial education.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dehradun",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.facebook.com/mhveducation",
+        "https://www.instagram.com/mhveducation",
+        "https://www.linkedin.com/company/mhveducation"
+      ]
+    }
+    `}
+  </script>
+</Helmet>
 
 const AboutContent = () => {
   const exe1Ref = useRef(null);
@@ -64,8 +98,8 @@ const AboutContent = () => {
       </p>
       </div>
       <div className="values-content">
-      <h2>Our Core Values</h2>
-        <ul className="values-list">
+      <h2>Our Core Values in Stock Market Education</h2>
+      <ul className="values-list">
           <li className="value-item">Integrity and Transparency</li>
           <li className="value-item">Excellence in Education</li>
           <li className="value-item">Student Success</li>
@@ -213,8 +247,8 @@ Vidhita Panwar plays an important role at MHV Education as our Business Manager,
         </div>
       </div>
       <div className="section-contact">
-          <h1>Get in Touch with Us</h1>
-          </div>
+      <h1>Contact MHV Education - The Best Stock Market Institute in Dehradun</h1>
+      </div>
       </div>
 
 

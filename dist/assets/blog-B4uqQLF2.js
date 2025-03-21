@@ -1,0 +1,1 @@
+import{j as s}from"./index-K7TA-QeM.js";import{N as r,F as t}from"./footer-BSF-aD5D.js";const o=()=>s.jsx("div",{className:"hi-container",children:s.jsx("h1",{children:"Blogs is this PAGE"})}),a=()=>s.jsxs(s.Fragment,{children:[s.jsx(r,{}),s.jsx(o,{}),s.jsx(t,{})]});export{a as default};

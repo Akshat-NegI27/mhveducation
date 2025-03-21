@@ -1,0 +1,1 @@
+import{j as r}from"./index-DCPMLPoq.js";import{N as s,F as t}from"./footer-X-VmuZik.js";const e=()=>r.jsx("div",{className:""}),n=()=>r.jsxs(r.Fragment,{children:[r.jsx(s,{}),r.jsx(e,{}),r.jsx(t,{})]});export{n as default};
