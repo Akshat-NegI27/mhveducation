@@ -10,6 +10,7 @@ import front2 from '../../img/front2.png';
 import { Helmet } from "react-helmet-async"; 
 import './aboutContentmedia.css';
 
+
 <Helmet>
   <title>About MHV Education | Best Stock Market Institute in Dehradun</title>
   <meta name="description" content="Learn more about MHV Education, Dehradun's best stock market training institute. Founded by Prakhar Rawat, we offer expert-led courses in stock trading and investing." />

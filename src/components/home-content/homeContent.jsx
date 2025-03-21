@@ -5,40 +5,7 @@ import { useState } from 'react';
 import "../button/button.scss"; 
 import { Link } from 'react-router-dom';
 import './homeContentmedia.css';
-<<<<<<< HEAD
 import main from '../../img/Detail.mp4';
-=======
-import { Helmet } from "react-helmet-async"; 
->>>>>>> fc33bce4600346dda008d4077af0e607bd936119
-
-
-<Helmet>
-  <title>Stock Market Course in Dehradun | MHV Education</title>
-  <meta name="description" content="Join the best stock market course in Dehradun to master trading, technical analysis, and investment strategies. Enroll today!" />
-  <meta name="keywords" content="Stock Market Course, Dehradun Trading Institute, Learn Trading, Investment Course, Stock Market Training" />
-  <link rel="canonical" href="https://mhveducation.com/" />
-  {/* ✅ Structured Data for SEO */}
-  <script type="application/ld+json">
-    {`
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "MHV Education",
-      "url": "https://mhveducation.com/",
-      "sameAs": [
-        "https://www.facebook.com/mhveducation",
-        "https://www.instagram.com/mhveducation"
-      ],
-      "description": "MHV Education is the best Stock Market Institute in Dehradun offering expert-led courses on stock market trading and investing.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Dehradun",
-        "addressCountry": "IN"
-      }
-    }
-    `}
-  </script>
-</Helmet>
 
 
 const faqs = [
@@ -117,14 +84,9 @@ const HomeContent = () => {
         </div>
         </div>
         <div className="s2img">
-<<<<<<< HEAD
       <div className="imgs">
       <video autoPlay loop muted src={main} type="video/mp4"/>
       </div>        </div>
-=======
-          <img src="https://hipfonts.com/wp-content/uploads/2023/01/milad-fakurian-E8Ufcyxz514-unsplash.jpg" alt="Stock Market Course in Dehradun"/>
-        </div>
->>>>>>> fc33bce4600346dda008d4077af0e607bd936119
     </div>
 
 
@@ -157,6 +119,26 @@ const HomeContent = () => {
     </section>
 
 </div>
+{/* <div className="pg1section3">
+  <section className="faq-container">
+    <h2 className="faq-title">Frequently Asked Questions</h2>
+    <div className="faq-grid">
+      {faqs.map((faq, index) => (
+        <motion.div
+          key={faq.id}
+          className="faq-card"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.4, delay: index * 0.2 }}
+        >
+          <h3 className="faq-question">{faq.question}</h3>
+          <p className="faq-answer">{faq.answer}</p>
+        </motion.div>
+      ))}
+    </div>
+  </section>
+</div> */}
 
 <div className="pg1section3">
 <section className="faq-section">
