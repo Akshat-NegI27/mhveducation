@@ -507,6 +507,14 @@
     grid-template-columns: 1fr;
   }
 
+  .pg1section2 {
+    & .s2content {
+      .buttons {
+        display: none;
+      }
+    }
+  }
+
   .faq-section {
     padding: 2rem 1rem;
 

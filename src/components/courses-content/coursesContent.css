@@ -203,14 +203,14 @@
   width: fit-content;
   justify-self: center;
   align-self: center;
-  height: 100%;
+  height: 50%;
   /* align-self: center; */
   /* padding-left: 30px; */
   flex-direction: column;
   gap: 10px;
   justify-content: center;
   align-items: left;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-family: Poppins;
   font-size: 14px;
 }
@@ -250,20 +250,58 @@
   gap: 30px;
   justify-content: space-between;
 }
-.enroll-button {
-  background-color: #2563eb;
-  color: #ffffff;
-  font-size: 14px;
+.course-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-top: 20px;
+}
+.down-button {
+  background-color: transparent;
+  color: green;
+  font-size: 16px;
+  width: 100%;
   font-weight: 600;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
+  padding: 8px;
+  /* border: none; */
+  border: green 1px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  i {
+    color: green;
+    margin-right: 10px;
+  }
+}
+.down-button:hover {
+  /* background-color: #1d4ed8; */
+  background-color: green;
+  color: white;
+  i {
+    color: white;
+  }
+}
+.enroll-button {
+  /* background-color: #2563eb; */
+  /* color: #ffffff; */
+  background-color: transparent;
+  border: #2563eb 1px solid;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px;
+  /* border: none; */
+  color: #2563eb;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .enroll-button:hover {
-  background-color: #1d4ed8;
+  /* background-color: #1d4ed8; */
+  background-color: #2563eb;
+  color: #ffffff;
 }
 
 /* section-3 */
@@ -465,15 +503,12 @@
   }
 }
 
-
 /* media quieries  */
 @media screen and (max-width: 1024px) {
   .courses-grid {
     padding: 20px 10px;
   }
-  .course-card {
-    width: 100%;
-  }
+
   .course-title {
     font-size: 1.5em;
   }
@@ -493,8 +528,10 @@
     font-size: 1em;
   }
   .title-fee {
+    width: 100%;
+    margin-bottom: 0;
     h1 {
-      font-size: 1em;
+      font-size: 2em;
     }
     p {
       font-size: 1em;
@@ -554,5 +591,11 @@
   }
   .btn {
     font-size: 1em;
+  }
+  .course-title {
+    height: fit-content;
+  }
+  .datax {
+    height: fit-content;
   }
 }

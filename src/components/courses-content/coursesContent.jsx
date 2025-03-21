@@ -45,7 +45,10 @@ const CoursesContent = () => {
               <p>✔️ Course Discussions</p>
               <p>✔️ Exercise Files</p>
                 </div>
+              <div className="course-actions">
               <button className="enroll-button">Enroll Now</button>
+              <button className="down-button"><a href="#"><i class="fa-solid fa-download"></i></a>Course Plan</button>
+              </div>
             </div>
           </div>
                   ))}

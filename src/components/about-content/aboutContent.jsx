@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import './aboutContent.css';
 import video from '../../img/vid1.mp4';
+import vid2 from '../../img/about.mp4';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faLinkedin, faInstagram, faFacebook, } from '@fortawesome/free-brands-svg-icons';
 import front from '../../img/front.png';
@@ -49,7 +51,7 @@ const AboutContent = () => {
       {/* ---------------------------------------------- */}
         <section className="vision-section">
         <div className="vidmega">
-      <video autoPlay loop muted src={video} type="video/mp4"/>
+      <video autoPlay loop muted src={vid2} type="video/mp4"/>
       </div>
         </section>
 
@@ -182,9 +184,10 @@ With deep market knowledge, he helps students understand sector fundamentals and
         <div className="profile3" ref={exe3Ref}>
         <div className="exe3">
           <div className="content">
-            <h2>John Doe</h2>
-            <h3>CEO</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nulla itaque voluptas unde cupiditate laboriosam illo natus excepturi veniam dolorum, omnis ullam doloribus vero quis esse aspernatur porro, aliquam consequatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nulla itaque voluptas unde cupiditate laboriosam illo natus excepturi veniam dolorum, omnis ullam doloribus vero quis esse aspernatur porro, aliquam consequatur</p>
+            <h2>Vidhita Panwar</h2>
+            <h3>Business<span></span>Manager</h3><p>
+Vidhita Panwar plays an important role at MHV Education as our Business Manager, supervising business operations, Business analyst, and arranging student interaction sessions. With a sharp eye for growth and a passion for delivering value, she ensures smooth coordination across departments and helps drive the institute’s vision forward.
+</p>
             <div className="social">  
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebook} />

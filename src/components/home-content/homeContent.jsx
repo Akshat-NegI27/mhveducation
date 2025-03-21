@@ -5,6 +5,7 @@ import { useState } from 'react';
 import "../button/button.scss"; 
 import { Link } from 'react-router-dom';
 import './homeContentmedia.css';
+import main from '../../img/Detail.mp4';
 
 
 
@@ -84,8 +85,9 @@ const HomeContent = () => {
         </div>
         </div>
         <div className="s2img">
-          <img src="https://hipfonts.com/wp-content/uploads/2023/01/milad-fakurian-E8Ufcyxz514-unsplash.jpg" alt=""/>
-        </div>
+      <div className="imgs">
+      <video autoPlay loop muted src={main} type="video/mp4"/>
+      </div>        </div>
     </div>
 
 
