@@ -64,10 +64,10 @@ const ContactContent = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_d7t8lio',
-      'template_ywgdkou',
+      'service_4e0t51b',
+      'template_sw7ekp1',
       formRef.current,
-      'P5br5HxzGm9mQPi8t'
+      '3_E0aNQ_UWSq5Eip_'
     )
     .then(() => {
       setFeedback('✅ Form successfully submitted. We will contact you shortly!');
