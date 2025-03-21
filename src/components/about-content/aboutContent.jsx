@@ -54,7 +54,7 @@ const AboutContent = () => {
     <div className="about-container">
       <div className="heading-content">
       <div className="title-box">
-      <h1>About MHV Education - Best Stock Market Training in Dehradun</h1>
+      <h1>About Us</h1>
       <p>MHV Educations, a leading institute dedicated to providing high-quality stock market education and professional trading mentorship. Founded by Prakhar Rawat, a stock market trader with 12+ years  experience, our mission is to train the  individuals with the knowledge and skills needed to trade and invest in the financial markets with confidence.
       </p>
       </div>
