@@ -54,7 +54,7 @@ const AboutContent = () => {
     <div className="about-container">
       <div className="heading-content">
       <div className="title-box">
-      <h1>About Us</h1>
+      <h1>About MHV Education - Best Stock Market Training in Dehradun</h1>
       <p>MHV Educations, a leading institute dedicated to providing high-quality stock market education and professional trading mentorship. Founded by Prakhar Rawat, a stock market trader with 12+ years  experience, our mission is to train the  individuals with the knowledge and skills needed to trade and invest in the financial markets with confidence.
       </p>
       </div>
@@ -96,8 +96,8 @@ const AboutContent = () => {
       </p>
       </div>
       <div className="values-content">
-      <h2>Our Core Values</h2>
-        <ul className="values-list">
+      <h2>Our Core Values in Stock Market Education</h2>
+      <ul className="values-list">
           <li className="value-item">Integrity and Transparency</li>
           <li className="value-item">Excellence in Education</li>
           <li className="value-item">Student Success</li>
@@ -244,8 +244,8 @@ With deep market knowledge, he helps students understand sector fundamentals and
         </div>
       </div>
       <div className="section-contact">
-          <h1>Get in Touch with Us</h1>
-          </div>
+      <h1>Contact MHV Education - The Best Stock Market Institute in Dehradun</h1>
+      </div>
       </div>
 
 
