@@ -546,8 +546,8 @@
 
 /* WhatsApp Icon */
 .whatsapp-icon {
-  width: 55px;
-  height: 55px;
+  width: 35px;
+  height: 35px;
   transition: transform 0.3s ease;
 }
 
@@ -584,4 +584,10 @@
     width: 45px;
     height: 45px;
   }
+}
+.whatsapp-float.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
 }
