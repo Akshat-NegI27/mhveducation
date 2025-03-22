@@ -129,7 +129,7 @@ const courses = [
     rate: '₹ 20,000',
     students: '12,543',
     rating: 4.8,
-    image: '/public/assets/img/1.avif',
+    image: 'https://raw.githubusercontent.com/Akshat-NegI27/mhveducation/refs/heads/main/public/assets/img/1.avif',
   },
   {
     level: 'Intermediate',
@@ -138,7 +138,7 @@ const courses = [
     rate: '₹ 25,000',
     students: '8,721',
     rating: 4.7,
-    image: '/public/assets/img/2.jpg',
+    image: 'https://raw.githubusercontent.com/Akshat-NegI27/mhveducation/refs/heads/main/public/assets/img/2.jpg',
   },
   {
     level: 'Advanced',
