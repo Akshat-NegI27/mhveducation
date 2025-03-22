@@ -2,11 +2,15 @@ import React, { useRef } from 'react';
 import './aboutContent.css';
 import video from '../../img/vid1.mp4';
 import vid2 from '../../img/about.mp4';
+import mainhead from '../../img/aboutvid.mp4';
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faLinkedin, faInstagram, faFacebook, } from '@fortawesome/free-brands-svg-icons';
 import front from '../../img/front.png';
 import front2 from '../../img/front2.png';
+import front3 from '../../img/front3.png';
+
 import { Helmet } from "react-helmet-async"; 
 import './aboutContentmedia.css';
 
@@ -62,7 +66,7 @@ const AboutContent = () => {
       </p>
       </div>
       <div className="vid-box">
-      <video autoPlay loop muted src={video} type="video/mp4"/>
+      <video autoPlay loop muted src={mainhead} type="video/mp4"/>
       </div>
       </div>
       
@@ -120,7 +124,7 @@ const AboutContent = () => {
         <div className="team-member" onClick={() => scrollToProfile(exe1Ref)}>
         <img src={front} alt="Team Member 1" className="team-photo" />
           <h3>Prakhar Rawat</h3>
-          <p>The Founder</p>
+          <p>Founder</p>
         </div>
         <div className="team-member" onClick={() => scrollToProfile(exe2Ref)}>
         <img src={front2} alt="Team Member 2" className="team-photo" />
@@ -128,9 +132,9 @@ const AboutContent = () => {
           <p>Manager</p>
         </div>
         <div className="team-member" onClick={() => scrollToProfile(exe3Ref)}>
-        <img src="https://media.istockphoto.com/id/1185414460/photo/young-woman.jpg?s=612x612&w=0&k=20&c=KukKq-I_BJU0I1W4itV-IBuUZk3NubmGP2cgFEuaF0o=" alt="Team Member 2" className="team-photo" />
-          <h3>Jane Smith</h3>
-          <p>UI/UX Designer</p>
+        <img src={front3} alt="Team Member 2" className="team-photo" />
+          <h3>Vidhita Panwar</h3>
+          <p>Business Manager</p>
         </div>
 
         </div>
@@ -144,7 +148,7 @@ const AboutContent = () => {
             
         <div className="title-3">
           <h1>Meet Our Executives</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui recusandae voluptates aliquam libero suscipit autem maiores totam itaque modi, praesentium quam corporis, architecto, reiciendis ab id deserunt soluta nesciunt dolor.</p>
+        <p>At MHV Education, our leadership is rooted in experience, passion, and a deep commitment to empowering individuals through stock market education. <br /> Get to know the minds driving our mission forward.</p>
         </div>
 <div className="profile1" ref={exe1Ref}>
         <div className="exe1" >
@@ -242,7 +246,7 @@ Vidhita Panwar plays an important role at MHV Education as our Business Manager,
 
           </div>
           <div className="photo">
-          <img src="https://media.istockphoto.com/id/1185414460/photo/young-woman.jpg?s=612x612&w=0&k=20&c=KukKq-I_BJU0I1W4itV-IBuUZk3NubmGP2cgFEuaF0o=" alt="Team Member 2" className="team-photo" />
+          <img src={front3} alt="Team Member 2" className="team-photo" />
           </div>
           
         </div>
