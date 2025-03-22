@@ -15,57 +15,65 @@ const faqs = [
   { id: 6, question: 'Is there a trial class or demo session available?', answer: 'Yes, all the trading courses at MHV Education include a 1 hour-free demo session for students.' },
   { id: 7, question: 'How is MHV Education Institute different from other stock market training institutes?', answer: 'At MHV Education we offer personalized mentorship through both Offline and Online modes. The courses are designed to equip you for long-term success in both trading and investing in stock market.' },
 ];
-
 const reviews = [
   {
     id: 1,
     name: 'Raj',
     place: 'Dehradun',
-    feedback: 'Excellent institute with knowledgeable instructors...',
+    feedback:
+      'Excellent institute with knowledgeable instructors. They break down complex trading concepts into simple, easy to understand modules. A highly recommended Stock Market Institute, if you are looking for live share market trading executions.',
   },
   {
     id: 2,
     name: 'Shakshi',
     place: 'Dehradun',
-    feedback: 'I enrolled in the Integrated technical analysis course...',
+    feedback:
+      'I enrolled in the Integrated technical analysis course, I would say this is the best Stock Market Institute in Dehradun. With classes during the market hours I actually learned how to implement and execute the strategies.',
   },
   {
     id: 3,
     name: 'Shivham',
     place: 'Dehradun',
-    feedback: 'As a beginner, I was trading very aggressively...',
+    feedback:
+      'As a beginner, I was trading very aggressively in the options market but after joining the beginner technical analysis course I have gained control over my emotions and learned the discipline needed in trading the Stock Market. Thank you MHV Education and the team.',
   },
   {
     id: 4,
     name: 'Pyush',
     place: 'Roorkee',
-    feedback: 'MHV Education is the best Stock Market Institute...',
+    feedback:
+      'MHV Education is the best Stock Market Institute in Dehradun. The special attention by the mentors have really helped me get control over my trading concepts. Highly recommended.',
   },
   {
     id: 5,
     name: 'Vaishali Sharma',
     place: 'Dehradun',
-    feedback: 'I have done my online Stock Market courses earlier...',
+    feedback:
+      'I have done my online Stock Market courses earlier from another institutes, I would say joining the online intraday strategy course with MHV Education was the best till now. Best mentors.',
   },
   {
     id: 6,
     name: 'Mayank Patel',
     place: 'Dehradun',
-    feedback: 'I had my online demo session with Mr. Prakhar...',
+    feedback:
+      'I had my online demo session with Mr. Prakhar, after that I knew exactly which share market course would be best suited for me. Let me tell you, this is the Best Stock market Institute in Dehradun, I am still learning and executing the strategies as guided. Thanks to MHV Education.',
   },
   {
     id: 7,
     name: 'Kanupriya Kothari',
     place: 'Dehradun',
-    feedback: 'Share market trading has been so much easier...',
+    feedback:
+      'Share market trading has been so much easier since I have joined this institute. Practical implementation of strategies is the best part of the course designed by this institute.',
   },
   {
     id: 8,
     name: 'Garima Rawat',
     place: 'Dehradun',
-    feedback: 'I joined the Elliott wave program...',
+    feedback:
+      'I joined the Elliott wave program, and it has provided me with one more trading and investment strategy in Share market. A must do course here.',
   },
 ];
+
 
 const HomeContent = () => {
   const [activeFaq, setActiveFaq] = useState(null);
