@@ -8,13 +8,27 @@ import { motion } from 'framer-motion';
 
 // Styled components
 const Wrapper = styled.section`
-  padding: 120px 120px;
+  padding: 20px 60px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   min-height: 80vh;
+   @media (max-width: 1024px) {
+    padding: 80px 60px; /* Reduce padding on tablets */
+  }
+
+  @media (max-width: 768px) {
+    padding: 60px 30px; /* Further reduce padding on mobile */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    padding: 40px 20px; /* Minimal padding for small phones */
+  }
 `;
 
 const Heading = styled.h2`
@@ -23,6 +37,14 @@ const Heading = styled.h2`
   align-items: center;
   text-align: center;
   padding: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const GridContainer = styled.div`
@@ -31,6 +53,17 @@ const GridContainer = styled.div`
   width: 100%;
   gap: 50px;
   justify-content: space-between;
+
+  
+  @media (max-width: 1024px) {
+    gap: 30px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Stack elements in column layout */
+    align-items: center;
+    gap: 20px;
+  }
 `;
 
 const MapContainer = styled.div`
@@ -39,7 +72,15 @@ const MapContainer = styled.div`
   font-family: 'Poppins';
   width: 100%;
   overflow: hidden;
+    @media (max-width: 768px) {
+    height: 300px; /* Adjust height on mobile */
+  }
+
+  @media (max-width: 480px) {
+    height: 250px;
+  }
 `;
+
 
 const ContactContent = () => {
   const [formData, setFormData] = useState({
