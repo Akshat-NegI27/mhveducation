@@ -1,10 +1,10 @@
-import React, { useState, useRef, useCallback } from 'react';
-import emailjs from '@emailjs/browser';
-import styled from 'styled-components';
-import { scroller } from 'react-scroll';
-import './ContactContent.css';
-import vido from '../../img/vid1.mp4';
-import { motion } from 'framer-motion';
+import React, { useState, useRef, useCallback } from "react";
+import emailjs from "@emailjs/browser";
+import styled from "styled-components";
+import { scroller } from "react-scroll";
+import "./ContactContent.css";
+import vido from "../../img/vid1.mp4";
+import { motion } from "framer-motion";
 
 // Styled components
 const Wrapper = styled.section`
@@ -15,7 +15,7 @@ const Wrapper = styled.section`
   align-items: center;
   color: #fff;
   min-height: 80vh;
-   @media (max-width: 1024px) {
+  @media (max-width: 1024px) {
     padding: 80px 60px; /* Reduce padding on tablets */
   }
 
@@ -54,7 +54,6 @@ const GridContainer = styled.div`
   gap: 50px;
   justify-content: space-between;
 
-  
   @media (max-width: 1024px) {
     gap: 30px;
   }
@@ -69,10 +68,10 @@ const GridContainer = styled.div`
 const MapContainer = styled.div`
   border-radius: 0px;
   height: 100%;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   width: 100%;
   overflow: hidden;
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     height: 300px; /* Adjust height on mobile */
   }
 
@@ -81,16 +80,15 @@ const MapContainer = styled.div`
   }
 `;
 
-
 const ContactContent = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    topic: '',
-    message: ''
+    firstName: "",
+    lastName: "",
+    email: "",
+    topic: "",
+    message: "",
   });
-  const [feedback, setFeedback] = useState('');
+  const [feedback, setFeedback] = useState("");
   const formRef = useRef(null);
 
   const handleChange = (e) => {
@@ -104,17 +102,26 @@ const ContactContent = () => {
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      'service_4e0t51b',
-      'template_sw7ekp1',
-      formRef.current,
-      '3_E0aNQ_UWSq5Eip_'
-    )
+    emailjs
+      .sendForm(
+        "service_4e0t51b",
+        "template_sw7ekp1",
+        formRef.current,
+        "3_E0aNQ_UWSq5Eip_"
+      )
       .then(() => {
-        setFeedback('✅ Form successfully submitted. We will contact you shortly!');
-        setFormData({ firstName: '', lastName: '', email: '', topic: '', message: '' });
+        setFeedback(
+          "✅ Form successfully submitted. We will contact you shortly!"
+        );
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          topic: "",
+          message: "",
+        });
 
-        scroller.scrollTo('form-top', { duration: 500, smooth: true });
+        scroller.scrollTo("form-top", { duration: 500, smooth: true });
 
         setTimeout(() => {
           window.location.reload();
@@ -130,7 +137,9 @@ const ContactContent = () => {
       <div className="contact-container">
         <div className="contact-header">
           <h1>Contact Us</h1>
-          <p>We’d love to hear from you. Fill out the form below to get in touch!</p>
+          <p>
+            We’d love to hear from you. Fill out the form below to get in touch!
+          </p>
         </div>
         <div className="bgvid">
           <video autoPlay loop muted className="video">
@@ -216,7 +225,7 @@ const ContactContent = () => {
                   fontSize: "16px",
                   fontWeight: "500",
                   textAlign: "center",
-                  boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
                 }}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -232,34 +241,78 @@ const ContactContent = () => {
       {/* SOCIAL MEDIA */}
       <div className="social-media-container">
         <p className="title">Follow Us</p>
-          <ul className="social-media-list">
-            <li>
-              <a href="https://www.instagram.com/mhveducation/" target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-instagram"></i><span>Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@MHVeducation" target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-youtube"></i><span>YouTube</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://medium.com/@mhveducation" target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-medium"></i><span>Medium</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/mhveducation/" target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-facebook"></i><span>Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/mhv-education/" target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-linkedin"></i><span>LinkedIn</span>
-              </a>
-            </li>
-          </ul>
-
+        <ul className="social-media-list">
+          <li>
+            <a
+              href="https://www.facebook.com/mhveducation/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-facebook"></i>
+              <span>Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/mhveducation/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/mhv-education/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@MHVeducation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-youtube"></i>
+              <span>YouTube</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://medium.com/@mhveducation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-medium"></i>
+              <span>Medium</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@MHVeducation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-solid fa-brands fa-envelope"></i>
+              <span>Mail</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@MHVeducation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-whatsapp"></i>
+              <span>Whatsapp</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );
