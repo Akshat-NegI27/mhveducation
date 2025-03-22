@@ -2,7 +2,7 @@ import React from 'react';
 import './homeContent.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
-import "../button/button.scss"; 
+import "../button/button.scss";
 import { Link } from 'react-router-dom';
 import './homeContentmedia.css';
 import main from '../../img/Detail.mp4';
@@ -29,97 +29,97 @@ const HomeContent = () => {
   };
   return (
     <div className="homepg">
-    <div className="pg1section1">
-      <div className="content">
-        <span className="tag">📈 Master The Markets</span>
-        <h1>
-          Learn to <span className="highlight">invest</span> with confidence
-        </h1>
-        <p>
-          Comprehensive, expert-led stock market courses designed to transform
-          beginners into confident traders and help experienced investors refine
-          their strategy.
-        </p>
-        <div className="buttons">
-        <Link to="/courses">
+      <div className="pg1section1">
+        <div className="content">
+          <span className="tag">📈 Master The Markets</span>
+          <h1>
+            Learn to <span className="highlight">invest</span> with confidence
+          </h1>
+          <p>
+            Comprehensive, expert-led stock market courses designed to transform
+            beginners into confident traders and help experienced investors refine
+            their strategy.
+          </p>
+          <div className="buttons">
+            <Link to="/courses">
 
-          <button className="button-underline">View All Courses</button>
-          </Link>
-          <Link to="/contact">
+              <button className="button-underline">View All Courses</button>
+            </Link>
+            <Link to="/contact">
 
-        <button className="learn-more">
-        <span className="circle">
-        <span className="icon arrow"></span>
-      </span>
-      <span className="button-text">Enroll Now</span>
-    </button>     
-    </Link>
-     
+              <button className="learn-more">
+                <span className="circle">
+                  <span className="icon arrow"></span>
+                </span>
+                <span className="button-text">Enroll Now</span>
+              </button>
+            </Link>
+
+          </div>
+          <div className="students">👥 Join 12,000+ Students
+          </div>
         </div>
-        <div className="students">👥 Join 12,000+ Students
+        <div className="image-container">
+          <div className="image-overlay">
+            <span className="badge">📈 Stock Market Fundamentals</span>
+            <p>Learn the essentials in our most popular course</p>
+          </div>
         </div>
       </div>
-      <div className="image-container">
-        <div className="image-overlay">
-          <span className="badge">📈 Stock Market Fundamentals</span>
-          <p>Learn the essentials in our most popular course</p>
-        </div>
-      </div>
-    </div>
 
 
-    <div className="pg1section2">
+      <div className="pg1section2">
         <div className="s2content">
-        <h1>CHOOSE BEST STOCK MARKET INSTITUTE</h1>
-        <p>MHV Education is more than a Stock Market Institution. We offer extensive courses to learn about share market trading, including the live execution of the strategies learned throughout the program. Whether you are a beginner or an advanced level trader, we help you build live trading confidence, retailer psychology, cultivate the discipline needed to take control of your trading and investment future.</p>
-        <div className="buttons">
-        <Link to="/courses">
-        <button className="button-underline">View All Courses</button>
-        </Link>
-        <Link to ="/contact">
+          <h1>CHOOSE BEST STOCK MARKET INSTITUTE</h1>
+          <p>MHV Education is more than a Stock Market Institution. We offer extensive courses to learn about share market trading, including the live execution of the strategies learned throughout the program. Whether you are a beginner or an advanced level trader, we help you build live trading confidence, retailer psychology, cultivate the discipline needed to take control of your trading and investment future.</p>
+          <div className="buttons">
+            <Link to="/courses">
+              <button className="button-underline">View All Courses</button>
+            </Link>
+            <Link to="/contact">
 
-        <button className="button-underline">Enroll Now →</button>
-        </Link>
+              <button className="button-underline">Enroll Now →</button>
+            </Link>
 
-        </div>
+          </div>
         </div>
         <div className="s2img">
-      <div className="imgs">
-      <video autoPlay loop muted src={main} type="video/mp4"/>
-      </div>        </div>
-    </div>
-
-
-
-<div className="pg1section4">
-<section className="student-reviews-section">
-      <div className="container">
-        <h2 className="section-title">What Our Students Have to Say...</h2>
-        <div className="reviews-grid">
-          {reviews.map((review, index) => (
-            <motion.div
-              key={review.id}
-              className="review-card"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-            >
-
-              <div className="review-rating">⭐️⭐️⭐️⭐️⭐️</div>
-            <div className="quotes-icon"> </div>
-              <p className="review-feedback">"{review.feedback}"</p>
-              <h3 className="reviewer-name">{review.name}</h3>
-              <h3 className="reviewer-place">{review.place} </h3>
-              
-            </motion.div>
-          ))}
-        </div>
+          <div className="imgs">
+            <video autoPlay loop muted src={main} type="video/mp4" />
+          </div>        </div>
       </div>
-    </section>
 
-</div>
-{/* <div className="pg1section3">
+
+
+      <div className="pg1section4">
+        <section className="student-reviews-section">
+          <div className="container">
+            <h2 className="section-title">What Our Students Have to Say...</h2>
+            <div className="reviews-grid">
+              {reviews.map((review, index) => (
+                <motion.div
+                  key={review.id}
+                  className="review-card"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                >
+
+                  <div className="review-rating">⭐️⭐️⭐️⭐️⭐️</div>
+                  <div className="quotes-icon"> </div>
+                  <p className="review-feedback">"{review.feedback}"</p>
+                  <h3 className="reviewer-name">{review.name}</h3>
+                  <h3 className="reviewer-place">{review.place} </h3>
+
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+      </div>
+      {/* <div className="pg1section3">
   <section className="faq-container">
     <h2 className="faq-title">Frequently Asked Questions</h2>
     <div className="faq-grid">
@@ -140,39 +140,80 @@ const HomeContent = () => {
   </section>
 </div> */}
 
-<div className="pg1section3">
-<section className="faq-section">
-      <div className="container">
-        <h2 className="section-title">Frequently Asked Questions</h2>
-        <div className="faq-list">
-          {faqs.map((faq) => (
-            <div key={faq.id} className="faq-item">
-              <button
-                className={`faq-question ${activeFaq === faq.id ? 'active' : ''}`}
-                onClick={() => toggleFaq(faq.id)}
-              >
-                {faq.question}
-              </button>
-              <AnimatePresence initial={false}>
-  {activeFaq === faq.id && (
-    <motion.div
-      key="content"
-      initial={{ opacity: 0, maxHeight: 0 }}
-      animate={{ opacity: 1, maxHeight: 500 }}
-      exit={{ opacity: 0, maxHeight: 0 }}
-      transition={{ duration: 0.4, ease: [0.25, 0.8, 0.25, 1] }}
-      className="faq-answer"
-    >
-      <p>{faq.answer}</p>
-    </motion.div>
-  )}
-</AnimatePresence>
+      <div className="pg1section3">
+        <section className="faq-section">
+          <div className="container">
+            <h2 className="section-title">Frequently Asked Questions</h2>
+            <div className="faq-list">
+              {faqs.map((faq) => (
+                <div key={faq.id} className="faq-item">
+                  <button
+                    className={`faq-question ${activeFaq === faq.id ? 'active' : ''}`}
+                    onClick={() => toggleFaq(faq.id)}
+                  >
+                    {faq.question}
+                  </button>
+                  <AnimatePresence initial={false}>
+                    {activeFaq === faq.id && (
+                      <motion.div
+                        key="content"
+                        initial={{ opacity: 0, maxHeight: 0 }}
+                        animate={{ opacity: 1, maxHeight: 500 }}
+                        exit={{ opacity: 0, maxHeight: 0 }}
+                        transition={{ duration: 0.4, ease: [0.25, 0.8, 0.25, 1] }}
+                        className="faq-answer"
+                      >
+                        <p>{faq.answer}</p>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        </section>
       </div>
-    </section>
-</div>
+      <div className="whatsapp-float">
+        {/* Show menu only on desktop */}
+        <div className="whatsapp-menu desktop-only">
+          <a
+            href="https://wa.me/919634104622?text=Hi%20MHV%20Education%2C%20I%20am%20interested%20in%20your%20Stock%20Market%20Course."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-btn"
+          >
+            📚 Tell me more about your courses
+          </a>
+          <a
+            href="https://wa.me/919634104622?text=Hey%2C%20I%20would%20like%20to%20know%20about%20the%20fees%20and%20discounts."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-btn"
+          >
+            💰 What are the course fees?
+          </a>
+          <a
+            href="https://wa.me/919634104622?text=Hey%20there%2C%20do%20you%20offer%20a%20trial%20or%20demo%20session%3F"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-btn"
+          >
+            🎓 Do you offer a trial/demo session?
+          </a>
+        </div>
+        {/* WhatsApp Icon - Always Visible */}
+        <a
+          href="https://wa.me/919634104622?text=Hey%2C%20I%20have%20a%20few%20questions%20about%20the%20stock%20market%20course."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+            alt="WhatsApp Chat"
+            className="whatsapp-icon"
+          />
+        </a>
+      </div>
 
 
     </div>

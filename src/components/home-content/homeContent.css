@@ -8,11 +8,13 @@
   /* padding-top: 130px !important; */
   background: #ffffff;
   height: 100vh;
-  justify-content: space-around; /* margin-top: 90px; */
+  justify-content: space-around;
+  /* margin-top: 90px; */
 }
 
 .content {
   max-width: 50%;
+
   h1 {
     font-family: "Sofia Pro Bold";
     font-size: 5rem;
@@ -21,6 +23,7 @@
     color: #111;
     text-transform: uppercase;
   }
+
   p {
     font-size: 1.2rem;
     color: #6b7280;
@@ -41,6 +44,7 @@
 .highlight {
   color: #2563eb;
 }
+
 .buttons {
   margin: 30px 0;
   display: flex;
@@ -68,6 +72,7 @@
   transition: all 0.5s ease;
   z-index: 4;
 }
+
 .button-underline:after {
   content: " ";
   position: absolute;
@@ -87,6 +92,7 @@
   right: unset;
   left: 0;
 }
+
 .button-underline:hover {
   color: #ffffff;
 }
@@ -114,10 +120,12 @@
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
@@ -190,11 +198,13 @@
   padding: 50px 50px;
   background: #ffffff;
   height: auto;
+
   .s2content {
     display: flex;
     flex-direction: column;
     max-width: 60%;
     align-items: center;
+
     /* background-color: red; */
     h1 {
       font-family: "Sofia Pro Bold";
@@ -206,6 +216,7 @@
       text-transform: uppercase;
       /* background-color: pink; */
     }
+
     p {
       /* background-color: yellow; */
       font-size: 1rem;
@@ -215,6 +226,7 @@
       font-weight: 100;
       font-family: worksans-n5;
     }
+
     .buttons {
       margin: 30px 0;
     }
@@ -235,7 +247,8 @@
 
     .buttons .primary-btn:hover {
       color: #2563eb;
-      z-index: 1; /* Ensure text is above the background */
+      z-index: 1;
+      /* Ensure text is above the background */
     }
 
     .buttons .primary-btn::before {
@@ -270,7 +283,8 @@
 
     .buttons .secondary-btn:hover {
       color: white;
-      z-index: 1; /* Ensure text is above the background */
+      z-index: 1;
+      /* Ensure text is above the background */
     }
 
     .buttons .secondary-btn::before {
@@ -291,6 +305,7 @@
     }
   }
 }
+
 .s2img {
   width: 75%;
   height: 100%;
@@ -299,6 +314,7 @@
   /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4); */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 20px;
+
   .imgs video {
     overflow: hidden;
     width: 100%;
@@ -307,62 +323,6 @@
     /* border-radius: 12px; */
   }
 }
-
-/* PG-1 Section-3 */
-/* .pg1section3 {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  padding: 50px 100px;
-  background: #ffffff;
-  height: 150vh;
-}
-.faq-container {
-  padding: 50px 20px;
-  background-color: #f5f9ff;
-  color: #333;
-  text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.faq-title {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  font-weight: 700;
-}
-
-.faq-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 25px;
-}
-
-.faq-card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-}
-
-.faq-card:hover {
-  transform: translateY(-10px) !important;
-  scale: 1.3;
-  transition: all 0.3s ease;
-}
-
-.faq-question {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #1e3c72;
-}
-
-.faq-answer {
-  font-size: 0.95rem;
-  line-height: 1.5;
-} */
 
 /* PG-1 Section-4 */
 .student-reviews-section {
@@ -423,6 +383,7 @@
   font-weight: 600;
   color: #2b6cb0;
 }
+
 .reviewer-place {
   font-weight: 600;
   color: #2b6cb0;
@@ -433,6 +394,7 @@
 .faq-section {
   padding: 4rem 1rem;
   background-color: #c6f8d5;
+
   /* min-height: 120vh; */
   .container {
     max-width: 900px;
@@ -505,9 +467,11 @@
     color: transparent;
     font-weight: 600;
   }
+
   .content h1 {
     margin-top: 5vh;
   }
+
   .students {
     /* text hidden */
     display: none;
@@ -520,7 +484,104 @@
     font-family: DM-Sans2;
     font-weight: 800;
   }
+
   .button-underline {
     display: none;
+  }
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  text-align: right;
+}
+
+/* Menu (Hidden by Default) */
+.whatsapp-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  background: transparent;
+  /* Black Background */
+  backdrop-filter: blur(10px);
+  /* Semi-Transparent Background */
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+  width: 250px;
+}
+
+/* Show Menu on Hover (Desktop Only) */
+.whatsapp-float:hover .whatsapp-menu {
+  display: flex;
+}
+
+/* WhatsApp Message Buttons */
+.whatsapp-btn {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  /* White Text */
+  background: #161616;
+  /* Dark Grey */
+  padding: 12px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  text-align: left;
+  font-weight: 500;
+}
+
+.whatsapp-btn:hover {
+  background: #333;
+  /* Slightly lighter grey on hover */
+  transform: translateX(5px);
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon {
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect on Icon */
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+
+/* ✅ Hide Menu on Mobile */
+@media (max-width: 768px) {
+  .whatsapp-menu {
+    display: none !important;
+    /* Force hide on mobile */
+  }
+
+  .whatsapp-float {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .whatsapp-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .whatsapp-icon {
+    width: 45px;
+    height: 45px;
   }
 }
