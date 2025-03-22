@@ -12,7 +12,7 @@
   font-family: Poppins;
   .contact-header {
     text-align: center;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     z-index: 5;
     h1 {
       font-size: 3rem;
@@ -24,7 +24,7 @@
     }
   }
   .bgvid {
-    padding: 65px 20px;
+    padding: 65px 50px;
     position: absolute;
     /* padding-top: 125px; */
     top: 0%;
@@ -280,11 +280,13 @@ button[type="submit"]:hover {
   color: #000;
 }
 
-.social-media-list li a i.fa-brands {
+.social-media-list li a i.fa-brands,
+i.fa-solid {
   color: #000000;
 }
 
-.social-media-list li:hover i.fa-brands {
+.social-media-list li:hover i.fa-brands,
+.social-media-list li:hover i.fa-solid {
   transform: translateY(-5px);
   transition: all 0.3s ease;
   color: #000;
@@ -387,5 +389,3 @@ button[type="submit"]:hover {
     grid-template-columns: 1fr;
   }
 }
-
-
