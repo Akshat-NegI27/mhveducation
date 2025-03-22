@@ -142,3 +142,15 @@
     }
   }
 }
+
+/* responsive css for mobile  */
+
+@media (max-width: 320px) {
+  .loader-container {
+    .loader-text,
+    .loader-quote {
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+  }
+}
