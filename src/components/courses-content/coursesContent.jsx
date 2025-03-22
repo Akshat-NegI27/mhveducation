@@ -7,9 +7,9 @@ const courseFiles = {
   "Beginner Technical Analysis Course": "/assets/courses/Technical_Analysis_Course_Syllabus.pdf",
   "Advanced Technical Analysis Course": "/assets/courses/Advanced_Technical_Analysis_Course_Syllabus.pdf",
   "Integrated Beginner and Technical Analysis Course": "/assets/courses/Integrated_Beginner_Technical_Analysis_Course_Syllabus.pdf",
-  "Intraday Strategy Course​": "/assets/courses/Intraday_Strategy_Course_Syllabus.pdf",
-  "Elliott Wave Program​": "/assets/courses/Elliott_Wave_Program_Syllabus.pdf",
-  "Chartered Market Technician(CMT)": "/assets/courses/CMT_Course_Syllabus.pdf"
+  "Intraday Strategy Course​": "/assets/courses/Intraday_Strategies_Program_Course_Syllabus.pdf",
+  "Elliott Wave Program​": "/assets/courses/Elliott_Wave_Theory_Course_Syllabus.pdf",
+  "Chartered Market Technician(CMT)": "/assets/courses/Chartered_Market_Technician_CMT_Course_Syllabus.pdf"
 };
 const openCoursePlan = (courseTitle) => {
   if (!courseFiles[courseTitle]) {
