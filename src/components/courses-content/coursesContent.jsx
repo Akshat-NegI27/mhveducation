@@ -1,6 +1,7 @@
 import React from 'react';
 import './coursesContent.css';
 import vid from '../../img/vid1.mp4';
+import { Navigate } from 'react-router-dom';
 
 const courseFiles = {
   "Beginner Technical Analysis Course": "/assets/courses/Technical_Analysis_Course_Syllabus.pdf",
@@ -39,11 +40,21 @@ const CoursesContent = () => {
           </video>
           <h1>Welcome to Our Courses</h1>
           <p>Explore a variety of courses to enhance your skills and knowledge.</p>
-          <button className="explore-button">Explore Courses</button>
+          <button
+            className="explore-button"
+            onClick={() => {
+              const section = document.getElementById("fee");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            Explore Courses
+          </button>
         </div>
       </div>
 
-      <div className="courses-grid">
+      <div className="courses-grid" id="fee">
         <div className="title-fee">
           <h1>Fee Structure</h1>
           <p>Our fee structure is designed to be flexible and affordable for all types of traders. Choose the plan that best suits your needs.</p>
@@ -71,7 +82,12 @@ const CoursesContent = () => {
                   <p>✔️ Exercise Files</p>
                 </div>
                 <div className="course-actions">
-                  <button className="enroll-button">Enroll Now</button>
+                  <button
+                    className="enroll-button"
+                    onClick={() => Navigate('/contact')}
+                  >
+                    Enroll Now
+                  </button>
                   <button className="down-button" onClick={() => openCoursePlan(course.title)}>
                     <i className="fa-solid fa-file"></i> View Course Plan
                   </button>
