@@ -110,19 +110,19 @@ const ContactContent = () => {
       formRef.current,
       '3_E0aNQ_UWSq5Eip_'
     )
-    .then(() => {
-      setFeedback('✅ Form successfully submitted. We will contact you shortly!');
-      setFormData({ firstName: '', lastName: '', email: '', topic: '', message: '' });
+      .then(() => {
+        setFeedback('✅ Form successfully submitted. We will contact you shortly!');
+        setFormData({ firstName: '', lastName: '', email: '', topic: '', message: '' });
 
-      scroller.scrollTo('form-top', { duration: 500, smooth: true });
+        scroller.scrollTo('form-top', { duration: 500, smooth: true });
 
-      setTimeout(() => {
-        window.location.reload();
-      }, 2500);
-    })
-    .catch((error) => {
-      setFeedback(`❌ Submission failed: ${error.text}`);
-    });
+        setTimeout(() => {
+          window.location.reload();
+        }, 2500);
+      })
+      .catch((error) => {
+        setFeedback(`❌ Submission failed: ${error.text}`);
+      });
   }, []);
 
   return (
@@ -232,16 +232,34 @@ const ContactContent = () => {
       {/* SOCIAL MEDIA */}
       <div className="social-media-container">
         <p className="title">Follow Us</p>
-        <ul className="social-media-list">
-          <li><a href="#"><i className="fa-brands fa-instagram"></i><span>Instagram</span></a></li>
-          <li><a href="#"><i className="fa-brands fa-youtube"></i><span>YouTube</span></a></li>
-          <li><a href="#"><i className="fa-brands fa-spotify"></i><span>Spotify</span></a></li>
-          <li><a href="#"><i className="fa-brands fa-facebook"></i><span>Facebook</span></a></li>
-          <li><a href="#"><i className="fa-brands fa-tiktok"></i><span>TikTok</span></a></li>
-          <li><a href="#"><i className="fa-brands fa-twitter"></i><span>Twitter</span></a></li>
-          <li><a href="#"><i className="fa-brands fa-snapchat"></i><span>Snapchat</span></a></li>
-          <li><a href="#"><i className="fa-brands fa-apple"></i><span>Apple</span></a></li>
-        </ul>
+          <ul className="social-media-list">
+            <li>
+              <a href="https://www.instagram.com/mhveducation/" target="_blank" rel="noopener noreferrer">
+                <i className="fa-brands fa-instagram"></i><span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@MHVeducation" target="_blank" rel="noopener noreferrer">
+                <i className="fa-brands fa-youtube"></i><span>YouTube</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@mhveducation" target="_blank" rel="noopener noreferrer">
+                <i className="fa-brands fa-medium"></i><span>Medium</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/mhveducation/" target="_blank" rel="noopener noreferrer">
+                <i className="fa-brands fa-facebook"></i><span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/mhv-education/" target="_blank" rel="noopener noreferrer">
+                <i className="fa-brands fa-linkedin"></i><span>LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+
       </div>
     </div>
   );
