@@ -76,6 +76,6 @@ To run this project locally:
 
 ```bash
 git clone https://github.com/yourusername/mhv-education.git
-cd mhv-education
+cd mhveducation
 npm install
 npm start
