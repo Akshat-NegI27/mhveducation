@@ -282,8 +282,6 @@ li.service_name {
     gap: 5px;
   }
 
-  .copy_right span {
-  }
   .copy_right {
     display: flex;
     flex-direction: row;

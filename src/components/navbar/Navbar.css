@@ -185,9 +185,6 @@
   padding-bottom: 10px;
 }
 
-.sidebar-logo {
-}
-
 .sidebar-close {
   background: none;
   border: none;
@@ -273,9 +270,6 @@
 
   .sidebar-logo {
     width: 100px;
-  }
-
-  .sidebar-links a {
   }
 
   .btn-enroll {
