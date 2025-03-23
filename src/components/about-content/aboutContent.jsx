@@ -29,7 +29,7 @@ import "./aboutContentmedia.css";
     content="Stock Market Education, Trading Institute Dehradun, MHV Education, Stock Market Training, Learn Stock Trading, Investment Courses"
   />
   <link rel="canonical" href="https://mhveducation.com/about" />
-  {/* ✅ Structured Data for SEO */}
+  {}
   <script type="application/ld+json">
     {`
     {
@@ -85,7 +85,7 @@ const AboutContent = () => {
         </div>
       </div>
 
-      {/* ---------------------------------------------- */}
+      {}
       <section className="mission-section">
         <div className="image-content">
           <img src="https://entail-assets.com/beprofit/Calculating%20profit%20margins-1633788391383.jpg" />
@@ -113,14 +113,14 @@ const AboutContent = () => {
         </div>
       </section>
 
-      {/* ---------------------------------------------- */}
+      {}
       <section className="vision-section">
         <div className="vidmega">
           <video autoPlay loop muted src={vid2} type="video/mp4" />
         </div>
       </section>
 
-      {/* ---------------------------------------------- */}
+      {}
       <section className="values-section">
         <div className="program-content">
           <h1>Programs & Courses</h1>
@@ -143,7 +143,7 @@ const AboutContent = () => {
         </div>
       </section>
 
-      {/* ---------------------------------------------- */}
+      {}
 
       <div className="about-team">
         <div className="team-content">
@@ -167,11 +167,9 @@ const AboutContent = () => {
           </div>
         </div>
       </div>
-      {/* ---------------------------------------------- */}
+      {}
       <div className="section-3">
-        {/* <div className="team-overlay">
-        <h1>TEAM Members</h1>
-        </div> */}
+        {}
 
         <div className="title-3">
           <h1>Meet Our Executives</h1>

@@ -2,7 +2,7 @@
 
 .navbar {
   position: fixed;
-  /* overflow: hidden; */
+
   top: 0;
   left: 0;
   right: 0;
@@ -11,28 +11,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: rgba(13, 18, 33, 0.2); */
+
   backdrop-filter: blur(10px);
 
-  /* border-radius: 0px 0px 50px 50px; */
-  /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); */
   transition: all 0.3s ease-in-out;
   z-index: 1000;
 }
 
 .navbar-scrolled {
-  /* height: 60px; */
   background-color: rgba(193, 193, 193, 0.55);
   backdrop-filter: saturate(180%) blur(20px);
-  /* background-color: rgba(13, 18, 33, 0.6); */
-  /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); */
-  transition: all 0.3s ease-in-out; /* Smooth transition */
+
+  transition: all 0.3s ease-in-out;
   .navbar-links {
-    /* font-size: 0.9rem; */
-    /* gap: 38px; */
-    transition: all 0.3s ease-in-out; /* Smooth transition */
+    transition: all 0.3s ease-in-out;
     a {
-      transition: color 0.3s ease-in-out; /* Smooth transition */
+      transition: color 0.3s ease-in-out;
       color: rgba(65, 65, 65, 0.733);
     }
   }
@@ -68,7 +62,6 @@
   }
   .logo {
     animation: all 0.3s ease-in-out;
-    /* filter: invert(0%); */
   }
 }
 
@@ -77,10 +70,6 @@
   align-items: center;
   height: 65px;
   margin-left: 40px;
-
-  /* animation: fadeIn 1s ease-in-out; */
-  /* filter: invert(100%); */
-  /* background-color: red; */
 }
 
 .logo img {
@@ -112,7 +101,6 @@
   text-decoration: none;
   position: relative;
   transition: color 0.2s;
-  /* text-transform: uppercase; */
 }
 
 .navbar-links a::after {
@@ -167,41 +155,37 @@
 .btn-download:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
-/* SIDEBAR BASE STYLES */
+
 .sidebar {
   overflow: hidden;
   position: fixed;
   top: 0;
-  left: -260px; /* Hidden by default */
+  left: -260px;
   width: 260px;
   height: 100vh;
-  background: rgba(76, 76, 76, 0.25); /* Translucent effect */
+  background: rgba(76, 76, 76, 0.25);
   backdrop-filter: saturate(120%) blur(20px);
-  /* box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1); */
+
   transition: left 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 10px 20px 30px 20px;
-  z-index: 1100; /* Ensure it appears above everything */
+  z-index: 1100;
 }
 
-/* Show Sidebar when open */
 .sidebar.open {
   left: 0;
 }
 
-/* Sidebar Header */
 .sidebar-header {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+
   padding-bottom: 10px;
 }
 
 .sidebar-logo {
-  /* width: 40px; */
-  /* height: 40px; */
 }
 
 .sidebar-close {
@@ -214,7 +198,6 @@
   height: fit-content;
 }
 
-/* Sidebar Navigation Links */
 .sidebar-links {
   margin-top: 30px;
   display: flex;
@@ -231,9 +214,9 @@
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
-  /* background-color: rgba(128, 128, 128, 0.566); */
+
   border-bottom: 1px solid #ffffff;
-  /* border-radius: 5px; */
+
   margin-top: 10px;
   padding: 10px 0;
   text-transform: uppercase;
@@ -243,7 +226,6 @@
   color: #007bff;
 }
 
-/* Sidebar Footer - Enroll Button */
 .sidebar-footer {
   margin-top: auto;
   text-align: center;
@@ -264,7 +246,6 @@
   background-color: #007bff;
 }
 
-/* Sidebar Overlay (closes sidebar when clicked outside) */
 .sidebar-overlay {
   position: fixed;
   top: 0;
@@ -280,13 +261,10 @@
   display: block;
 }
 
-/* 🌟 MEDIA QUERIES - Adjust Sidebar for Different Devices */
-
-/* ✅ Tablet & Medium-Sized Screens */
 @media (max-width: 1024px) {
   .sidebar {
     width: 100%;
-    left: -100%; /* Ensures it's hidden by default */
+    left: -100%;
   }
 
   .sidebar.open {
@@ -298,7 +276,6 @@
   }
 
   .sidebar-links a {
-    /* font-size: 15px; */
   }
 
   .btn-enroll {
@@ -307,18 +284,16 @@
   }
 }
 
-/* ✅ Mobile Screens */
 @media (max-width: 768px) {
   .sidebar {
     width: 100%;
-    left: -100%; /* Ensures it stays hidden when closed */
+    left: -100%;
   }
 
   .btn-download {
     display: none;
   }
   .logo img {
-    /* margin-left: 20px; */
     height: 60px;
     width: 100%;
   }
@@ -339,13 +314,12 @@
     padding: 8px 18px;
   }
 
-  /* Hide the default navbar links (only sidebar is shown) */
   .navbar-links {
     display: none;
   }
 
   .menu-icon {
-    display: block; /* Ensure menu icon is visible */
+    display: block;
     font-size: 1.8rem;
     cursor: pointer;
     color: #000;
@@ -369,7 +343,6 @@
   }
 }
 
-/* ✅ Small Mobile Devices */
 @media (max-width: 480px) {
   .sidebar {
     width: 100%;
@@ -391,7 +364,6 @@
     padding: 9px 24px;
   }
 
-  /* Adjust Navbar for small screens */
   .navbar {
     padding: 0 15px;
     height: 45px;
@@ -402,6 +374,5 @@
   }
 }
 
-/* media queires of mobile width  */
 @media (max-width: 768px) {
 }

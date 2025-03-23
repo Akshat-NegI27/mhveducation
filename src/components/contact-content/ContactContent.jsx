@@ -6,7 +6,6 @@ import "./ContactContent.css";
 import vido from "../../img/vid1.mp4";
 import { motion } from "framer-motion";
 
-// Styled components
 const Wrapper = styled.section`
   padding: 20px 60px;
   width: 100%;
@@ -16,18 +15,18 @@ const Wrapper = styled.section`
   color: #fff;
   min-height: 80vh;
   @media (max-width: 1024px) {
-    padding: 80px 60px; /* Reduce padding on tablets */
+    padding: 80px 60px;
   }
 
   @media (max-width: 768px) {
-    padding: 60px 30px; /* Further reduce padding on mobile */
-    flex-direction: column; /* Stack elements vertically */
+    padding: 60px 30px;
+    flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
   @media (max-width: 480px) {
-    padding: 40px 20px; /* Minimal padding for small phones */
+    padding: 40px 20px;
   }
 `;
 
@@ -59,7 +58,7 @@ const GridContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    flex-direction: column; /* Stack elements in column layout */
+    flex-direction: column;
     align-items: center;
     gap: 20px;
   }
@@ -72,7 +71,7 @@ const MapContainer = styled.div`
   width: 100%;
   overflow: hidden;
   @media (max-width: 768px) {
-    height: 300px; /* Adjust height on mobile */
+    height: 300px;
   }
 
   @media (max-width: 480px) {
@@ -163,7 +162,7 @@ const ContactContent = () => {
             ></iframe>
           </MapContainer>
 
-          {/* FORM */}
+          {}
           <motion.form
             ref={formRef}
             onSubmit={handleSubmit}
@@ -213,7 +212,7 @@ const ContactContent = () => {
             ></textarea>
             <button type="submit">Send Message</button>
 
-            {/* Feedback popup */}
+            {}
             {feedback && (
               <motion.div
                 style={{
@@ -238,7 +237,7 @@ const ContactContent = () => {
         </GridContainer>
       </Wrapper>
 
-      {/* SOCIAL MEDIA */}
+      {}
       <div className="social-media-container">
         <p className="title">Follow Us</p>
         <ul className="social-media-list">

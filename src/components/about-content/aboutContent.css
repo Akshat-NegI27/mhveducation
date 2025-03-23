@@ -1,11 +1,8 @@
 @import "../fonts/fonts.css";
 
 .about-container {
-  /* padding: 50px; */
   background: #f9f9f9;
   font-family: Poppins;
-
-  /* animation: fadeIn 2s ease-in-out; */
 
   .heading-content {
     display: flex;
@@ -15,21 +12,20 @@
     padding: 60px 120px;
     padding-top: 125px;
     gap: 40px;
-    /* background-color: #82d811; */
-    /* height: 80vh; */
+
     .title-box {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      /* align-items: center; */
+
       width: 100%;
       height: 100%;
-      /* background-color: #4d11d8; */
+
       h1 {
         font-size: 5.5em;
         margin-bottom: 10px;
         color: #333;
-        /* border-bottom: 3px solid #333; */
+
         width: 80%;
       }
       p {
@@ -46,25 +42,23 @@
       border: 1px solid #333;
       width: 100%;
       height: 100%;
-      /* background-color: #991d1d; */
+
       video {
         width: 100%;
         height: fit-content;
-        /* border-radius: 10px; */
-        /* cover: fill; */
+
         object-fit: contain;
       }
     }
   }
 }
-/* -----------------section-2----------------- */
+
 .mission-section {
   gap: 40px;
-  /* margin: 40px 0; */
+
   display: flex;
   flex-direction: row;
-  /* animation: fadeIn 2s ease-in-out; */
-  /* height: 80vh; */
+
   padding: 60px 120px;
   background-color: rgba(245, 206, 154, 0.653);
   align-items: center;
@@ -73,16 +67,15 @@
     flex-direction: column;
     justify-content: center;
     justify-self: center;
-    /* align-items: center; */
+
     width: 100%;
     height: 100%;
     h2 {
       font-size: 34px;
       margin-bottom: 30px;
       color: #333;
-      /* border-bottom: #000000 2px solid; */
     }
-    /* background-color: #ff0000; */
+
     p {
       font-size: 18px;
       font-family: Poppins;
@@ -95,21 +88,17 @@
   .image-content {
     width: 100%;
     height: 100%;
-    /* background-color: #ff0000; */
-    /* padding: 20px 0; */
+
     img {
       width: 100%;
-      /* -webkit-box-shadow: 0px 0px 31px 2px rgba(0, 0, 0, 0.59);
-      -moz-box-shadow: 0px 0px 31px 2px rgba(0, 0, 0, 0.59);
-      box-shadow: 0px 0px 31px 2px rgba(0, 0, 0, 0.59); */
+
       height: 100%;
-      /* border-radius: 10px; */
+
       object-fit: cover;
     }
   }
 }
 
-/* -----------------section-3----------------- */
 .values-section {
   gap: 60px;
   display: flex;
@@ -123,7 +112,7 @@
     rgba(255, 223, 239, 1) 40%,
     rgba(198, 217, 243, 1) 100%
   );
-  /* background-size: 200% 200%; */
+
   animation: radialGlow 10s ease infinite;
 
   @keyframes radialGlow {
@@ -152,7 +141,7 @@
       margin-bottom: 20px;
       color: #333;
     }
-    /* background-color: #ff0000; */
+
     p {
       font-size: 18px;
       font-family: Poppins;
@@ -176,7 +165,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    /* background-color: #67e414; */
+
     justify-content: space-between;
     h2 {
       font-size: 2.5em;
@@ -192,11 +181,11 @@
       flex-direction: column;
       gap: 10px;
       width: 80%;
-      /* background-color: red; */
+
       .value-item {
         border: none;
         color: rgb(0, 0, 0);
-        /* border: 1px solid #4caf50; */
+
         padding: 8px 42px;
         width: 100%;
         text-align: center;
@@ -215,13 +204,12 @@
         background-color: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(10px);
         transform: translateY(-5px);
-        padding: 12px 42px; /* Increase padding without disturbing other elements */
+        padding: 12px 42px;
       }
     }
   }
 }
 
-/* -----------------section-4----------------- */
 .about-team {
   display: flex;
   justify-content: center;
@@ -236,18 +224,18 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    /* border-bottom: #000000 2px solid; */
+
     padding: 10px;
     align-self: center;
     height: fit-content;
-    /* background-color: red; */
+
     h2 {
       font-family: Poppins;
       font-size: 3em;
-      /* text-transform: uppercase; */
+
       color: #333;
     }
-    /* background-color: #ff0000; */
+
     p {
       font-size: 1.1em;
       line-height: 1.5em;
@@ -258,7 +246,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: rgb(195, 195, 195); */
   }
 }
 
@@ -275,8 +262,6 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  /* gap: 10px; */
-  /* background-color: red; */
 }
 
 .team-member:hover {
@@ -287,38 +272,10 @@
 .team-photo {
   width: 400px;
   height: fit-content;
-  /* border-radius: 50%; */
+
   margin-bottom: 10px;
 }
 
-/* @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideInFromLeft {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-} */
-
-/* @keyframes slideInFromRight {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-} */
-
-/* -----------------section-3-----------------  */
 .exe1,
 .exe3 {
   display: flex;
@@ -331,35 +288,15 @@
   gap: 50px;
 }
 
-/* .team-overlay {
-  position: absolute;
-  width: 100%;
-  z-index: 5;
-  justify-self: left;
-
-  h1 {
-    position: relative;
-    font-size: 4em;
-
-    height: fit-content;
-    font-family: Poppins;
-    color: #00000042;
-    left: -780px;
-    rotate: -90deg;
-    letter-spacing: 55px;
-    text-transform: uppercase;
-  }
-} */
 .section-3 {
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
+
   width: 100%;
   padding: 60px 120px;
-  /* gap: 120px; */
 
   .profile1,
   .profile2,
@@ -374,7 +311,7 @@
     width: 60%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+
     align-items: center;
     h1 {
       font-size: 3em;
@@ -394,7 +331,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+
     width: 50%;
     h2 {
       font-size: 2em;
@@ -458,7 +395,6 @@
   animation: ease-in-out 0.3s;
 }
 
-/* Tooltip Styling */
 .social svg::after {
   content: attr(data-tooltip);
   position: absolute;
@@ -480,10 +416,9 @@
   visibility: visible;
 }
 
-/* Brand Colors */
 .social .fa-x-twitter {
   color: #000;
-} /* X (Twitter) */
+}
 .social .fa-instagram {
   color: #e4405f;
 }
@@ -494,7 +429,6 @@
   color: #0077b5;
 }
 
-/* Hover Effects */
 .social svg:hover {
   color: #fff;
   transform: rotate(360deg);
@@ -530,7 +464,7 @@
   font-family: Poppins;
   border-radius: 10px;
   display: flex;
-  /* justify-content: center; */
+
   padding: 0 50px;
   align-items: center;
   justify-content: center;

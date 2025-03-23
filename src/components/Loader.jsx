@@ -21,7 +21,7 @@ const quotes = [
   "The stock market is a wealth engine.",
   "Think long-term, act smart.",
   "Big gains start with small steps.",
-  "Your money, your rules."
+  "Your money, your rules.",
 ];
 
 const Loader = ({ onComplete }) => {
@@ -29,13 +29,12 @@ const Loader = ({ onComplete }) => {
   const [quote, setQuote] = useState("");
 
   useEffect(() => {
-    // Pick a random quote on each load
     setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
 
     setTimeout(() => {
       setFadeOut(true);
-      setTimeout(onComplete, 1000); // Ensure transition is complete
-    }, 4000); // Matches loader timing
+      setTimeout(onComplete, 1000);
+    }, 4000);
   }, [onComplete]);
 
   return (

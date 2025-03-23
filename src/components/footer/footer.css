@@ -204,7 +204,6 @@ li.service_name {
   color: #ffffff;
 }
 
-/* Media query for tablets and smaller screens */
 @media only screen and (max-width: 880px) {
   .containerx {
     padding: 60px;
@@ -231,22 +230,21 @@ li.service_name {
   }
 
   .profil .logo_area img {
-    width: 60px; /* Centered and resized logo */
+    width: 60px;
     height: auto;
   }
 
   .desc_area {
     width: 90%;
-    /* padding-bottom: 2vh; */
+
     margin-bottom: 2vh;
     text-align: center;
-    font-size: 14px; /* Smaller text */
+    font-size: 14px;
   }
 
   .service_area {
     flex-direction: column;
     gap: 2vh;
-    /* align-items: center; */
   }
 
   .service_header {
@@ -261,14 +259,13 @@ li.service_name {
   }
 
   .social_media {
-    /* display: flex; */
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Spacing between icons */
+    gap: 10px;
   }
 
   .social_media box-icon {
-    font-size: 20px; /* Smaller icons */
+    font-size: 20px;
     fill: #b3b3b3;
   }
   .desc_area h2 {
@@ -283,18 +280,16 @@ li.service_name {
     align-items: center;
     justify-content: center;
     gap: 5px;
-    /* font-size: small; */
   }
 
   .copy_right span {
-    /* font-size: 0px; */
   }
   .copy_right {
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
-    font-size: 12px; /* Smaller text */
+    font-size: 12px;
   }
 
   .tou {
@@ -302,16 +297,15 @@ li.service_name {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 12px; /* Smaller text */
+    font-size: 12px;
     margin-top: 1.5vh;
   }
 
   .tou a {
-    font-size: 12px; /* Smaller links */
+    font-size: 12px;
   }
 }
 
-/* Media query for mobile devices (max-width: 600px) */
 @media (max-width: 600px) {
   footer .containerx {
     padding: 20px 40px;
@@ -334,7 +328,7 @@ li.service_name {
   }
 
   .profil .logo_area img {
-    width: 150px; /* Smaller logo */
+    width: 150px;
     height: auto;
   }
 
@@ -362,7 +356,7 @@ li.service_name {
   }
 
   .social_media box-icon {
-    font-size: 18px; /* Adjusted size */
+    font-size: 18px;
   }
 
   .copy_right {
@@ -372,7 +366,7 @@ li.service_name {
   .tou {
     flex-direction: row;
     justify-content: center;
-    gap: 10px; /* Spacing between links */
+    gap: 10px;
     font-size: 12px;
   }
 

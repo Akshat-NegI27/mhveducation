@@ -1,79 +1,114 @@
-import React, { useEffect, useState } from 'react';
-import './homeContent.css';
-import './homeContentmedia.css';
+import React, { useEffect, useState } from "react";
+import "./homeContent.css";
+import "./homeContentmedia.css";
 import "../button/button.scss";
-import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import main from '../../img/Detail.mp4';
+import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
+import main from "../../img/Detail.mp4";
 
 const faqs = [
-  { id: 1, question: 'What courses do you offer?', answer: 'We offer beginner, intermediate and advance level courses for traders and investors, covering every aspect of stocks and index analysis through comprehensive technical analysis techniques.' },
-  { id: 2, question: 'Are the courses suitable for beginners?', answer: 'Yes, Our beginner friendly courses are specially designed for you to learn the fundamental concepts of stock market, with step by step guidance which makes learning share market trading effortless for newcomers.' },
-  { id: 3, question: 'What is the duration of each course ?', answer: 'The course duration varies depending of the type and level of training opted for. Our courses range from 4 weeks for beginner modules to 12 weeks for advanced modules.' },
-  { id: 4, question: 'Do you offer live trading sessions as part of the training?', answer: 'Yes, we provide live share market trading sessions where students can execute the strategies they have learned during the course.' },
-  { id: 5, question: 'Will I have access to instructors for guidance and questions?', answer: 'Definitely. Our mentors are available to solve your queries through direct interactions even after the course tenure ends.' },
-  { id: 6, question: 'Is there a trial class or demo session available?', answer: 'Yes, all the trading courses at MHV Education include a 1 hour-free demo session for students.' },
-  { id: 7, question: 'How is MHV Education Institute different from other stock market training institutes?', answer: 'At MHV Education we offer personalized mentorship through both Offline and Online modes. The courses are designed to equip you for long-term success in both trading and investing in stock market.' },
+  {
+    id: 1,
+    question: "What courses do you offer?",
+    answer:
+      "We offer beginner, intermediate and advance level courses for traders and investors, covering every aspect of stocks and index analysis through comprehensive technical analysis techniques.",
+  },
+  {
+    id: 2,
+    question: "Are the courses suitable for beginners?",
+    answer:
+      "Yes, Our beginner friendly courses are specially designed for you to learn the fundamental concepts of stock market, with step by step guidance which makes learning share market trading effortless for newcomers.",
+  },
+  {
+    id: 3,
+    question: "What is the duration of each course ?",
+    answer:
+      "The course duration varies depending of the type and level of training opted for. Our courses range from 4 weeks for beginner modules to 12 weeks for advanced modules.",
+  },
+  {
+    id: 4,
+    question: "Do you offer live trading sessions as part of the training?",
+    answer:
+      "Yes, we provide live share market trading sessions where students can execute the strategies they have learned during the course.",
+  },
+  {
+    id: 5,
+    question: "Will I have access to instructors for guidance and questions?",
+    answer:
+      "Definitely. Our mentors are available to solve your queries through direct interactions even after the course tenure ends.",
+  },
+  {
+    id: 6,
+    question: "Is there a trial class or demo session available?",
+    answer:
+      "Yes, all the trading courses at MHV Education include a 1 hour-free demo session for students.",
+  },
+  {
+    id: 7,
+    question:
+      "How is MHV Education Institute different from other stock market training institutes?",
+    answer:
+      "At MHV Education we offer personalized mentorship through both Offline and Online modes. The courses are designed to equip you for long-term success in both trading and investing in stock market.",
+  },
 ];
 const reviews = [
   {
     id: 1,
-    name: 'Raj',
-    place: 'Dehradun',
+    name: "Raj",
+    place: "Dehradun",
     feedback:
-      'Excellent institute with knowledgeable instructors. They break down complex trading concepts into simple, easy to understand modules. A highly recommended Stock Market Institute, if you are looking for live share market trading executions.',
+      "Excellent institute with knowledgeable instructors. They break down complex trading concepts into simple, easy to understand modules. A highly recommended Stock Market Institute, if you are looking for live share market trading executions.",
   },
   {
     id: 2,
-    name: 'Shakshi',
-    place: 'Dehradun',
+    name: "Shakshi",
+    place: "Dehradun",
     feedback:
-      'I enrolled in the Integrated technical analysis course, I would say this is the best Stock Market Institute in Dehradun. With classes during the market hours I actually learned how to implement and execute the strategies.',
+      "I enrolled in the Integrated technical analysis course, I would say this is the best Stock Market Institute in Dehradun. With classes during the market hours I actually learned how to implement and execute the strategies.",
   },
   {
     id: 3,
-    name: 'Shivham',
-    place: 'Dehradun',
+    name: "Shivham",
+    place: "Dehradun",
     feedback:
-      'As a beginner, I was trading very aggressively in the options market but after joining the beginner technical analysis course I have gained control over my emotions and learned the discipline needed in trading the Stock Market. Thank you MHV Education and the team.',
+      "As a beginner, I was trading very aggressively in the options market but after joining the beginner technical analysis course I have gained control over my emotions and learned the discipline needed in trading the Stock Market. Thank you MHV Education and the team.",
   },
   {
     id: 4,
-    name: 'Pyush',
-    place: 'Roorkee',
+    name: "Pyush",
+    place: "Roorkee",
     feedback:
-      'MHV Education is the best Stock Market Institute in Dehradun. The special attention by the mentors have really helped me get control over my trading concepts. Highly recommended.',
+      "MHV Education is the best Stock Market Institute in Dehradun. The special attention by the mentors have really helped me get control over my trading concepts. Highly recommended.",
   },
   {
     id: 5,
-    name: 'Vaishali Sharma',
-    place: 'Dehradun',
+    name: "Vaishali Sharma",
+    place: "Dehradun",
     feedback:
-      'I have done my online Stock Market courses earlier from another institutes, I would say joining the online intraday strategy course with MHV Education was the best till now. Best mentors.',
+      "I have done my online Stock Market courses earlier from another institutes, I would say joining the online intraday strategy course with MHV Education was the best till now. Best mentors.",
   },
   {
     id: 6,
-    name: 'Mayank Patel',
-    place: 'Dehradun',
+    name: "Mayank Patel",
+    place: "Dehradun",
     feedback:
-      'I had my online demo session with Mr. Prakhar, after that I knew exactly which share market course would be best suited for me. Let me tell you, this is the Best Stock market Institute in Dehradun, I am still learning and executing the strategies as guided. Thanks to MHV Education.',
+      "I had my online demo session with Mr. Prakhar, after that I knew exactly which share market course would be best suited for me. Let me tell you, this is the Best Stock market Institute in Dehradun, I am still learning and executing the strategies as guided. Thanks to MHV Education.",
   },
   {
     id: 7,
-    name: 'Kanupriya Kothari',
-    place: 'Dehradun',
+    name: "Kanupriya Kothari",
+    place: "Dehradun",
     feedback:
-      'Share market trading has been so much easier since I have joined this institute. Practical implementation of strategies is the best part of the course designed by this institute.',
+      "Share market trading has been so much easier since I have joined this institute. Practical implementation of strategies is the best part of the course designed by this institute.",
   },
   {
     id: 8,
-    name: 'Garima Rawat',
-    place: 'Dehradun',
+    name: "Garima Rawat",
+    place: "Dehradun",
     feedback:
-      'I joined the Elliott wave program, and it has provided me with one more trading and investment strategy in Share market. A must do course here.',
+      "I joined the Elliott wave program, and it has provided me with one more trading and investment strategy in Share market. A must do course here.",
   },
 ];
-
 
 const HomeContent = () => {
   const [activeFaq, setActiveFaq] = useState(null);
@@ -106,14 +141,18 @@ const HomeContent = () => {
           </h1>
           <p>
             Comprehensive, expert-led stock market courses designed to transform
-            beginners into confident traders and help experienced investors refine
-            their strategy.
+            beginners into confident traders and help experienced investors
+            refine their strategy.
           </p>
           <div className="buttons">
-            <Link to="/courses"><button className="button-underline">View All Courses</button></Link>
+            <Link to="/courses">
+              <button className="button-underline">View All Courses</button>
+            </Link>
             <Link to="/contact">
               <button className="learn-more">
-                <span className="circle"><span className="icon arrow"></span></span>
+                <span className="circle">
+                  <span className="icon arrow"></span>
+                </span>
                 <span className="button-text">Enroll Now</span>
               </button>
             </Link>
@@ -133,8 +172,12 @@ const HomeContent = () => {
           <h1>CHOOSE BEST STOCK MARKET INSTITUTE</h1>
           <p>MHV Education is more than a Stock Market Institution...</p>
           <div className="buttons">
-            <Link to="/courses"><button className="button-underline">View All Courses</button></Link>
-            <Link to="/contact"><button className="button-underline">Enroll Now →</button></Link>
+            <Link to="/courses">
+              <button className="button-underline">View All Courses</button>
+            </Link>
+            <Link to="/contact">
+              <button className="button-underline">Enroll Now →</button>
+            </Link>
           </div>
         </div>
         <div className="s2img">
@@ -178,7 +221,9 @@ const HomeContent = () => {
               {faqs.map((faq) => (
                 <div key={faq.id} className="faq-item">
                   <button
-                    className={`faq-question ${activeFaq === faq.id ? 'active' : ''}`}
+                    className={`faq-question ${
+                      activeFaq === faq.id ? "active" : ""
+                    }`}
                     onClick={() => toggleFaq(faq.id)}
                   >
                     {faq.question}
@@ -190,7 +235,10 @@ const HomeContent = () => {
                         initial={{ opacity: 0, maxHeight: 0 }}
                         animate={{ opacity: 1, maxHeight: 500 }}
                         exit={{ opacity: 0, maxHeight: 0 }}
-                        transition={{ duration: 0.4, ease: [0.25, 0.8, 0.25, 1] }}
+                        transition={{
+                          duration: 0.4,
+                          ease: [0.25, 0.8, 0.25, 1],
+                        }}
                         className="faq-answer"
                       >
                         <p>{faq.answer}</p>
@@ -206,12 +254,41 @@ const HomeContent = () => {
 
       <div className={`whatsapp-float ${!isVisible ? "hide" : ""}`}>
         <div className="whatsapp-menu desktop-only">
-          <a href="https://wa.me/919634104622?text=Hi..." target="_blank" rel="noopener noreferrer" className="whatsapp-btn">📚 Tell me more about your courses</a>
-          <a href="https://wa.me/919634104622?text=Hey..." target="_blank" rel="noopener noreferrer" className="whatsapp-btn">💰 What are the course fees?</a>
-          <a href="https://wa.me/919634104622?text=Hey..." target="_blank" rel="noopener noreferrer" className="whatsapp-btn">🎓 Do you offer a trial/demo session?</a>
+          <a
+            href="https://wa.me/919634104622?text=Hi..."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-btn"
+          >
+            📚 Tell me more about your courses
+          </a>
+          <a
+            href="https://wa.me/919634104622?text=Hey..."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-btn"
+          >
+            💰 What are the course fees?
+          </a>
+          <a
+            href="https://wa.me/919634104622?text=Hey..."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-btn"
+          >
+            🎓 Do you offer a trial/demo session?
+          </a>
         </div>
-        <a href="https://wa.me/919634104622?text=Hey..." target="_blank" rel="noopener noreferrer">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat" className="whatsapp-icon" />
+        <a
+          href="https://wa.me/919634104622?text=Hey..."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+            alt="WhatsApp Chat"
+            className="whatsapp-icon"
+          />
         </a>
       </div>
     </div>

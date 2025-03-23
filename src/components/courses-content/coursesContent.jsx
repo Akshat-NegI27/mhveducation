@@ -1,15 +1,21 @@
-import React from 'react';
-import './coursesContent.css';
-import vid from '../../img/vid1.mp4';
-import { Navigate } from 'react-router-dom';
+import React from "react";
+import "./coursesContent.css";
+import vid from "../../img/vid1.mp4";
+import { Navigate } from "react-router-dom";
 
 const courseFiles = {
-  "Beginner Technical Analysis Course": "/assets/courses/Technical_Analysis_Course_Syllabus.pdf",
-  "Advanced Technical Analysis Course": "/assets/courses/Advanced_Technical_Analysis_Course_Syllabus.pdf",
-  "Integrated Beginner and Technical Analysis Course": "/assets/courses/Integrated_Beginner_Technical_Analysis_Course_Syllabus.pdf",
-  "Intraday Strategy Course​": "/assets/courses/Intraday_Strategies_Program_Course_Syllabus.pdf",
-  "Elliott Wave Program​": "/assets/courses/Elliott_Wave_Theory_Course_Syllabus.pdf",
-  "Chartered Market Technician(CMT)": "/assets/courses/Chartered_Market_Technician_CMT_Course_Syllabus.pdf"
+  "Beginner Technical Analysis Course":
+    "/assets/courses/Technical_Analysis_Course_Syllabus.pdf",
+  "Advanced Technical Analysis Course":
+    "/assets/courses/Advanced_Technical_Analysis_Course_Syllabus.pdf",
+  "Integrated Beginner and Technical Analysis Course":
+    "/assets/courses/Integrated_Beginner_Technical_Analysis_Course_Syllabus.pdf",
+  "Intraday Strategy Course​":
+    "/assets/courses/Intraday_Strategies_Program_Course_Syllabus.pdf",
+  "Elliott Wave Program​":
+    "/assets/courses/Elliott_Wave_Theory_Course_Syllabus.pdf",
+  "Chartered Market Technician(CMT)":
+    "/assets/courses/Chartered_Market_Technician_CMT_Course_Syllabus.pdf",
 };
 const openCoursePlan = (courseTitle) => {
   if (!courseFiles[courseTitle]) {
@@ -18,17 +24,14 @@ const openCoursePlan = (courseTitle) => {
   }
 
   const filePath = `${window.location.origin}${courseFiles[courseTitle]}`;
-  console.log(`Opening File: ${filePath}`); // Debugging log
+  console.log(`Opening File: ${filePath}`);
 
-  // Open the file in a new tab
   const newTab = window.open(filePath, "_blank");
 
   if (!newTab) {
     alert("Popup blocked! Please allow pop-ups for this site.");
   }
 };
-
-
 
 const CoursesContent = () => {
   return (
@@ -39,7 +42,9 @@ const CoursesContent = () => {
             <source src={vid} type="video/mp4" />
           </video>
           <h1>Welcome to Our Courses</h1>
-          <p>Explore a variety of courses to enhance your skills and knowledge.</p>
+          <p>
+            Explore a variety of courses to enhance your skills and knowledge.
+          </p>
           <button
             className="explore-button"
             onClick={() => {
@@ -57,14 +62,23 @@ const CoursesContent = () => {
       <div className="courses-grid" id="fee">
         <div className="title-fee">
           <h1>Fee Structure</h1>
-          <p>Our fee structure is designed to be flexible and affordable for all types of traders. Choose the plan that best suits your needs.</p>
+          <p>
+            Our fee structure is designed to be flexible and affordable for all
+            types of traders. Choose the plan that best suits your needs.
+          </p>
         </div>
         <div className="cards">
           {courses.map((course, index) => (
             <div key={index} className="course-card">
               <div className="course-image-container">
-                {course.popular && (<span className="course-popular-badge">POPULAR</span>)}
-                <img src={course.image} alt={course.title} className="course-image" />
+                {course.popular && (
+                  <span className="course-popular-badge">POPULAR</span>
+                )}
+                <img
+                  src={course.image}
+                  alt={course.title}
+                  className="course-image"
+                />
               </div>
               <div className="course-details">
                 <div className="courselvl">
@@ -84,15 +98,16 @@ const CoursesContent = () => {
                 <div className="course-actions">
                   <button
                     className="enroll-button"
-                    onClick={() => Navigate('/contact')}
+                    onClick={() => Navigate("/contact")}
                   >
                     Enroll Now
                   </button>
-                  <button className="down-button" onClick={() => openCoursePlan(course.title)}>
+                  <button
+                    className="down-button"
+                    onClick={() => openCoursePlan(course.title)}
+                  >
                     <i className="fa-solid fa-file"></i> View Course Plan
                   </button>
-
-
                 </div>
               </div>
             </div>
@@ -103,7 +118,8 @@ const CoursesContent = () => {
       <div className="containerr">
         <h2 className="section-title">WHY CHOOSE MHV EDUCATION?</h2>
         <p className="section-subtitle">
-          We provide a premium learning environment with features designed to help you succeed in the stock market.
+          We provide a premium learning environment with features designed to
+          help you succeed in the stock market.
         </p>
         <div className="features-grid">
           {features.map((feature, index) => (
@@ -123,100 +139,112 @@ export default CoursesContent;
 
 const courses = [
   {
-    level: 'Beginner',
-    title: 'Beginner Technical Analysis Course',
-    description: 'Master the basics of stock market investing with our comprehensive beginner course.',
-    rate: '₹ 20,000',
-    students: '12,543',
+    level: "Beginner",
+    title: "Beginner Technical Analysis Course",
+    description:
+      "Master the basics of stock market investing with our comprehensive beginner course.",
+    rate: "₹ 20,000",
+    students: "12,543",
     rating: 4.8,
-    image: '/src/img/cources.jpg',
+    image: "/src/img/cources.jpg",
   },
   {
-    level: 'Intermediate',
-    title: 'Advanced Technical Analysis Course',
-    description: 'Learn how to read charts and identify trading patterns for better investment decisions.',
-    rate: '₹ 25,000',
-    students: '8,721',
+    level: "Intermediate",
+    title: "Advanced Technical Analysis Course",
+    description:
+      "Learn how to read charts and identify trading patterns for better investment decisions.",
+    rate: "₹ 25,000",
+    students: "8,721",
     rating: 4.7,
-    image: '/src/img/cources.jpg',
+    image: "/src/img/cources.jpg",
   },
   {
-    level: 'Advanced',
-    title: 'Integrated Beginner and Technical Analysis Course',
-    description: 'Discover how to identify undervalued stocks using fundamental analysis techniques.',
-    rate: '₹ 30,000',
-    students: '7,432',
+    level: "Advanced",
+    title: "Integrated Beginner and Technical Analysis Course",
+    description:
+      "Discover how to identify undervalued stocks using fundamental analysis techniques.",
+    rate: "₹ 30,000",
+    students: "7,432",
     rating: 4.9,
-    image: '/src/img/cources.jpg',
+    image: "/src/img/cources.jpg",
   },
   {
-    level: 'Beginner',
-    title: 'Intraday Strategy Course​',
-    description: 'Master the basics of stock market investing with our comprehensive beginner course.',
-    rate: '₹ 15,000',
-    students: '12,543',
+    level: "Beginner",
+    title: "Intraday Strategy Course​",
+    description:
+      "Master the basics of stock market investing with our comprehensive beginner course.",
+    rate: "₹ 15,000",
+    students: "12,543",
     rating: 4.8,
-    image: '/src/img/cources.jpg',
+    image: "/src/img/cources.jpg",
   },
   {
-    level: 'Intermediate',
-    title: 'Elliott Wave Program​',
-    description: 'Learn how to read charts and identify trading patterns for better investment decisions.',
-    rate: '₹ 35,000',
-    students: '8,721',
+    level: "Intermediate",
+    title: "Elliott Wave Program​",
+    description:
+      "Learn how to read charts and identify trading patterns for better investment decisions.",
+    rate: "₹ 35,000",
+    students: "8,721",
     rating: 4.7,
-    image: '/src/img/cources.jpg',
+    image: "/src/img/cources.jpg",
   },
   {
-    level: 'Advanced',
-    title: 'Chartered Market Technician(CMT)',
-    description: 'Discover how to identify undervalued stocks using fundamental analysis techniques.',
-    rate: '₹ 35,000',
-    students: '7,432',
+    level: "Advanced",
+    title: "Chartered Market Technician(CMT)",
+    description:
+      "Discover how to identify undervalued stocks using fundamental analysis techniques.",
+    rate: "₹ 35,000",
+    students: "7,432",
     rating: 4.9,
-    image: '/src/img/cources.jpg',
+    image: "/src/img/cources.jpg",
   },
 ];
 
 const features = [
   {
-    icon: '🎥',
-    title: 'HD Video Lessons',
-    description: 'High-quality, professionally produced video lessons for optimal learning.',
+    icon: "🎥",
+    title: "HD Video Lessons",
+    description:
+      "High-quality, professionally produced video lessons for optimal learning.",
   },
   {
-    icon: '⏰',
-    title: 'Learn at Your Pace',
-    description: 'Access courses 24/7 and learn whenever it fits your schedule.',
+    icon: "⏰",
+    title: "Learn at Your Pace",
+    description:
+      "Access courses 24/7 and learn whenever it fits your schedule.",
   },
   {
-    icon: '📘',
-    title: 'Comprehensive Resources',
-    description: 'Downloadable materials, cheat sheets, and templates included.',
+    icon: "📘",
+    title: "Comprehensive Resources",
+    description:
+      "Downloadable materials, cheat sheets, and templates included.",
   },
   {
-    icon: '🎯',
-    title: 'Market Simulation',
-    description: 'Practice with real-world market simulations without risking money.',
+    icon: "🎯",
+    title: "Market Simulation",
+    description:
+      "Practice with real-world market simulations without risking money.",
   },
   {
-    icon: '🌐',
-    title: 'Global Community',
-    description: 'Connect with students and instructors worldwide for support.',
+    icon: "🌐",
+    title: "Global Community",
+    description: "Connect with students and instructors worldwide for support.",
   },
   {
-    icon: '🎓',
-    title: 'Expert Instructors',
-    description: 'Learn from industry professionals with proven track records.',
+    icon: "🎓",
+    title: "Expert Instructors",
+    description: "Learn from industry professionals with proven track records.",
   },
   {
-    icon: '🎖️',
-    title: 'Course Certificates',
-    description: 'Earn certificates upon course completion to showcase your skills.',
+    icon: "🎖️",
+    title: "Course Certificates",
+    description:
+      "Earn certificates upon course completion to showcase your skills.",
   },
   {
-    icon: '💳',
-    title: 'Affordable Pricing',
-    description: 'Quality education at competitive rates with payment plans available.',
+    icon: "💳",
+    title: "Affordable Pricing",
+    description:
+      "Quality education at competitive rates with payment plans available.",
   },
 ];

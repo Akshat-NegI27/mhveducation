@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
-import brandlogo from '../../img/brandlogo.webp';
+import brandlogo from "../../img/brandlogo.webp";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
@@ -42,12 +42,32 @@ const Navbar = () => {
         </div>
 
         <div className={`navbar-links ${menuOpen ? "open" : ""}`}>
-          <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink>
-          <NavLink to="/Courses" className={({ isActive }) => (isActive ? "active" : "")}>Courses</NavLink>
-          {/* <NavLink to="/Feestructure" className={({ isActive }) => (isActive ? "active" : "")}>Fee Structure</NavLink> */}
-          {/* <NavLink to="/Blogs" className={({ isActive }) => (isActive ? "active" : "")}>Blogs</NavLink> */}
-          <NavLink to="/About" className={({ isActive }) => (isActive ? "active" : "")}>About</NavLink>
-          <NavLink to="/Contact" className={({ isActive }) => (isActive ? "active" : "")}>Contact Us</NavLink>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/Courses"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Courses
+          </NavLink>
+          {}
+          {}
+          <NavLink
+            to="/About"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="/Contact"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Contact Us
+          </NavLink>
         </div>
 
         <div className="navbar-actions">
@@ -56,13 +76,13 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Menu Icon to Toggle Sidebar */}
+        {}
         <div className="menu-icon" onClick={toggleSidebar}>
           {sidebarOpen ? <FiX /> : <FiMenu />}
         </div>
       </nav>
 
-      {/* Sidebar */}
+      {}
       <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="sidebar-header">
           <img src={brandlogo} alt="Logo" className="sidebar-logo" />
@@ -72,10 +92,18 @@ const Navbar = () => {
         </div>
 
         <div className="sidebar-links">
-          <NavLink to="/" onClick={toggleSidebar}>Home</NavLink>
-          <NavLink to="/Courses" onClick={toggleSidebar}>Courses</NavLink>
-          <NavLink to="/About" onClick={toggleSidebar}>About</NavLink>
-          <NavLink to="/Contact" onClick={toggleSidebar}>Contact Us</NavLink>
+          <NavLink to="/" onClick={toggleSidebar}>
+            Home
+          </NavLink>
+          <NavLink to="/Courses" onClick={toggleSidebar}>
+            Courses
+          </NavLink>
+          <NavLink to="/About" onClick={toggleSidebar}>
+            About
+          </NavLink>
+          <NavLink to="/Contact" onClick={toggleSidebar}>
+            Contact Us
+          </NavLink>
         </div>
 
         <div className="sidebar-footer">
@@ -85,8 +113,10 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Sidebar Overlay */}
-      {sidebarOpen && <div className="sidebar-overlay" onClick={toggleSidebar}></div>}
+      {}
+      {sidebarOpen && (
+        <div className="sidebar-overlay" onClick={toggleSidebar}></div>
+      )}
     </>
   );
 };

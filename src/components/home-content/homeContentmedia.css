@@ -1,6 +1,3 @@
-/* Media Queries for Home Content */
-
-/* Default styles for larger screens */
 @media (min-width: 1024px) {
   .pg1section1 {
     display: flex;
@@ -427,7 +424,6 @@
   }
 }
 
-/* Styles for smaller screens */
 @media (max-width: 1023px) {
   .pg1section1 {
     display: block;
@@ -462,7 +458,6 @@
     }
   }
   .learn-more {
-    /* padding: 0.5rem; */
     font-size: small;
     height: 50px;
     width: 50px;
