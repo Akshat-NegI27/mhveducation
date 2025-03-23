@@ -17,12 +17,12 @@ The website serves as the digital presence for MHV Education, featuring course d
 
 ## 🌟 Key Features
 
-- Clean, responsive design
-- Engaging hero section with call-to-action
-- Navigation bar with smooth routing
-- Courses showcase and enrollment buttons
-- Interactive UI with animations and effects
-- WhatsApp floating button for direct contact
+- Clean, responsive design  
+- Engaging hero section with call-to-action  
+- Navigation bar with smooth routing  
+- Courses showcase and enrollment buttons  
+- Interactive UI with animations and effects  
+- WhatsApp floating button for direct contact  
 - SEO-optimized structure (targeting keywords like: **stock, market, course, Dehradun**)
 
 ---
