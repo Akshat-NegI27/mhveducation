@@ -6,13 +6,8 @@ import Loader from "./components/Loader";
 // ✅ Lazy Loading Components for Performance Optimization
 const Home = lazy(() => import("./pages/home/home"));
 const Courses = lazy(() => import("./pages/courses/courses"));
-const Feestructure = lazy(() => import("./pages/feestructure/feestructure"));
-const Blogs = lazy(() => import("./pages/blog/blog"));
 const About = lazy(() => import("./pages/about/about"));
 const Contact = lazy(() => import("./pages/contact/contact"));
-const Coursesdetail = lazy(() =>
-  import("./components/courses-detail-content/coursesdetailContent")
-);
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -37,11 +32,8 @@ const App = () => {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/courses" element={<Courses />} />
-                <Route path="/feestructure" element={<Feestructure />} />
-                <Route path="/blogs" element={<Blogs />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/coursesdetail" element={<Coursesdetail />} />
               </Routes>
             </Suspense>
           </Router>
