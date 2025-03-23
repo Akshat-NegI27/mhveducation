@@ -3,7 +3,8 @@
 MHV Education is a modern, responsive website built using **React.js**, dedicated to teaching the stock market with clarity and confidence. This platform offers expertly crafted courses tailored for beginners and experienced investors.
 
 ---
-
+![MHV Education Website Preview](https://raw.githubusercontent.com/Akshat-NegI27/mhveducation/refs/heads/main/src/assets/image.png)
+---
 ## 🚀 Project Overview
 
 - **Website Name:** MHV Education
