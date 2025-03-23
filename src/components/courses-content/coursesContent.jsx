@@ -146,7 +146,7 @@ const courses = [
     rate: "₹ 20,000",
     students: "12,543",
     rating: 4.8,
-    image: "/src/img/cources.jpg",
+    image: 'https://raw.githubusercontent.com/Akshat-NegI27/mhveducation/refs/heads/main/public/assets/img/1.avif',
   },
   {
     level: "Intermediate",
@@ -156,7 +156,7 @@ const courses = [
     rate: "₹ 25,000",
     students: "8,721",
     rating: 4.7,
-    image: "/src/img/cources.jpg",
+    image: 'https://raw.githubusercontent.com/Akshat-NegI27/mhveducation/refs/heads/main/public/assets/img/2.jpg',
   },
   {
     level: "Advanced",
@@ -166,7 +166,7 @@ const courses = [
     rate: "₹ 30,000",
     students: "7,432",
     rating: 4.9,
-    image: "/src/img/cources.jpg",
+    image: 'https://raw.githubusercontent.com/Akshat-NegI27/mhveducation/refs/heads/main/public/assets/img/6.webp',
   },
   {
     level: "Beginner",
@@ -176,7 +176,7 @@ const courses = [
     rate: "₹ 15,000",
     students: "12,543",
     rating: 4.8,
-    image: "/src/img/cources.jpg",
+    image: 'https://raw.githubusercontent.com/Akshat-NegI27/mhveducation/refs/heads/main/public/assets/img/5.jpg',
   },
   {
     level: "Intermediate",
@@ -186,7 +186,7 @@ const courses = [
     rate: "₹ 35,000",
     students: "8,721",
     rating: 4.7,
-    image: "/src/img/cources.jpg",
+    image: 'https://raw.githubusercontent.com/Akshat-NegI27/mhveducation/refs/heads/main/public/assets/img/4.webp',
   },
   {
     level: "Advanced",
@@ -196,7 +196,7 @@ const courses = [
     rate: "₹ 35,000",
     students: "7,432",
     rating: 4.9,
-    image: "/src/img/cources.jpg",
+    image: 'https://raw.githubusercontent.com/Akshat-NegI27/mhveducation/refs/heads/main/public/assets/img/3.jpg',
   },
 ];
 
