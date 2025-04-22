@@ -518,3 +518,160 @@
     }
   }
 }
+
+
+/* Lists */
+.course-modules ul {
+  list-style-type: none;
+  padding-left: 0;
+  color: #000; /* Text color set to black */
+}
+
+.course-modules ul li {
+  padding: 10px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 25px;
+  color: #000; /* Text color set to black */
+}
+
+ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #38b000;
+  font-weight: bold;
+}
+
+/* Course modules container */
+.course-modules {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  color: #000; /* Ensure black text color inside the container */
+}
+
+/* Call to Action */
+#cta {
+  background-color: #d7d7d7;
+  color: #000; /* Set text color to black */
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+#cta h2 {
+  color: #000; /* Text color to black */
+  font-size: 2rem;
+}
+
+#cta p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #000; /* Text color to black */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .course-modules {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 30px 15px;
+    color: #000; /* Black text color for mobile view */
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    color: #000; /* Ensure h2 remains black */
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    color: #000; /* Ensure h3 remains black */
+  }
+}
+/* General section styling */
+.section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+}
+
+/* Section Headings */
+.section-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0077b6;
+  border-left: 5px solid #0077b6;
+  padding-left: 12px;
+}
+
+/* Join List */
+.join-list,
+.learning-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.join-list li,
+.learning-list li {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 10px 0;
+  position: relative;
+  padding-left: 28px;
+  color: #000;
+}
+
+.join-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #38b000;
+  font-weight: bold;
+}
+
+/* CTA Styling */
+.cta-section {
+  background-color: #0077b6;
+  color: #000;
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  margin-top: 40px;
+}
+
+.cta-heading {
+  color: #000;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-text {
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: 30px 15px;
+  }
+
+  .section-heading,
+  .cta-heading {
+    font-size: 1.6rem;
+  }
+
+  .join-list li,
+  .learning-list li {
+    font-size: 1rem;
+    padding-left: 25px;
+  }
+}
