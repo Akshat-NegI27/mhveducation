@@ -169,87 +169,8 @@ const HomeContent = () => {
 
       <div className="pg1section2">
         <div className="s2content">
-          <h1>Unlock Financial Success with Expert-Led Stock Market Training</h1>
-          <p>Are you looking for the best trading course in Dehradun to master stock market trading? At MHV Education, we provide certified stock market courses for beginners and experienced traders. Learn from SEBI-registered experts and gain hands-on experience in equity trading, technical analysis, and risk management.</p>
-          <br />
-          <br /><p>No boring theory—only real-market simulations and live trading sessions.
-
-            <br />Expert Trainers
-            Learn from professionals with years of experience in intraday trading, swing trading, and long-term investing.
-            <br />
-
-            Flexible Batches
-            Choose between weekend classes for working professionals or online stock market courses with lifetime access.
-            <br />
-
-            Certification
-            Get a recognized stock market certification to boost your trading career.</p>
-          <br /><br />
-
-          <section id="course-overview">
-            <div class="course-modules">
-
-              <article>
-                <h3>📈 Stock Market Basics</h3>
-                <ul>
-                  <li>How markets work</li>
-                  <li>Types of orders</li>
-                  <li>Key financial terms</li>
-                </ul>
-              </article>
-
-              <article>
-                <h3>📊 Technical Analysis</h3>
-                <ul>
-                  <li>Candlestick patterns</li>
-                  <li>Chart trends</li>
-                  <li>Indicators like RSI & MACD</li>
-                </ul>
-              </article>
-
-              <article>
-                <h3>💼 Trading Strategies</h3>
-                <ul>
-                  <li>Intraday techniques</li>
-                  <li>Swing trading</li>
-                  <li>Positional trading</li>
-                </ul>
-              </article>
-
-              <article>
-                <h3>🛡️ Risk Management</h3>
-                <ul>
-                  <li>Smart stop-loss</li>
-                  <li>Portfolio diversification</li>
-                </ul>
-              </article>
-            </div>
-          </section>
-
-          <section id="who-should-join" class="section join-section">
-            <h2 class="section-heading">👥 Who Should Join?</h2>
-            <ul class="join-list">
-              <li><strong>Beginners:</strong> Start your journey in share market trading with a solid foundation.</li>
-              <li><strong>Working Professionals:</strong> Learn part-time trading strategies for passive income.</li>
-              <li><strong>Investors:</strong> Enhance your skills in fundamental and technical analysis.</li>
-              <li><strong>College Students:</strong> Build financial literacy early for long-term wealth creation.</li>
-            </ul>
-          </section>
-
-          <section id="learning-options" class="section learning-section">
-            <h2 class="section-heading">🎓 Flexible Learning Options</h2>
-            <ul class="learning-list">
-              <li>🏫 <strong>Classroom Training:</strong> Join our Dehradun-based institute with live trading labs.</li>
-              <li>💻 <strong>Online Stock Market Course:</strong> Learn at your own pace with recorded lectures & live mentorship.</li>
-            </ul>
-          </section>
-
-          <section id="cta" class="section cta-section">
-            <h2 class="cta-heading">🎯 Get Certified & Start Trading Confidently!</h2>
-            <p class="cta-text">Don't just trade—<strong>trade smart</strong> with the <strong>best stock market course in Dehradun</strong>.</p>
-          </section>
-
-
+          <h1>CHOOSE BEST STOCK MARKET INSTITUTE</h1>
+          <p>MHV Education is more than a Stock Market Institution...</p>
           <div className="buttons">
             <Link to="/courses">
               <button className="button-underline">View All Courses</button>
@@ -300,8 +221,9 @@ const HomeContent = () => {
               {faqs.map((faq) => (
                 <div key={faq.id} className="faq-item">
                   <button
-                    className={`faq-question ${activeFaq === faq.id ? "active" : ""
-                      }`}
+                    className={`faq-question ${
+                      activeFaq === faq.id ? "active" : ""
+                    }`}
                     onClick={() => toggleFaq(faq.id)}
                   >
                     {faq.question}

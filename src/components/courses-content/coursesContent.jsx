@@ -96,10 +96,12 @@ const CoursesContent = () => {
                   <p>✔️ Exercise Files</p>
                 </div>
                 <div className="course-actions">
-                  <button className="enroll-button" onClick={() => navigate("/contact")}>
+                  <button
+                    className="enroll-button"
+                    onClick={() => Navigate("/contact")}
+                  >
                     Enroll Now
                   </button>
-
                   <button
                     className="down-button"
                     onClick={() => openCoursePlan(course.title)}
