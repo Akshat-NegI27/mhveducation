@@ -3,8 +3,9 @@
 MHV Education is a modern, responsive website built using **React.js**, dedicated to teaching the stock market with clarity and confidence. This platform offers expertly crafted courses tailored for beginners and experienced investors.
 
 ---
-![MHV Education Website Preview](https://raw.githubusercontent.com/Akshat-NegI27/mhveducation/refs/heads/main/#Screenshots/image.png)
----
+
+## ![MHV Education Website Preview](https://github.com/Akshat-NegI27/mhveducation/blob/2c814027243a2211ce037946ff761150f59f8c35/%23Screenshots/image.png)
+
 ## 🚀 Project Overview
 
 - **Website Name:** MHV Education
@@ -18,12 +19,12 @@ The website serves as the digital presence for MHV Education, featuring course d
 
 ## 🌟 Key Features
 
-- Clean, responsive design  
-- Engaging hero section with call-to-action  
-- Navigation bar with smooth routing  
-- Courses showcase and enrollment buttons  
-- Interactive UI with animations and effects  
-- WhatsApp floating button for direct contact  
+- Clean, responsive design
+- Engaging hero section with call-to-action
+- Navigation bar with smooth routing
+- Courses showcase and enrollment buttons
+- Interactive UI with animations and effects
+- WhatsApp floating button for direct contact
 - SEO-optimized structure (targeting keywords like: **stock, market, course, Dehradun**)
 
 ---
@@ -33,10 +34,12 @@ The website serves as the digital presence for MHV Education, featuring course d
 Here are the main components used in the website:
 
 1. **Navbar**
+
    - Navigation links: Home, Courses, About, Contact Us
    - "Enroll Today" button
 
 2. **HeroSection**
+
    - Headline: “Learn to Invest with Confidence”
    - Supporting text
    - Call-to-action buttons: "View All Courses", "Enroll Now"
@@ -44,16 +47,20 @@ Here are the main components used in the website:
    - Side image showing a trader (Akshat Negi) analyzing charts
 
 3. **CoursesSection**
+
    - Course cards showcasing different available learning options
    - Popular course highlight
 
 4. **AboutSection**
+
    - MHV Education's mission and background
 
 5. **ContactSection**
+
    - Form or contact links for inquiries
 
 6. **Footer**
+
    - Social media links (Medium, YouTube, Instagram, LinkedIn, Facebook)
    - Legal links (if any)
 
@@ -79,3 +86,4 @@ git clone https://github.com/yourusername/mhv-education.git
 cd mhveducation
 npm install
 npm start
+```
