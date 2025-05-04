@@ -69,14 +69,13 @@
   display: flex;
   align-items: center;
   height: 65px;
-  margin-left: 40px;
+  margin-left: 90px;
 }
 
 .logo img {
   height: 120%;
   width: 100%;
-  margin-left: 50px;
-  margin-bottom: 5px;
+
   transition: height 0.3s ease-in-out;
 }
 
@@ -263,6 +262,9 @@
     width: 100%;
     left: -100%;
   }
+  .logo {
+    margin-left: 20px;
+  }
 
   .sidebar.open {
     left: 0;
@@ -287,6 +289,7 @@
   .btn-download {
     display: none;
   }
+
   .logo img {
     height: 60px;
     width: 100%;

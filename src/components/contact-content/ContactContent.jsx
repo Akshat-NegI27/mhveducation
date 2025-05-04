@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import { scroller } from "react-scroll";
 import "./ContactContent.css";
-import vido from "../../img/vid1.mp4";
+import vido from "/assets/img/vid1.mp4";
 import { motion } from "framer-motion";
 
 const Wrapper = styled.section`

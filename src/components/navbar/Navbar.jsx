@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
-import brandlogo from "../../img/brandlogo.webp";
+import brandlogo from "/assets/img/brandlogo.webp";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {

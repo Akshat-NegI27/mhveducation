@@ -1,10 +1,5 @@
 @import "../fonts/fonts.css";
 
-.courses-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .hero-section {
   background: url("../../img/vid1.mp4") no-repeat center center;
   background-size: contain;

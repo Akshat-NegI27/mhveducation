@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
 import "./aboutContent.css";
-import video from "../../img/vid1.mp4";
-import vid2 from "../../img/about.mp4";
-import mainhead from "../../img/aboutvid.mp4";
+import vid2 from "/assets/img/about.mp4";
+import mainhead from "/assets/img/aboutvid.mp4";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,9 +10,9 @@ import {
   faInstagram,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
-import front from "../../img/front.png";
-import front2 from "../../img/front2.png";
-import front3 from "../../img/front3.png";
+import front from "/assets/img/front.png";
+import front2 from "/assets/img/front2.png";
+import front3 from "/assets/img/front3.png";
 
 import { Helmet } from "react-helmet-async";
 import "./aboutContentmedia.css";

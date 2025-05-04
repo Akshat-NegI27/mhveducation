@@ -4,7 +4,8 @@ import "./homeContentmedia.css";
 import "../button/button.scss";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import main from "../../img/Detail.mp4";
+import main from "/assets/img/Detail.mp4";
+import img1 from "/assets/img/pic1.webp";
 
 const faqs = [
   {
@@ -164,6 +165,7 @@ const HomeContent = () => {
             <span className="badge">📈 Stock Market Fundamentals</span>
             <p>Learn the essentials in our most popular course</p>
           </div>
+          <img src={img1} className="imgcon" />
         </div>
       </div>
 

@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CustomCursor from "./CustomCursor";
 import Loader from "./components/Loader";
 
-// ✅ Lazy Loading Components for Performance Optimization
 const Home = lazy(() => import("./pages/home/home"));
 const Courses = lazy(() => import("./pages/courses/courses"));
 const About = lazy(() => import("./pages/about/about"));
@@ -24,11 +23,14 @@ const App = () => {
       ) : (
         <>
           <CustomCursor />
-          <Router future={{ v7_startTransition: true ,
-                v7_relativeSplatPath: true,
-
-          }}> {/* ✅ Future-proofing React Router */}
-            <Suspense fallback={<Loader />}> {/* ✅ Handles lazy loading */}
+          <Router
+            future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+          >
+            {" "}
+            {/* ✅ Future-proofing React Router */}
+            <Suspense fallback={<Loader />}>
+              {" "}
+              {/* ✅ Handles lazy loading */}
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/courses" element={<Courses />} />
