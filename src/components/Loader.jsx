@@ -31,15 +31,21 @@ const Loader = ({ onComplete }) => {
   useEffect(() => {
     setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
 
-    setTimeout(() => {
+    const showTime = setTimeout(() => {
       setFadeOut(true);
-      setTimeout(onComplete, 1000);
-    }, 4000);
+      const finishTime = setTimeout(onComplete, 1000); // 1s fade-out
+      return () => clearTimeout(finishTime);
+    }, 5000); // 👈 Increase to 5s visible before fade
+
+    return () => clearTimeout(showTime);
   }, [onComplete]);
 
   return (
-    <div className={`loader-container ${fadeOut ? "loader-fadeout" : ""}`}>
-      <div className="loader-text">MHV Education</div>
+    <div
+      className={`loader-container ${fadeOut ? "loader-fadeout" : ""}`}
+      aria-hidden="true"
+    >
+      <h4 className="loader-text">MHV Education</h4>
       <div className="loader-quote">{quote}</div>
     </div>
   );

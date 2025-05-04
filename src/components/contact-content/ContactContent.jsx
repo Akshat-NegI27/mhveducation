@@ -5,6 +5,7 @@ import { scroller } from "react-scroll";
 import "./ContactContent.css";
 import vido from "/assets/img/vid1.mp4";
 import { motion } from "framer-motion";
+import SEO from "../../components/SEO";
 
 const Wrapper = styled.section`
   padding: 20px 60px;
@@ -133,6 +134,12 @@ const ContactContent = () => {
 
   return (
     <div className="hi-ccontainer" id="scroll-container">
+      <SEO
+        title="Contact MHV Education | Best Stock Market Institute in Dehradun"
+        description="Get in touch with MHV Education, the leading stock market training institute in Dehradun. Visit our office, fill out the contact form, or connect with us on social media platforms including Instagram, LinkedIn, and YouTube."
+        keywords="contact MHV Education, stock market training Dehradun, share market classes, trading institute Dehradun, get in touch MHV Education"
+        canonical="https://mhveducation.com/contact"
+      />
       <div className="contact-container">
         <div className="contact-header">
           <h1>Contact Us</h1>
@@ -155,6 +162,7 @@ const ContactContent = () => {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.6969682114545!2d78.08188347542638!3d30.372802774759943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d7a1eb15df5b%3A0xec320e209ab53869!2sIKSANA%20Workspaces-%20Best%20Co-working%20and%20fully%20furnished%20office%20spaces%20in%20Dehradun!5e1!3m2!1sen!2sin!4v1742650823392!5m2!1sen!2sin"
               width="100%"
               height="500"
+              title="Location of MHV Education on Google Maps"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
@@ -246,69 +254,82 @@ const ContactContent = () => {
               href="https://www.facebook.com/mhveducation/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="MHV Education on Facebook"
             >
               <i className="fa-brands fa-facebook"></i>
               <span>Facebook</span>
             </a>
           </li>
+
           <li>
             <a
               href="https://www.instagram.com/mhveducation/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="MHV Education on Instagram"
             >
               <i className="fa-brands fa-instagram"></i>
               <span>Instagram</span>
             </a>
           </li>
+
           <li>
             <a
               href="https://www.linkedin.com/company/mhv-education/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="MHV Education on LinkedIn"
             >
               <i className="fa-brands fa-linkedin"></i>
               <span>LinkedIn</span>
             </a>
           </li>
+
           <li>
             <a
               href="https://www.youtube.com/@MHVeducation"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="MHV Education on YouTube"
             >
               <i className="fa-brands fa-youtube"></i>
               <span>YouTube</span>
             </a>
           </li>
+
           <li>
             <a
               href="https://medium.com/@mhveducation"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="MHV Education on Medium"
             >
               <i className="fa-brands fa-medium"></i>
               <span>Medium</span>
             </a>
           </li>
+
           <li>
             <a
-              href="https://www.youtube.com/@MHVeducation"
+              href="mailto:mhveducation@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Email MHV Education"
             >
-              <i class="fa-solid fa-brands fa-envelope"></i>
+              <i className="fa-solid fa-envelope"></i>
               <span>Mail</span>
             </a>
           </li>
+
           <li>
             <a
-              href="https://www.youtube.com/@MHVeducation"
+              href="https://wa.me/+919634104622"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Chat with MHV Education on WhatsApp"
             >
               <i className="fa-brands fa-whatsapp"></i>
-              <span>Whatsapp</span>
+              <span>WhatsApp</span>
             </a>
           </li>
         </ul>

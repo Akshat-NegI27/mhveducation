@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./homeContent.css";
 import "./homeContentmedia.css";
 import "../button/button.scss";
+import SEO from "../../components/SEO";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import main from "/assets/img/Detail.mp4";
@@ -134,6 +135,12 @@ const HomeContent = () => {
 
   return (
     <div className="homepg">
+      <SEO
+        title="MHV Education - Best Stock Market Courses in Dehradun"
+        description="Join top-rated share market classes with live sessions, trading strategies, and mentorship."
+        keywords="stock market course, Dehradun, MHV Education, trading institute"
+        canonical="https://mhveducation.com/"
+      />
       <div className="pg1section1">
         <div className="content">
           <span className="tag">📈 Master The Markets</span>
@@ -165,7 +172,7 @@ const HomeContent = () => {
             <span className="badge">📈 Stock Market Fundamentals</span>
             <p>Learn the essentials in our most popular course</p>
           </div>
-          <img src={img1} className="imgcon" />
+          <img src={img1} alt="Stock Market" className="imgcon" />
         </div>
       </div>
 

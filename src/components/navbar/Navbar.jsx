@@ -86,7 +86,11 @@ const Navbar = () => {
       <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="sidebar-header">
           <img src={brandlogo} alt="Logo" className="sidebar-logo" />
-          <button className="sidebar-close" onClick={toggleSidebar}>
+          <button
+            className="sidebar-close"
+            onClick={toggleSidebar}
+            aria-label="Close sidebar"
+          >
             <FiX />
           </button>
         </div>

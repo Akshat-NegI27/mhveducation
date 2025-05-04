@@ -20,65 +20,46 @@
     #e2f5b5,
     #b3f7bc
   );
-  background-size: 400% 400%;
+  background-size: 300% 300%;
   animation: gradient-animation 10s ease infinite;
+
   z-index: 9999;
   transition: opacity 0.7s ease-in-out;
-
-  .loader-text,
-  .loader-quote {
-    font-family: Poppins;
-    font-size: 1rem;
-    color: #000;
-    text-transform: uppercase;
-    letter-spacing: 7px;
-    position: absolute;
-    opacity: 0;
-    animation-timing-function: ease-in-out;
-  }
-
-  .loader-text {
-    animation: fadeInOut 1.5s forwards;
-    animation-iteration-count: 1;
-    animation-delay: 0s;
-  }
-
-  .loader-quote {
-    animation: fadeInOut 2.5s forwards;
-    animation-delay: 1.5s;
-    animation-iteration-count: 1;
-  }
-
-  .loader-fadeout {
-    animation: fadeOut 1s forwards;
-    pointer-events: none;
-  }
 }
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  25% {
-    background-position: 50% 50%;
-  }
-  50% {
-    background-position: 50% 100%;
-  }
-  75% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.loader-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  position: relative;
+  animation: fadeInThenOut 2s ease forwards;
+  animation-delay: 0s;
 }
 
-@keyframes fadeInOut {
+.loader-quote {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  position: absolute;
+  opacity: 0;
+  animation: quoteFadeIn 1.5s ease forwards;
+  animation-delay: 2s; /* Starts after text fades out */
+}
+
+.loader-fadeout {
+  animation: fadeOut 1s forwards;
+  pointer-events: none;
+}
+
+@keyframes fadeInThenOut {
   0% {
     opacity: 0;
-  }
-  10% {
-    opacity: 0.5;
   }
   20% {
     opacity: 1;
@@ -86,20 +67,40 @@
   80% {
     opacity: 1;
   }
-  90% {
-    opacity: 0.5;
-  }
   100% {
     opacity: 0;
   }
 }
 
+@keyframes quoteFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes fadeOut {
-  0% {
+  from {
     opacity: 1;
   }
-  100% {
+  to {
     opacity: 0;
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
