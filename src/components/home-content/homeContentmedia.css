@@ -645,6 +645,27 @@
     height: 45px;
   }
 }
+
+.image-container {
+  height: auto;
+}
+.content h1 {
+  margin-top: 1vh;
+  line-height: 1.2;
+}
+.image-overlay {
+  margin-top: 180px;
+  margin-left: 60px;
+  width: 80%;
+  padding: 5px 10px;
+  .badge {
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
 .whatsapp-float.hide {
   opacity: 0;
   visibility: hidden;
