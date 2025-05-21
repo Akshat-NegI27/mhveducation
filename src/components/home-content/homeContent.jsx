@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./homeContent.css";
 import "./homeContentmedia.css";
 import "../button/button.scss";

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import { scroller } from "react-scroll";

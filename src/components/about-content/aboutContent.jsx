@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import "./aboutContent.css";
 import vid2 from "/assets/img/about.mp4";
 import mainhead from "/assets/img/aboutvid.mp4";

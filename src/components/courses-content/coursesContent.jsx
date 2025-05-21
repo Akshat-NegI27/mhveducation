@@ -1,4 +1,3 @@
-import React from "react";
 import "./coursesContent.css";
 import vid from "/assets/img/vid1.mp4";
 import { Navigate } from "react-router-dom";
