@@ -104,9 +104,9 @@ const CoursesContent = () => {
                   <p>✔️ Exercise Files</p>
                 </div>
                 <div className="course-actions">
-                  <button className="enroll-button">
-                    <Link to="/Contact">Enroll Now</Link>
-                  </button>
+                  <Link to="/Contact" className="enroll-button">
+                    Enroll Now
+                  </Link>
                   <button
                     className="down-button"
                     onClick={() => openCoursePlan(course.title)}
