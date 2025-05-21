@@ -2,7 +2,8 @@ import { useState, useEffect, Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CustomCursor from "./CustomCursor";
 import Loader from "./components/Loader";
-import "./App.css"; // Make sure you include the fade-in styles here
+import ScrollToTop from "./ScrollToTop";
+import "./App.css";
 
 const Home = lazy(() => import("./pages/home/home"));
 const Courses = lazy(() => import("./pages/courses/courses"));
@@ -13,7 +14,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 5500); // 👈 Adjust for speed
+    const timer = setTimeout(() => setLoading(false), 5500);
     return () => clearTimeout(timer);
   }, []);
 
@@ -27,6 +28,7 @@ const App = () => {
           <Router
             future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
           >
+            <ScrollToTop />
             <Suspense fallback={<Loader />}>
               <Routes>
                 <Route path="/" element={<Home />} />

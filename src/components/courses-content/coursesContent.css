@@ -46,6 +46,7 @@
     }
     button {
       margin-top: 20px;
+      border-radius: 8px;
       padding: 10px 20px;
       background: #2563eb;
       color: white;
@@ -100,14 +101,14 @@
     width: 100%;
   }
 }
-  .course-card:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .course-card:hover .course-image {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-  }
+.course-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.course-card:hover .course-image {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
 .course-card:hover {
   transform: translateY(-5px);
 }
@@ -266,7 +267,6 @@
   width: 100%;
   font-weight: 600;
   padding: 8px;
-
   border: green 1px solid;
   border-radius: 8px;
   cursor: pointer;
@@ -290,16 +290,23 @@
   font-size: 16px;
   font-weight: 600;
   padding: 8px;
-
   color: #2563eb;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  a {
+    text-decoration: none;
+    color: #2563eb;
+  }
 }
 
 .enroll-button:hover {
   background-color: #2563eb;
   color: #ffffff;
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
 }
 
 .containerr {

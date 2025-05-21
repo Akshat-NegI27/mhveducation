@@ -1,6 +1,8 @@
 import "./coursesContent.css";
 import vid from "/assets/img/vid1.mp4";
 import { Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 import SEO from "../../components/SEO";
 
 const courseFiles = {
@@ -102,11 +104,8 @@ const CoursesContent = () => {
                   <p>✔️ Exercise Files</p>
                 </div>
                 <div className="course-actions">
-                  <button
-                    className="enroll-button"
-                    onClick={() => Navigate("/Contact")}
-                  >
-                    Enroll Now
+                  <button className="enroll-button">
+                    <Link to="/Contact">Enroll Now</Link>
                   </button>
                   <button
                     className="down-button"
