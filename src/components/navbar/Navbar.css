@@ -347,11 +347,7 @@
 
   .logo {
     margin: 0;
-    padding: 0;
-  }
-  .logo img {
-    height: 60px;
-    width: 100%;
+    
   }
   .sidebar-logo {
     width: 80px;
