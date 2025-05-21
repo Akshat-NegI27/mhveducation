@@ -4,6 +4,7 @@ import "boxicons";
 import { Link } from "react-router-dom";
 import logo from "/assets/img/brandlogo.webp";
 
+
 const Footer = () => {
   return (
     <footer>
@@ -66,7 +67,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/assets/courses/Intraday_Strategy_Course_Syllabus.pdf"
+                    href="/assets/courses/Intraday_Strategies_Program_Course_Syllabus.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -75,7 +76,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/assets/courses/Elliott_Wave_Program_Syllabus.pdf"
+                    href="/assets/courses/Elliott_Wave_Theory_Course_Syllabus.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -84,7 +85,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/assets/courses/Chartered_Market_Technician_CMT_Syllabus.pdf"
+                    href="/assets/courses/Chartered_Market_Technician_CMT_Course_Syllabus.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
