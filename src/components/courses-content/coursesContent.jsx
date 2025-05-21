@@ -105,7 +105,7 @@ const CoursesContent = () => {
                 <div className="course-actions">
                   <button
                     className="enroll-button"
-                    onClick={() => Navigate("/contact")}
+                    onClick={() => Navigate("/Contact")}
                   >
                     Enroll Now
                   </button>
