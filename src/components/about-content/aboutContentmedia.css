@@ -222,17 +222,19 @@
   }
 
   .about-container .heading-content .title-box p {
-    font-size: 14px;
+    font-size: 0.9em;
     line-height: normal;
+    text-align: left;
   }
 
   .mission-section .mission-content h2 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .mission-section .mission-content p {
-    font-size: 14px;
+    font-size: 0.9em;
     line-height: normal;
+    text-align: left;
   }
 
   .mission-section {
@@ -245,11 +247,12 @@
   .values-section {
     .program-content {
       p {
-        font-size: 14px;
+        font-size: 0.9em;
+        line-height: normal;
+        text-align: left;
       }
       h1 {
         font-size: 1.5em;
-        margin-bottom: 0;
       }
     }
   }
@@ -280,6 +283,8 @@
     & .content {
       p {
         margin-bottom: 10px;
+        font-size: 0.9em;
+        text-align: left;
       }
     }
   }
@@ -289,6 +294,8 @@
       width: 100%;
       h1 {
         margin-bottom: 10px;
+        font-size: 2em;
+        line-height: normal;
       }
     }
   }
@@ -318,5 +325,9 @@
     .profile3 {
       height: fit-content;
     }
+  }
+  .section-contact {
+    font-size: 0.5em;
+    font-weight: 600;
   }
 }

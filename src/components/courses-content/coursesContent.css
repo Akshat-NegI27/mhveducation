@@ -597,3 +597,14 @@
     height: fit-content;
   }
 }
+
+@media (max-width: 480px) {
+  .bg {
+    h1 {
+      line-height: normal;
+    }
+  }
+  .courses-grid {
+    padding: 20px 20px;
+  }
+}

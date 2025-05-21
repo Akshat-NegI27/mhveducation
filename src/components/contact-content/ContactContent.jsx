@@ -25,9 +25,8 @@ const Wrapper = styled.section`
     align-items: center;
     text-align: center;
   }
-
   @media (max-width: 480px) {
-    padding: 40px 20px;
+    padding: 0px 20px;
   }
 `;
 
@@ -76,7 +75,7 @@ const MapContainer = styled.div`
   }
 
   @media (max-width: 480px) {
-    height: 250px;
+    height: fit-content;
   }
 `;
 
@@ -178,6 +177,7 @@ const ContactContent = () => {
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
+            autoComplete="on"
           >
             <input
               type="text"
@@ -186,6 +186,7 @@ const ContactContent = () => {
               onChange={handleChange}
               placeholder="First Name"
               required
+              autoComplete="given-name"
             />
             <input
               type="text"
@@ -194,6 +195,7 @@ const ContactContent = () => {
               onChange={handleChange}
               placeholder="Last Name"
               required
+              autoComplete="family-name"
             />
             <input
               type="email"
@@ -202,6 +204,7 @@ const ContactContent = () => {
               onChange={handleChange}
               placeholder="Your Email"
               required
+              autoComplete="email"
             />
             <input
               type="text"
@@ -217,6 +220,7 @@ const ContactContent = () => {
               onChange={handleChange}
               placeholder="Your Message"
               required
+              autoComplete="off"
             ></textarea>
             <button type="submit">Send Message</button>
 
