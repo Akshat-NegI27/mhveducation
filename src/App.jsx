@@ -23,7 +23,7 @@ const App = () => {
       {loading ? (
         <Loader onComplete={() => setLoading(false)} />
       ) : (
-        <div className="app-wrapper fade-in">
+        <div className={`app-wrapper ${!loading ? "fade-in" : ""}`}>
           <CustomCursor />
           <Router
             future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
