@@ -11,7 +11,7 @@ const About = lazy(() => import("./pages/about/about"));
 const Contact = lazy(() => import("./pages/contact/contact"));
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 5500);
@@ -23,22 +23,24 @@ const App = () => {
       {loading ? (
         <Loader onComplete={() => setLoading(false)} />
       ) : (
-        <div className={`app-wrapper ${!loading ? "fade-in" : ""}`}>
+        <>
           <CustomCursor />
-          <Router
-            future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
-          >
-            <ScrollToTop />
-            <Suspense fallback={<Loader />}>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/courses" element={<Courses />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-              </Routes>
-            </Suspense>
-          </Router>
-        </div>
+          <div className={`app-wrapper ${!loading ? "fade-in" : ""}`}>
+            <Router
+              future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+            >
+              <ScrollToTop />
+              <Suspense fallback={<Loader />}>
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/courses" element={<Courses />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/contact" element={<Contact />} />
+                </Routes>
+              </Suspense>
+            </Router>
+          </div>
+        </>
       )}
     </>
   );

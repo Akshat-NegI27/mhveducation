@@ -46,7 +46,6 @@
       video {
         width: 100%;
         height: fit-content;
-
         object-fit: contain;
       }
     }

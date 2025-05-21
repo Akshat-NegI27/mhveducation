@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import "./homeContent.css";
 import "./homeContentmedia.css";
-import "../button/button.scss";
 import SEO from "../../components/SEO";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import main from "/assets/img/Detail.mp4";
 import img1 from "/assets/img/pic1.webp";
+import { useNavigate } from "react-router-dom";
 
 const faqs = [
   {
@@ -115,7 +115,7 @@ const reviews = [
 const HomeContent = () => {
   const [activeFaq, setActiveFaq] = useState(null);
   const [isVisible, setIsVisible] = useState(true);
-
+  let navigate = useNavigate();
   useEffect(() => {
     let scrollTimeout;
 
@@ -153,17 +153,21 @@ const HomeContent = () => {
             refine their strategy.
           </p>
           <div className="buttons">
-            <Link to="/courses">
-              <button className="button-underline">View All Courses</button>
+            <Link className="button-underline" to="/courses">
+              View All Courses
             </Link>
-            <Link to="/contact">
-              <button className="learn-more">
-                <span className="circle">
-                  <span className="icon arrow"></span>
-                </span>
-                <span className="button-text">Enroll Now</span>
-              </button>
-            </Link>
+
+            <button
+              onClick={() => {
+                navigate("/Contact");
+              }}
+              className="learn-more"
+            >
+              <span className="circle">
+                <span className="icon arrow"></span>
+              </span>
+              <span className="button-text">Enroll Now</span>
+            </button>
           </div>
           <div className="students">👥 Join 12,000+ Students</div>
         </div>
@@ -172,7 +176,12 @@ const HomeContent = () => {
             <span className="badge">📈 Stock Market Fundamentals</span>
             <p>Learn the essentials in our most popular course</p>
           </div>
-          <img src={img1} alt="Stock Market" className="imgcon" />
+          <img
+            src={img1}
+            alt="Stock Market"
+            loading="eager"
+            className="imgcon"
+          />
         </div>
       </div>
 
@@ -181,11 +190,11 @@ const HomeContent = () => {
           <h1>CHOOSE BEST STOCK MARKET INSTITUTE</h1>
           <p>MHV Education is more than a Stock Market Institution...</p>
           <div className="buttons">
-            <Link to="/courses">
-              <button className="button-underline">View All Courses</button>
+            <Link className="button-underline" to="/courses">
+              View All Courses
             </Link>
-            <Link to="/contact">
-              <button className="button-underline">Enroll Now →</button>
+            <Link className="button-underline" to="/contact">
+              Enroll Now →
             </Link>
           </div>
         </div>
