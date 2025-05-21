@@ -11,7 +11,7 @@ const About = lazy(() => import("./pages/about/about"));
 const Contact = lazy(() => import("./pages/contact/contact"));
 
 const App = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 5500);
