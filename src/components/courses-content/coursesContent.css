@@ -80,7 +80,6 @@
 
 .course-card {
   width: 420px;
-
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -93,9 +92,22 @@
 .course-details {
   display: flex;
   flex-direction: column;
-
   padding: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+  .course-card {
+    width: 100%;
+  }
+}
+  .course-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .course-card:hover .course-image {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
 .course-card:hover {
   transform: translateY(-5px);
 }
