@@ -229,20 +229,26 @@ const HomeContent = () => {
           </p>
         </div>
 
-        <div class="pg1section3text">
+        <div className="pg1section3text">
           <h1>Courses We Provide</h1>
-          <div class="alltxt">
+          <div className="alltxt">
             <div className="p1">
-              <div class="course-item">Beginner Technical Analysis Course</div>
-              <div class="course-item">Advanced Technical Analysis Course</div>
-              <div class="course-item">
+              <div className="course-item">
+                Beginner Technical Analysis Course
+              </div>
+              <div className="course-item">
+                Advanced Technical Analysis Course
+              </div>
+              <div className="course-item">
                 Integrated Beginner & Technical Analysis
               </div>
             </div>
             <div className="p2">
-              <div class="course-item">Intraday Strategy Course</div>
-              <div class="course-item">Elliott Wave Program</div>
-              <div class="course-item">Chartered Market Technician (CMT)</div>
+              <div className="course-item">Intraday Strategy Course</div>
+              <div className="course-item">Elliott Wave Program</div>
+              <div className="course-item">
+                Chartered Market Technician (CMT)
+              </div>
             </div>
           </div>
         </div>

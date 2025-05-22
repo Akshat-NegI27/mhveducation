@@ -27,12 +27,12 @@
       z-index: -1;
       width: 100%;
       height: 100%;
-      padding: 50px 16px 50px 16px;
+      padding: 65px 16px 50px 16px;
       object-fit: cover;
     }
 
     h1 {
-      font-size: 2.5em;
+      font-size: 4.5em;
       font-family: "Sofia Pro Bold";
       margin-bottom: 20px;
       text-transform: uppercase;
@@ -40,6 +40,7 @@
 
     p {
       font-size: 1.1em;
+      font-family: "worksans-n4";
       margin-bottom: 20px;
       width: 80%;
     }
@@ -602,9 +603,23 @@
 }
 
 @media (max-width: 480px) {
-  .bg {
-    h1 {
-      line-height: normal;
+  .hero-section {
+    .bg {
+      h1 {
+        font-size: 6vw;
+        font-family: "Sofia Pro Bold";
+        margin-bottom: 2vw;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 3vw;
+        font-family: "worksans-n4";
+        margin-bottom: 1vw;
+        width: 80%;
+      }
+      .explore-button {
+        margin-top: 2vw;
+      }
     }
   }
   .courses-grid {

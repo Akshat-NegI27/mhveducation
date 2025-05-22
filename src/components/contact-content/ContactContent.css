@@ -13,19 +13,27 @@
 .contact-header {
   text-align: center;
   z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
 
   h1 {
-    font-size: 3rem;
-    color: #ffffff;
+    font-size: 4.5rem;
+    font-family: "Sofia Pro Bold";
+    margin-bottom: 20px;
+    text-transform: uppercase;
   }
 
   p {
-    font-size: 1.1rem;
-    color: #ffffff;
+    font-size: 1.1em;
+    font-family: "worksans-n4";
   }
 }
 .bgvid {
-  padding: 65px 50px;
+  padding: 65px 16px 50px 16px;
   position: absolute;
 
   top: 0%;
@@ -363,8 +371,9 @@ i.fa-solid {
   }
   .contact-header {
     h1 {
-      font-size: 3rem;
+      font-size: 9vw;
       color: #ffffff;
+      margin: 0 0 2vw 0;
     }
 
     p {
