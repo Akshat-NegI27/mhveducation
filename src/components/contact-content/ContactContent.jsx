@@ -14,7 +14,8 @@ const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   color: #fff;
-  min-height: 80vh;
+  height: fit-content;
+
   @media (max-width: 1024px) {
     padding: 80px 60px;
   }
@@ -26,7 +27,7 @@ const Wrapper = styled.section`
     text-align: center;
   }
   @media (max-width: 480px) {
-    padding: 0px 20px;
+    padding: 0px;
   }
 `;
 
@@ -48,10 +49,11 @@ const Heading = styled.h2`
 
 const GridContainer = styled.div`
   display: flex;
-  height: 100%;
+  height: fit-content;
   width: 100%;
-  gap: 50px;
-  justify-content: space-between;
+  gap: 40px;
+
+  justify-content: space-evenly;
 
   @media (max-width: 1024px) {
     gap: 30px;
@@ -62,20 +64,29 @@ const GridContainer = styled.div`
     align-items: center;
     gap: 20px;
   }
+  @media (max-width: 480px) {
+    gap: 120px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 0;
+  }
 `;
 
 const MapContainer = styled.div`
   border-radius: 0px;
-  height: 100%;
+  height: fit-content;
   font-family: "Poppins";
-  width: 100%;
-  overflow: hidden;
+  width: 50%;
+
   @media (max-width: 768px) {
     height: 300px;
   }
 
   @media (max-width: 480px) {
-    height: fit-content;
+    height: 300px;
+    width: 100%;
   }
 `;
 
@@ -158,6 +169,7 @@ const ContactContent = () => {
           <MapContainer>
             <Heading>Our Location</Heading>
             <iframe
+              className="map-iframe"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.6969682114545!2d78.08188347542638!3d30.372802774759943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d7a1eb15df5b%3A0xec320e209ab53869!2sIKSANA%20Workspaces-%20Best%20Co-working%20and%20fully%20furnished%20office%20spaces%20in%20Dehradun!5e1!3m2!1sen!2sin!4v1742650823392!5m2!1sen!2sin"
               width="100%"
               height="500"

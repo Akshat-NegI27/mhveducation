@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import main from "/assets/img/Detail.mp4";
 import img1 from "/assets/img/pic1.webp";
+import img2 from "/assets/img/pic2.webp";
 import { useNavigate } from "react-router-dom";
 
 const faqs = [
@@ -187,8 +188,15 @@ const HomeContent = () => {
 
       <div className="pg1section2">
         <div className="s2content">
-          <h1>CHOOSE BEST STOCK MARKET INSTITUTE</h1>
-          <p>MHV Education is more than a Stock Market Institution...</p>
+          <h1>
+            Unlock Financial Success with Expert-Led Stock Market Training
+          </h1>
+          <p>
+            Are you looking for the best trading course in Dehradun to master
+            stock market trading?
+            <br /> At MHV Education, we provide certified stock market courses
+            for beginners and experienced traders..
+          </p>
           <div className="buttons">
             <Link className="button-underline" to="/courses">
               View All Courses
@@ -201,6 +209,82 @@ const HomeContent = () => {
         <div className="s2img">
           <div className="imgs">
             <video autoPlay loop muted src={main} type="video/mp4" />
+          </div>
+        </div>
+        <div className="pg1section2text">
+          <h1>Why Choose Our Stock Market Course in Dehradun?</h1>
+          <p>
+            Practical Learning: No boring theory—only real-market simulations
+            and live trading sessions.
+            <br />
+            Expert Trainers: Learn from professionals with years of experience
+            in intraday trading, swing trading, and long-term investing.
+            <br />
+            Flexible Batches: Choose between weekend classes for working
+            professionals or online stock market courses with lifetime access.
+            <br />
+            Certification: Get a recognized stock market certification to boost
+            your trading career. Don’t just trade—trade smart with the best
+            stock market courses in Dehradun.
+          </p>
+        </div>
+
+        <div class="pg1section3text">
+          <h1>Courses We Provide</h1>
+          <div class="alltxt">
+            <div className="p1">
+              <div class="course-item">Beginner Technical Analysis Course</div>
+              <div class="course-item">Advanced Technical Analysis Course</div>
+              <div class="course-item">
+                Integrated Beginner & Technical Analysis
+              </div>
+            </div>
+            <div className="p2">
+              <div class="course-item">Intraday Strategy Course</div>
+              <div class="course-item">Elliott Wave Program</div>
+              <div class="course-item">Chartered Market Technician (CMT)</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="pg1section4text">
+          <h1>What You Will Learn</h1>
+          <p>
+            • Stock Market Basics – How markets work, types of orders, and key
+            financial terms. <br />
+            • Technical Analysis – Master candlestick patterns, chart trends,
+            and indicators like RSI & MACD. <br />
+            • Trading Strategies – Intraday, swing, and positional trading
+            techniques. <br />• Risk Management – Protect your capital with
+            smart stop-loss and portfolio diversification.
+          </p>
+        </div>
+        <div className="pg1section5img">
+          <div className="pg1section5image">
+            <img src={img2} alt="Stock Market Course" loading="lazy" />
+          </div>
+          <div className="pg1section5text">
+            <div className="para1">
+              <h1>Join Our Stock Market Course Today!</h1>
+              <p>
+                • Beginners – Start your journey in share market trading with a
+                solid foundation. <br />
+                • Working Professionals – Learn part-time trading strategies for
+                passive income. <br /> • Investors – Enhance your skills in
+                fundamental and technical analysis. <br /> • College Students –
+                Build financial literacy early for long-term wealth creation.
+              </p>
+            </div>
+            <div className="para2">
+              <h1>Flexible Learning Options</h1>
+              <p>
+                • Classroom Training – Join our Dehradun-based institute with
+                live trading labs. <br />
+                • Online Stock Market Course – Learn at your own pace with
+                recorded lectures & live mentorship. <br />• We provide share
+                market courses online with certificates in Dehradun.
+              </p>
+            </div>
           </div>
         </div>
       </div>

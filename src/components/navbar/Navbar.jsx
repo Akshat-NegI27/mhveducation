@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 import brandlogo from "/assets/img/brandlogo.webp";
+import sidebarlogo from "/assets/img/thelogo2.webp";
+
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
@@ -85,7 +87,7 @@ const Navbar = () => {
       {}
       <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="sidebar-header">
-          <img src={brandlogo} alt="Logo" className="sidebar-logo" />
+          <img src={sidebarlogo} alt="Logo" className="sidebar-logo" />
           <button
             className="sidebar-close"
             onClick={toggleSidebar}
