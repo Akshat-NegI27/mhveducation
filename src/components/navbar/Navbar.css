@@ -89,14 +89,14 @@
 .navbar-links {
   display: flex;
   gap: 28px;
-  font-family: worksans-n4;
+  font-family: worksans-n5;
   font-weight: 800;
   font-size: 16px;
   text-transform: uppercase;
 }
 
 .navbar-links a {
-  color: #636876bb;
+  color: #898989;
   text-decoration: none;
   position: relative;
   transition: color 0.2s;
@@ -347,7 +347,6 @@
 
   .logo {
     margin: 0;
-    
   }
   .sidebar-logo {
     width: 80px;

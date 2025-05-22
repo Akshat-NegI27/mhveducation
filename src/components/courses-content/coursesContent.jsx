@@ -11,7 +11,7 @@ const courseFiles = {
   "Advanced Technical Analysis Course":
     "/assets/courses/Advanced_Technical_Analysis_Course_Syllabus.pdf",
   "Integrated Beginner and Technical Analysis Course":
-    "/assets/courses/Integrated_Beginner_Technical_Analysis_Course_Syllabus.pdf",
+    "/assets/courses/Beginner_Technical_Analysis_Course_Syllabus.pdf",
   "Intraday Strategy Course​":
     "/assets/courses/Intraday_Strategies_Program_Course_Syllabus.pdf",
   "Elliott Wave Program​":
