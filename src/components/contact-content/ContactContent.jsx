@@ -145,10 +145,10 @@ const ContactContent = () => {
   return (
     <div className="hi-ccontainer" id="scroll-container">
       <SEO
-        title="Contact MHV Education | Best Stock Market Institute in Dehradun"
+        title="Contact Us MHV Education | Best Stock Market Institute in Dehradun"
         description="Get in touch with MHV Education, the leading stock market training institute in Dehradun. Visit our office, fill out the contact form, or connect with us on social media platforms including Instagram, LinkedIn, and YouTube."
         keywords="contact MHV Education, stock market training Dehradun, share market classes, trading institute Dehradun, get in touch MHV Education"
-        canonical="https://mhveducation.com/contact"
+        canonical="https://mhveducation.com/Contact"
       />
       <div className="contact-container">
         <div className="contact-header">

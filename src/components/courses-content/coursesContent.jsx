@@ -42,7 +42,7 @@ const CoursesContent = () => {
         title="Stock Market Courses in Dehradun | MHV Education"
         description="Explore MHV Education’s top-rated stock market courses including Beginner & Advanced Technical Analysis, Intraday Strategy, Elliott Wave, and CMT. Learn from expert mentors in Dehradun with affordable pricing and certification."
         keywords="stock market courses in Dehradun, beginner trading course, advanced technical analysis, intraday strategy course, Elliott Wave training, CMT program, share market classes Dehradun"
-        canonical="https://mhveducation.com/courses"
+        canonical="https://mhveducation.com/Courses"
       />
       <div className="hero-section">
         <div className="bg">

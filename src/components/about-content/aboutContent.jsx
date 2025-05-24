@@ -14,22 +14,10 @@ import {
 import front from "/assets/img/front.png";
 import front2 from "/assets/img/front2.png";
 import front3 from "/assets/img/front3.png";
-
 import { Helmet } from "react-helmet-async";
 import "./aboutContentmedia.css";
 
 <Helmet>
-  <title>About MHV Education | Best Stock Market Institute in Dehradun</title>
-  <meta
-    name="description"
-    content="Learn more about MHV Education, Dehradun's best stock market training institute. Founded by Prakhar Rawat, we offer expert-led courses in stock trading and investing."
-  />
-  <meta
-    name="keywords"
-    content="Stock Market Education, Trading Institute Dehradun, MHV Education, Stock Market Training, Learn Stock Trading, Investment Courses"
-  />
-  <link rel="canonical" href="https://mhveducation.com/about" />
-  {}
   <script type="application/ld+json">
     {`
     {
@@ -72,7 +60,7 @@ const AboutContent = () => {
         title="About MHV Education | Best Stock Market Institute in Dehradun"
         description="Learn about MHV Education – Dehradun’s premier stock market institute founded by Prakhar Rawat. We offer technical analysis, intraday strategies, Elliott Wave, and CMT-level programs led by expert mentors."
         keywords="MHV Education, stock market institute Dehradun, Prakhar Rawat, technical analysis course, intraday trading course, CMT, Elliott wave training, share market mentor Dehradun"
-        canonical="https://mhveducation.com/about"
+        canonical="https://mhveducation.com/About"
       />
       <div className="heading-content">
         <div className="title-box">
