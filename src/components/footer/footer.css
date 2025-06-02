@@ -83,13 +83,13 @@ footer .containerx {
   font-family: "Rubik", sans-serif;
 }
 
-.social_media box-icon {
+.social_media .box-icon {
   fill: #b3b3b3;
   margin-right: 18px;
   font-size: 24px;
 }
 
-.social_media box-icon:hover {
+.social_media .box-icon:hover {
   fill: #ffffff;
 }
 

@@ -39,7 +39,7 @@ const Navbar = () => {
       <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
         <div className="logo-container">
           <div className="logo">
-            <img src={brandlogo} alt="BlockChat Logo" className="logos" />
+            <img src={brandlogo} alt="MHV Education Logo" className="logos" />
           </div>
         </div>
 
@@ -51,7 +51,7 @@ const Navbar = () => {
             Home
           </NavLink>
           <NavLink
-            to="/Courses"
+            to="/courses"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Courses
@@ -59,13 +59,13 @@ const Navbar = () => {
           {}
           {}
           <NavLink
-            to="/About"
+            to="/about"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             About
           </NavLink>
           <NavLink
-            to="/Contact"
+            to="/contact"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Contact Us
@@ -101,13 +101,13 @@ const Navbar = () => {
           <NavLink to="/" onClick={toggleSidebar}>
             Home
           </NavLink>
-          <NavLink to="/Courses" onClick={toggleSidebar}>
+          <NavLink to="/courses" onClick={toggleSidebar}>
             Courses
           </NavLink>
-          <NavLink to="/About" onClick={toggleSidebar}>
+          <NavLink to="/about" onClick={toggleSidebar}>
             About
           </NavLink>
-          <NavLink to="/Contact" onClick={toggleSidebar}>
+          <NavLink to="/contact" onClick={toggleSidebar}>
             Contact Us
           </NavLink>
         </div>

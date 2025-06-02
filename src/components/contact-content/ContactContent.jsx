@@ -7,6 +7,8 @@ import vido from "/assets/img/vid1.mp4";
 import { motion } from "framer-motion";
 import SEO from "../../components/SEO";
 
+import { Helmet } from "react-helmet-async";
+
 const Wrapper = styled.section`
   padding: 20px 60px;
   width: 100%;
@@ -112,43 +114,49 @@ const ContactContent = () => {
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_4e0t51b",
-        "template_sw7ekp1",
-        formRef.current,
-        "3_E0aNQ_UWSq5Eip_"
-      )
-      .then(() => {
-        setFeedback(
-          "✅ Form successfully submitted. We will contact you shortly!"
-        );
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          topic: "",
-          message: "",
+    if (formRef.current) {
+      emailjs
+        .sendForm(
+          "service_4e0t51b",
+          "template_sw7ekp1",
+          formRef.current,
+          "3_E0aNQ_UWSq5Eip_"
+        )
+        .then(() => {
+          setFeedback(
+            "✅ Form successfully submitted. We will contact you shortly!"
+          );
+          setFormData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            topic: "",
+            message: "",
+          });
+
+          scroller.scrollTo("form-top", { duration: 500, smooth: true });
+
+          setTimeout(() => {
+            window.location.reload();
+          }, 2500);
+        })
+        .catch((error) => {
+          setFeedback(`❌ Submission failed: ${error.text}`);
         });
-
-        scroller.scrollTo("form-top", { duration: 500, smooth: true });
-
-        setTimeout(() => {
-          window.location.reload();
-        }, 2500);
-      })
-      .catch((error) => {
-        setFeedback(`❌ Submission failed: ${error.text}`);
-      });
+    }
   }, []);
 
   return (
     <div className="hi-ccontainer" id="scroll-container">
+      <Helmet>
+        <title>Contact – MHV Education</title>
+        <link rel="canonical" href="https://www.mhveducation.com/contact" />
+      </Helmet>
       <SEO
         title="Contact Us MHV Education | Best Stock Market Institute in Dehradun"
         description="Get in touch with MHV Education, the leading stock market training institute in Dehradun. Visit our office, fill out the contact form, or connect with us on social media platforms including Instagram, LinkedIn, and YouTube."
         keywords="contact MHV Education, stock market training Dehradun, share market classes, trading institute Dehradun, get in touch MHV Education"
-        canonical="https://mhveducation.com/Contact"
+        canonical="https://mhveducation.com/contact"
       />
       <div className="contact-container">
         <div className="contact-header">
@@ -176,7 +184,6 @@ const ContactContent = () => {
               title="Location of MHV Education on Google Maps"
               style={{ border: 0 }}
               allowFullScreen
-              loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </MapContainer>

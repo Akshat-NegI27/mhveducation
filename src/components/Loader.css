@@ -142,3 +142,21 @@
     }
   }
 }
+
+.loader-container {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  transition: opacity 1s ease-in-out;
+}
+
+.loader-fadeout {
+  opacity: 0;
+  visibility: hidden;
+}

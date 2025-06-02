@@ -35,7 +35,7 @@ const Loader = ({ onComplete }) => {
       setFadeOut(true);
       const finishTime = setTimeout(onComplete, 1000); // 1s fade-out
       return () => clearTimeout(finishTime);
-    }, 5000); // 👈 Increase to 5s visible before fade
+    }, 2000); // 👈 Increase to 5s visible before fade
 
     return () => clearTimeout(showTime);
   }, [onComplete]);

@@ -160,7 +160,7 @@ const HomeContent = () => {
 
             <button
               onClick={() => {
-                navigate("/Contact");
+                navigate("/contact");
               }}
               className="learn-more"
             >
@@ -177,12 +177,7 @@ const HomeContent = () => {
             <span className="badge">📈 Stock Market Fundamentals</span>
             <p>Learn the essentials in our most popular course</p>
           </div>
-          <img
-            src={img1}
-            alt="Stock Market"
-            loading="eager"
-            className="imgcon"
-          />
+          <img src={img1} alt="Stock Market" className="imgcon" />
         </div>
       </div>
 
@@ -267,7 +262,7 @@ const HomeContent = () => {
         </div>
         <div className="pg1section5img">
           <div className="pg1section5image">
-            <img src={img2} alt="Stock Market Course" loading="lazy" />
+            <img src={img2} alt="Stock Market Course" />
           </div>
           <div className="pg1section5text">
             <div className="para1">

@@ -17,19 +17,35 @@ const CustomCursor = () => {
   });
 
   React.useEffect(() => {
-    document.addEventListener("mousemove", (event) => {
-      const { clientX, clientY } = event;
+    // Start from center
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
 
-      const mouseX = clientX;
-      const mouseY = clientY;
+    const cursorWidth = secondaryCursor.current?.clientWidth || 20;
+    const cursorHeight = secondaryCursor.current?.clientHeight || 20;
 
-      positionRef.current.mouseX =
-        mouseX - secondaryCursor.current.clientWidth / 2;
-      positionRef.current.mouseY =
-        mouseY - secondaryCursor.current.clientHeight / 2;
-    });
+    const initX = centerX - cursorWidth / 2;
+    const initY = centerY - cursorHeight / 2;
 
-    return () => {};
+    positionRef.current.mouseX = initX;
+    positionRef.current.mouseY = initY;
+    positionRef.current.destinationX = initX;
+    positionRef.current.destinationY = initY;
+
+    // Listen for mouse move
+    const handleMouseMove = (event) => {
+      const mouseX = event.clientX - cursorWidth / 2;
+      const mouseY = event.clientY - cursorHeight / 2;
+
+      positionRef.current.mouseX = mouseX;
+      positionRef.current.mouseY = mouseY;
+    };
+
+    document.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
   }, []);
 
   React.useEffect(() => {
