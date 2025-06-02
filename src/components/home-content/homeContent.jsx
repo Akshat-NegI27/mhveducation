@@ -138,7 +138,7 @@ const HomeContent = () => {
     <div className="homepg">
       <SEO
         title="MHV Education - Best Stock Market Courses in Dehradun"
-        description="Join top-rated share market classes with live sessions, trading strategies, and mentorship."
+        description="Join MHV Education – Dehradun's leading institute for stock market courses. Master trading, investing, and technical analysis with hands-on guidance from market experts."
         keywords="stock market course, Dehradun, MHV Education, trading institute"
         canonical="https://mhveducation.com/"
       />

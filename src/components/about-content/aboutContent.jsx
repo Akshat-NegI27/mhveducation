@@ -58,7 +58,7 @@ const AboutContent = () => {
     <div className="about-container">
       <SEO
         title="About MHV Education | Best Stock Market Institute in Dehradun"
-        description="Learn about MHV Education – Dehradun’s premier stock market institute founded by Prakhar Rawat. We offer technical analysis, intraday strategies, Elliott Wave, and CMT-level programs led by expert mentors."
+        description="Learn about MHV Education – Dehradun’s stock market institute founded by Prakhar Rawat. We offer technical analysis and strategies led by expert mentors."
         keywords="MHV Education, stock market institute Dehradun, Prakhar Rawat, technical analysis course, intraday trading course, CMT, Elliott wave training, share market mentor Dehradun"
         canonical="https://mhveducation.com/about"
       />

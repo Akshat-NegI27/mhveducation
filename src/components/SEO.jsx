@@ -19,7 +19,7 @@ const SEO = ({ title, description, keywords, canonical }) => {
           "stock, market, course, Dehradun, mhv, mhv education, stock market, stock market course, stock market course in Dehradun, stock market course in India, stock market course in Uttarakhand, stock market course in Delhi, stock market course in Mumbai, stock market course in Bangalore, stock market course in Chennai, stock market course in Kolkata, stock market course in Hyderabad, stock market course in Pune"
         }
       />
-      <meta name="robots" content="index, follow" />
+      {/* <meta name="robots" content="index, follow" /> */}
       {canonical && <link rel="canonical" href={canonical} />}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link

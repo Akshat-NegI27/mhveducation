@@ -148,13 +148,9 @@ const ContactContent = () => {
 
   return (
     <div className="hi-ccontainer" id="scroll-container">
-      <Helmet>
-        <title>Contact – MHV Education</title>
-        <link rel="canonical" href="https://www.mhveducation.com/contact" />
-      </Helmet>
       <SEO
-        title="Contact Us MHV Education | Best Stock Market Institute in Dehradun"
-        description="Get in touch with MHV Education, the leading stock market training institute in Dehradun. Visit our office, fill out the contact form, or connect with us on social media platforms including Instagram, LinkedIn, and YouTube."
+        title="Contact MHV Education | Best Stock Market Institute in Dehradun"
+        description="Get in touch with MHV Education, Dehradun’s top stock market institute. Visit our office, fill out the form, or connect with us on social media."
         keywords="contact MHV Education, stock market training Dehradun, share market classes, trading institute Dehradun, get in touch MHV Education"
         canonical="https://mhveducation.com/contact"
       />
