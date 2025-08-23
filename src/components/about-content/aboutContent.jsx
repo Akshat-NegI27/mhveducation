@@ -14,7 +14,7 @@ import {
 import front from "/assets/img/front.png";
 import front2 from "/assets/img/front2.png";
 import front3 from "/assets/img/front3.png";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "@dr.pogodin/react-helmet";
 import "./aboutContentmedia.css";
 
 <Helmet>

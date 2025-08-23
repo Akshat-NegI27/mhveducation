@@ -7,7 +7,7 @@ import vido from "/assets/img/vid1.mp4";
 import { motion } from "framer-motion";
 import SEO from "../../components/SEO";
 
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "@dr.pogodin/react-helmet";
 
 const Wrapper = styled.section`
   padding: 20px 60px;

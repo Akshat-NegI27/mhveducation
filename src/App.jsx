@@ -1,6 +1,6 @@
 import { useEffect, Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "@dr.pogodin/react-helmet";
 import CustomCursor from "./CustomCursor";
 import ScrollToTop from "./ScrollToTop";
 import "./App.css";
